@@ -1,5 +1,5 @@
 /* Ionic Design System — Default Design System */
-/* Generated 2026-04-09T01:13:00.060Z */
+/* Generated 2026-04-09T01:27:35.365Z */
 /* Usage: <link rel="stylesheet" href="https://poyi-is.github.io/ids/styles/default.css"> */
 
 /* ========================= */
@@ -342,13 +342,13 @@
   --ids-action-primary-hover: #1669f1;
   --ids-action-primary-pressed: #1054c2;
   --ids-action-primary-text: #FFFFFF;
-  --ids-black: /* unresolved: {color.black} */ transparent;
+  --ids-black: /* unresolved: {color.black} */;
   --ids-border-default: #E5E7EB;
   --ids-border-focus: #3B82F6;
   --ids-border-strong: #9CA3AF;
   --ids-border-subtle: #F3F4F6;
   --ids-danger-500: #DC2626;
-  --ids-danger-600: /* unresolved: {color.red.600} */ transparent;
+  --ids-danger-600: /* unresolved: {color.red.600} */;
   --ids-focus-ring: #3B82F6;
   --ids-focus-ringOffset: #FFFFFF;
   --ids-fontsize-base: 16px;
@@ -443,9 +443,9 @@
   --ids-md: 16px;
   --ids-md: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
   --ids-md: 8px;
-  --ids-neutral-100: /* unresolved: {color.gray.100} */ transparent;
-  --ids-neutral-300: /* unresolved: {color.gray.300} */ transparent;
-  --ids-neutral-900: /* unresolved: {color.gray.900} */ transparent;
+  --ids-neutral-100: /* unresolved: {color.gray.100} */;
+  --ids-neutral-300: /* unresolved: {color.gray.300} */;
+  --ids-neutral-900: /* unresolved: {color.gray.900} */;
   --ids-none: none;
   --ids-primary-100: #e2e5eb;
   --ids-primary-50: #eff0f2;
@@ -690,13 +690,13 @@
 }
 .ionic-button[data-intent="info"]:focus-visible {
   outline: none;
-  box-shadow: /* unresolved: {base.shadow.button.focusInfo} */ transparent;
+  box-shadow: /* unresolved: {base.shadow.button.focusInfo} */;
 }
 .ionic-button[data-intent="info"]:hover {
   background-color: #0369A1;
 }
 .ionic-button[data-intent="info"]:active {
-  transform: /* unresolved: {base.motion.transform.pressed} */ transparent;
+  transform: /* unresolved: {base.motion.transform.pressed} */;
   background-color: #075985;
 }
 .ionic-button[data-intent="info"]:disabled {
@@ -711,13 +711,13 @@
 }
 .ionic-button[data-intent="danger"]:focus-visible {
   outline: none;
-  box-shadow: /* unresolved: {base.shadow.button.focusDanger} */ transparent;
+  box-shadow: /* unresolved: {base.shadow.button.focusDanger} */;
 }
 .ionic-button[data-intent="danger"]:hover {
   background-color: #B91C1C;
 }
 .ionic-button[data-intent="danger"]:active {
-  transform: /* unresolved: {base.motion.transform.pressed} */ transparent;
+  transform: /* unresolved: {base.motion.transform.pressed} */;
   background-color: #991B1B;
 }
 .ionic-button[data-intent="danger"]:disabled {
@@ -732,13 +732,13 @@
 }
 .ionic-button[data-intent="primary"]:focus-visible {
   outline: none;
-  box-shadow: /* unresolved: {base.shadow.focus.ringPrimary} */ transparent;
+  box-shadow: /* unresolved: {base.shadow.focus.ringPrimary} */;
 }
 .ionic-button[data-intent="primary"]:hover {
   background-color: #1669f1;
 }
 .ionic-button[data-intent="primary"]:active {
-  transform: /* unresolved: {base.motion.transform.pressed} */ transparent;
+  transform: /* unresolved: {base.motion.transform.pressed} */;
   background-color: #1054c2;
 }
 .ionic-button[data-intent="primary"]:disabled {
@@ -753,13 +753,13 @@
 }
 .ionic-button[data-intent="success"]:focus-visible {
   outline: none;
-  box-shadow: /* unresolved: {base.shadow.button.focusSuccess} */ transparent;
+  box-shadow: /* unresolved: {base.shadow.button.focusSuccess} */;
 }
 .ionic-button[data-intent="success"]:hover {
   background-color: #15803D;
 }
 .ionic-button[data-intent="success"]:active {
-  transform: /* unresolved: {base.motion.transform.pressed} */ transparent;
+  transform: /* unresolved: {base.motion.transform.pressed} */;
   background-color: #166534;
 }
 .ionic-button[data-intent="success"]:disabled {
@@ -774,13 +774,13 @@
 }
 .ionic-button[data-intent="warning"]:focus-visible {
   outline: none;
-  box-shadow: /* unresolved: {base.shadow.button.focusWarning} */ transparent;
+  box-shadow: /* unresolved: {base.shadow.button.focusWarning} */;
 }
 .ionic-button[data-intent="warning"]:hover {
   background-color: #D97706;
 }
 .ionic-button[data-intent="warning"]:active {
-  transform: /* unresolved: {base.motion.transform.pressed} */ transparent;
+  transform: /* unresolved: {base.motion.transform.pressed} */;
   background-color: #B45309;
 }
 .ionic-button[data-intent="warning"]:disabled {
@@ -795,13 +795,13 @@
 }
 .ionic-button[data-intent="secondary"]:focus-visible {
   outline: none;
-  box-shadow: /* unresolved: {base.shadow.button.focusNeutral} */ transparent;
+  box-shadow: /* unresolved: {base.shadow.button.focusNeutral} */;
 }
 .ionic-button[data-intent="secondary"]:hover {
   background-color: #E5E7EB;
 }
 .ionic-button[data-intent="secondary"]:active {
-  transform: /* unresolved: {base.motion.transform.pressed} */ transparent;
+  transform: /* unresolved: {base.motion.transform.pressed} */;
   background-color: #D1D5DB;
 }
 .ionic-button[data-intent="secondary"]:disabled {
@@ -871,7 +871,7 @@
   background-color: #FFFFFF;
 }
 .ionic-checkbox[data-color="default"]:focus-visible {
-  box-shadow: /* unresolved: {base.shadow.focus.ringSoft} */ transparent;
+  box-shadow: /* unresolved: {base.shadow.focus.ringSoft} */;
 }
 .ionic-checkbox[data-color="default"]:hover {
   border-color: #79a3e7;
@@ -1008,13 +1008,13 @@
   box-shadow: none;
 }
 .ionic-container[data-padding="lg"] {
-  padding: /* unresolved: {base.spacing.6} */ transparent;
+  padding: 24px;
 }
 .ionic-container[data-padding="md"] {
-  padding: /* unresolved: {base.spacing.4} */ transparent;
+  padding: 16px;
 }
 .ionic-container[data-padding="sm"] {
-  padding: /* unresolved: {base.spacing.3} */ transparent;
+  padding: 12px;
 }
 .ionic-container[data-padding="none"] {
   padding: 0;
@@ -1045,13 +1045,13 @@
   width: 100%;
 }
 .ionic-container[data-spacing="lg"] {
-  gap: /* unresolved: {base.spacing.6} */ transparent;
+  gap: 24px;
 }
 .ionic-container[data-spacing="md"] {
-  gap: /* unresolved: {base.spacing.4} */ transparent;
+  gap: 16px;
 }
 .ionic-container[data-spacing="sm"] {
-  gap: /* unresolved: {base.spacing.2} */ transparent;
+  gap: 8px;
 }
 .ionic-container[data-spacing="none"] {
   gap: 0;
@@ -1129,21 +1129,6 @@
 .ionic-icon[data-state="show"] {
   display: inline-flex;
 }
-.ionic-image[data-aspectRatio="1/1"] {
-  aspect-ratio: /* unresolved: {base.aspectRatio.square} */ transparent;
-}
-.ionic-image[data-aspectRatio="3/2"] {
-  aspect-ratio: /* unresolved: {base.aspectRatio.photo32} */ transparent;
-}
-.ionic-image[data-aspectRatio="4/3"] {
-  aspect-ratio: /* unresolved: {base.aspectRatio.standard43} */ transparent;
-}
-.ionic-image[data-aspectRatio="16/9"] {
-  aspect-ratio: /* unresolved: {base.aspectRatio.video169} */ transparent;
-}
-.ionic-image[data-aspectRatio="auto"] {
-  aspect-ratio: /* unresolved: {base.aspectRatio.auto} */ transparent;
-}
 .ionic-image[data-fit="fill"] {
   object-fit: fill;
 }
@@ -1167,11 +1152,6 @@
 }
 .ionic-input[data-align="center"] {
   text-align: center;
-}
-.ionic-input[data-color="default"] {
-  color: /* unresolved: {semantic.foreground} */ transparent;
-  border-color: /* unresolved: {semantic.input} */ transparent;
-  background-color: /* unresolved: {semantic.background} */ transparent;
 }
 .ionic-input[data-elevation="md"] {
   box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
@@ -1221,9 +1201,6 @@
 .ionic-link[data-color="default"] {
   color: #3B82F6;
 }
-.ionic-link[data-size="default"] {
-  font-size: /* unresolved: {base.fontSize.base} */ transparent;
-}
 .ionic-link[data-weight="medium"] {
   font-weight: 500;
 }
@@ -1253,7 +1230,7 @@
 .ionic-menuitem[data-color="danger"]:disabled {
   cursor: not-allowed;
   opacity: 0.5;
-  pointer-events: /* unresolved: {base.interaction.pointerEvents.none} */ transparent;
+  pointer-events: /* unresolved: {base.interaction.pointerEvents.none} */;
 }
 .ionic-menuitem[data-color="default"] {
   color: #4B5563;
@@ -1273,7 +1250,7 @@
 .ionic-menuitem[data-color="default"]:disabled {
   cursor: not-allowed;
   opacity: 0.5;
-  pointer-events: /* unresolved: {base.interaction.pointerEvents.none} */ transparent;
+  pointer-events: /* unresolved: {base.interaction.pointerEvents.none} */;
 }
 .ionic-menuitem[data-size="lg"] {
   gap: 12px;
@@ -1390,11 +1367,11 @@
   background-color: #FFFFFF;
 }
 .ionic-radio[data-color="default"]:focus-visible {
-  box-shadow: /* unresolved: {base.shadow.radio.focusPrimary} */ transparent;
+  box-shadow: /* unresolved: {base.shadow.radio.focusPrimary} */;
   border-color: #3B82F6;
 }
 .ionic-radio[data-color="default"]:hover {
-  box-shadow: /* unresolved: {base.shadow.radio.hoverPrimary} */ transparent;
+  box-shadow: /* unresolved: {base.shadow.radio.hoverPrimary} */;
   border-color: #79a3e7;
 }
 .ionic-radio[data-color="default"]:checked {
@@ -1413,11 +1390,11 @@
   background-color: #F9FAFB;
 }
 .ionic-radio[data-color="neutral"]:focus-visible {
-  box-shadow: /* unresolved: {base.shadow.radio.focusNeutral} */ transparent;
+  box-shadow: /* unresolved: {base.shadow.radio.focusNeutral} */;
   border-color: #4B5563;
 }
 .ionic-radio[data-color="neutral"]:hover {
-  box-shadow: /* unresolved: {base.shadow.radio.hoverNeutral} */ transparent;
+  box-shadow: /* unresolved: {base.shadow.radio.hoverNeutral} */;
   border-color: #6B7280;
 }
 .ionic-radio[data-color="neutral"]:checked {
@@ -1436,11 +1413,11 @@
   background-color: #FFFFFF;
 }
 .ionic-radio[data-color="primary"]:focus-visible {
-  box-shadow: /* unresolved: {base.shadow.radio.focusPrimaryStrong} */ transparent;
+  box-shadow: /* unresolved: {base.shadow.radio.focusPrimaryStrong} */;
   border-color: #1054c2;
 }
 .ionic-radio[data-color="primary"]:hover {
-  box-shadow: /* unresolved: {base.shadow.radio.hoverPrimaryStrong} */ transparent;
+  box-shadow: /* unresolved: {base.shadow.radio.hoverPrimaryStrong} */;
   border-color: #1669f1;
 }
 .ionic-radio[data-color="primary"]:checked {
@@ -1478,7 +1455,7 @@
   background-color: transparent;
 }
 .ionic-select[data-appearance="ghost"]:focus-visible {
-  box-shadow: /* unresolved: {base.shadow.focus.ringGhost} */ transparent;
+  box-shadow: /* unresolved: {base.shadow.focus.ringGhost} */;
   background-color: #F3F4F6;
 }
 .ionic-select[data-appearance="ghost"]:hover {
@@ -1511,7 +1488,7 @@
   --select-field-caption-color: #4B5563;
 }
 .ionic-select[data-color="muted"]:focus-visible {
-  box-shadow: /* unresolved: {base.shadow.focus.ringNeutral} */ transparent;
+  box-shadow: /* unresolved: {base.shadow.focus.ringNeutral} */;
   border-color: #9CA3AF;
 }
 .ionic-select[data-color="muted"]:hover {
@@ -1531,7 +1508,7 @@
   --select-field-caption-color: #4B5563;
 }
 .ionic-select[data-color="default"]:focus-visible {
-  box-shadow: /* unresolved: {base.shadow.focus.ringPrimary} */ transparent;
+  box-shadow: /* unresolved: {base.shadow.focus.ringPrimary} */;
   border-color: #3B82F6;
 }
 .ionic-select[data-color="default"]:hover {
@@ -1551,7 +1528,7 @@
   --select-field-caption-color: #4B5563;
 }
 .ionic-select[data-color="primary"]:focus-visible {
-  box-shadow: /* unresolved: {base.shadow.focus.ringPrimaryStrong} */ transparent;
+  box-shadow: /* unresolved: {base.shadow.focus.ringPrimaryStrong} */;
   border-color: #1669f1;
 }
 .ionic-select[data-color="primary"]:hover {
@@ -1613,7 +1590,7 @@
   --select-field-caption-color: #DC2626;
 }
 .ionic-select[data-state="invalid"]:focus-visible {
-  box-shadow: /* unresolved: {base.shadow.button.focusDanger} */ transparent;
+  box-shadow: /* unresolved: {base.shadow.button.focusDanger} */;
   border-color: #DC2626;
 }
 .ionic-select[data-state="invalid"]:hover {
@@ -1725,7 +1702,6 @@
 }
 .ionic-spinner[data-color="white"] {
   color: #FFFFFF;
-  background-color: /* unresolved: {base.color.whiteAlpha30} */ transparent;
 }
 .ionic-spinner[data-color="danger"] {
   color: #DC2626;
@@ -1774,7 +1750,7 @@
   background-color: #D1D5DB;
 }
 .ionic-switch[data-color="info"]:focus-visible {
-  box-shadow: /* unresolved: {base.shadow.switch.focusInfo} */ transparent;
+  box-shadow: /* unresolved: {base.shadow.switch.focusInfo} */;
 }
 .ionic-switch[data-color="info"]:hover {
   background-color: #9CA3AF;
@@ -1792,7 +1768,7 @@
   background-color: #D1D5DB;
 }
 .ionic-switch[data-color="danger"]:focus-visible {
-  box-shadow: /* unresolved: {base.shadow.switch.focusDanger} */ transparent;
+  box-shadow: /* unresolved: {base.shadow.switch.focusDanger} */;
 }
 .ionic-switch[data-color="danger"]:hover {
   background-color: #9CA3AF;
@@ -1810,7 +1786,7 @@
   background-color: #D1D5DB;
 }
 .ionic-switch[data-color="neutral"]:focus-visible {
-  box-shadow: /* unresolved: {base.shadow.switch.focusNeutral} */ transparent;
+  box-shadow: /* unresolved: {base.shadow.switch.focusNeutral} */;
 }
 .ionic-switch[data-color="neutral"]:hover {
   background-color: #9CA3AF;
@@ -1828,7 +1804,7 @@
   background-color: #D1D5DB;
 }
 .ionic-switch[data-color="primary"]:focus-visible {
-  box-shadow: /* unresolved: {base.shadow.switch.focusPrimary} */ transparent;
+  box-shadow: /* unresolved: {base.shadow.switch.focusPrimary} */;
 }
 .ionic-switch[data-color="primary"]:hover {
   background-color: #9CA3AF;
@@ -1846,7 +1822,7 @@
   background-color: #D1D5DB;
 }
 .ionic-switch[data-color="success"]:focus-visible {
-  box-shadow: /* unresolved: {base.shadow.switch.focusSuccess} */ transparent;
+  box-shadow: /* unresolved: {base.shadow.switch.focusSuccess} */;
 }
 .ionic-switch[data-color="success"]:hover {
   background-color: #9CA3AF;
@@ -1864,7 +1840,7 @@
   background-color: #D1D5DB;
 }
 .ionic-switch[data-color="warning"]:focus-visible {
-  box-shadow: /* unresolved: {base.shadow.switch.focusWarning} */ transparent;
+  box-shadow: /* unresolved: {base.shadow.switch.focusWarning} */;
 }
 .ionic-switch[data-color="warning"]:hover {
   background-color: #9CA3AF;
@@ -1915,7 +1891,7 @@
 .ionic-tab[data-appearance="line"]:disabled {
   cursor: not-allowed;
   opacity: 0.5;
-  pointer-events: /* unresolved: {base.interaction.pointerEvents.none} */ transparent;
+  pointer-events: /* unresolved: {base.interaction.pointerEvents.none} */;
 }
 .ionic-tab[data-appearance="line"]:selected {
   color: #1054c2;
@@ -1938,7 +1914,7 @@
 .ionic-tab[data-appearance="pills"]:disabled {
   cursor: not-allowed;
   opacity: 0.5;
-  pointer-events: /* unresolved: {base.interaction.pointerEvents.none} */ transparent;
+  pointer-events: /* unresolved: {base.interaction.pointerEvents.none} */;
 }
 .ionic-tab[data-appearance="pills"]:selected {
   color: #1054c2;
@@ -1961,7 +1937,7 @@
 .ionic-tab[data-appearance="contained"]:disabled {
   cursor: not-allowed;
   opacity: 0.5;
-  pointer-events: /* unresolved: {base.interaction.pointerEvents.none} */ transparent;
+  pointer-events: /* unresolved: {base.interaction.pointerEvents.none} */;
 }
 .ionic-tab[data-appearance="contained"]:selected {
   color: #111827;
@@ -2070,27 +2046,26 @@
 }
 .ionic-text[data-size="lg"] {
   font-size: 18px;
-  line-height: /* unresolved: {base.lineHeight.lg} */ transparent;
+  line-height: 1.625;
 }
 .ionic-text[data-size="sm"] {
   font-size: 14px;
-  line-height: /* unresolved: {base.lineHeight.sm} */ transparent;
+  line-height: 1.375;
 }
 .ionic-text[data-size="xl"] {
   font-size: 20px;
-  line-height: /* unresolved: {base.lineHeight.xl} */ transparent;
+  line-height: 1.75;
 }
 .ionic-text[data-size="xs"] {
   font-size: 12px;
-  line-height: /* unresolved: {base.lineHeight.xs} */ transparent;
+  line-height: 1.25;
 }
 .ionic-text[data-size="2xl"] {
   font-size: 24px;
-  line-height: /* unresolved: {base.lineHeight.2xl} */ transparent;
+  line-height: 2;
 }
 .ionic-text[data-size="base"] {
-  font-size: /* unresolved: {base.fontSize.base} */ transparent;
-  line-height: /* unresolved: {base.lineHeight.base} */ transparent;
+  line-height: 1.5;
 }
 .ionic-text[data-weight="bold"] {
   font-weight: 700;
@@ -2111,7 +2086,7 @@
   placeholder-color: #6B7280;
 }
 .ionic-textarea[data-color="muted"]:focus-visible {
-  box-shadow: /* unresolved: {base.shadow.focus.ringNeutral} */ transparent;
+  box-shadow: /* unresolved: {base.shadow.focus.ringNeutral} */;
   border-color: #9CA3AF;
 }
 .ionic-textarea[data-color="muted"]:hover {
@@ -2129,7 +2104,7 @@
   placeholder-color: #6B7280;
 }
 .ionic-textarea[data-color="default"]:focus-visible {
-  box-shadow: /* unresolved: {base.shadow.focus.ringSoft} */ transparent;
+  box-shadow: /* unresolved: {base.shadow.focus.ringSoft} */;
   border-color: #3B82F6;
 }
 .ionic-textarea[data-color="default"]:hover {
@@ -2147,7 +2122,7 @@
   placeholder-color: #6B7280;
 }
 .ionic-textarea[data-color="primary"]:focus-visible {
-  box-shadow: /* unresolved: {base.shadow.focus.ringSoft} */ transparent;
+  box-shadow: /* unresolved: {base.shadow.focus.ringSoft} */;
   border-color: #1669f1;
 }
 .ionic-textarea[data-color="primary"]:hover {
@@ -2306,7 +2281,7 @@
 .ionic-togglebutton[data-appearance="ghost"]:disabled {
   cursor: not-allowed;
   opacity: 0.5;
-  pointer-events: /* unresolved: {base.interaction.pointerEvents.none} */ transparent;
+  pointer-events: /* unresolved: {base.interaction.pointerEvents.none} */;
 }
 .ionic-togglebutton[data-appearance="filled"] {
   border-color: transparent;
@@ -2329,7 +2304,7 @@
 .ionic-togglebutton[data-appearance="filled"]:disabled {
   cursor: not-allowed;
   opacity: 0.5;
-  pointer-events: /* unresolved: {base.interaction.pointerEvents.none} */ transparent;
+  pointer-events: /* unresolved: {base.interaction.pointerEvents.none} */;
 }
 .ionic-togglebutton[data-appearance="outline"] {
   border-color: #E5E7EB;
@@ -2354,7 +2329,7 @@
 .ionic-togglebutton[data-appearance="outline"]:disabled {
   cursor: not-allowed;
   opacity: 0.5;
-  pointer-events: /* unresolved: {base.interaction.pointerEvents.none} */ transparent;
+  pointer-events: /* unresolved: {base.interaction.pointerEvents.none} */;
 }
 .ionic-togglebutton[data-color="danger"] {
   color: #DC2626;
