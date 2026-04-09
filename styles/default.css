@@ -1,6 +1,8 @@
 /* Ionic Design System — Default DS (Clean) */
-/* Generated 2026-04-09T04:51:13.051Z */
+/* Generated 2026-04-09T20:32:14.320Z */
 /* Usage: <link rel="stylesheet" href="https://ionic-design-system.github.io/ids-landing/styles/default.css"> */
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
 
 /* ========================= */
 /* Base Resets                */
@@ -10,7 +12,7 @@
   margin: 0;
   padding: 0;
   border: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -553,8 +555,10 @@
   gap: 8px !important;
   color: #0C4A6E !important;
   font-size: 14px !important;
-  padding-x: 16px !important;
-  padding-y: 8px !important;
+  padding-left: 16px !important;
+  padding-right: 16px !important;
+  padding-top: 8px !important;
+  padding-bottom: 8px !important;
   font-family: Inter !important;
   font-weight: 400 !important;
   border-color: #BAE6FD !important;
@@ -564,8 +568,10 @@
   gap: 8px !important;
   color: #7F1D1D !important;
   font-size: 14px !important;
-  padding-x: 16px !important;
-  padding-y: 8px !important;
+  padding-left: 16px !important;
+  padding-right: 16px !important;
+  padding-top: 8px !important;
+  padding-bottom: 8px !important;
   font-family: Inter !important;
   font-weight: 400 !important;
   border-color: #FECACA !important;
@@ -575,8 +581,10 @@
   gap: 8px !important;
   color: #4B5563 !important;
   font-size: 14px !important;
-  padding-x: 16px !important;
-  padding-y: 8px !important;
+  padding-left: 16px !important;
+  padding-right: 16px !important;
+  padding-top: 8px !important;
+  padding-bottom: 8px !important;
   font-family: Inter !important;
   font-weight: 400 !important;
   border-color: #E5E7EB !important;
@@ -586,8 +594,10 @@
   gap: 8px !important;
   color: #14532D !important;
   font-size: 14px !important;
-  padding-x: 16px !important;
-  padding-y: 8px !important;
+  padding-left: 16px !important;
+  padding-right: 16px !important;
+  padding-top: 8px !important;
+  padding-bottom: 8px !important;
   font-family: Inter !important;
   font-weight: 400 !important;
   border-color: #BBF7D0 !important;
@@ -597,8 +607,10 @@
   gap: 8px !important;
   color: #92400E !important;
   font-size: 14px !important;
-  padding-x: 16px !important;
-  padding-y: 8px !important;
+  padding-left: 16px !important;
+  padding-right: 16px !important;
+  padding-top: 8px !important;
+  padding-bottom: 8px !important;
   font-family: Inter !important;
   font-weight: 400 !important;
   border-color: #FDE68A !important;
@@ -820,20 +832,26 @@
 }
 .ionic-badge[data-size="lg"] {
   font-size: 16px !important;
-  padding-x: 10px !important;
-  padding-y: 4px !important;
+  padding-left: 10px !important;
+  padding-right: 10px !important;
+  padding-top: 4px !important;
+  padding-bottom: 4px !important;
   font-family: Inter !important;
 }
 .ionic-badge[data-size="md"] {
   font-size: 14px !important;
-  padding-x: 8px !important;
-  padding-y: 3px !important;
+  padding-left: 8px !important;
+  padding-right: 8px !important;
+  padding-top: 3px !important;
+  padding-bottom: 3px !important;
   font-family: Inter !important;
 }
 .ionic-badge[data-size="sm"] {
   font-size: 12px !important;
-  padding-x: 6px !important;
-  padding-y: 2px !important;
+  padding-left: 6px !important;
+  padding-right: 6px !important;
+  padding-top: 2px !important;
+  padding-bottom: 2px !important;
   font-family: Inter !important;
 }
 .ionic-button[data-appearance="soft"][data-intent="info"] {
@@ -1372,7 +1390,6 @@
   gap: 16px !important;
   padding: 16px 24px !important;
   font-size: 18px !important;
-  icon-size: 24px !important;
   min-height: 48px !important;
   font-family: Inter !important;
   font-weight: 500 !important;
@@ -1381,7 +1398,6 @@
   gap: 8px !important;
   padding: 8px 16px !important;
   font-size: 16px !important;
-  icon-size: 20px !important;
   min-height: 40px !important;
   font-family: Inter !important;
   font-weight: 500 !important;
@@ -1390,7 +1406,6 @@
   gap: 4px !important;
   padding: 4px 8px !important;
   font-size: 14px !important;
-  icon-size: 16px !important;
   min-height: 32px !important;
   font-family: Inter !important;
   font-weight: 500 !important;
@@ -2988,8 +3003,10 @@
   color: #FFFFFF !important;
   font-size: 12px !important;
   max-width: 240px !important;
-  padding-x: 8px !important;
-  padding-y: 4px !important;
+  padding-left: 8px !important;
+  padding-right: 8px !important;
+  padding-top: 4px !important;
+  padding-bottom: 4px !important;
   font-family: Inter !important;
   font-weight: 400 !important;
   background-color: #111827 !important;
@@ -2998,8 +3015,10 @@
   color: #111827 !important;
   font-size: 12px !important;
   max-width: 240px !important;
-  padding-x: 8px !important;
-  padding-y: 4px !important;
+  padding-left: 8px !important;
+  padding-right: 8px !important;
+  padding-top: 4px !important;
+  padding-bottom: 4px !important;
   font-family: Inter !important;
   font-weight: 400 !important;
   border-color: #E5E7EB !important;
@@ -3011,8 +3030,10 @@
   color: #FFFFFF !important;
   font-size: 12px !important;
   max-width: 240px !important;
-  padding-x: 8px !important;
-  padding-y: 4px !important;
+  padding-left: 8px !important;
+  padding-right: 8px !important;
+  padding-top: 4px !important;
+  padding-bottom: 4px !important;
   font-family: Inter !important;
   font-weight: 400 !important;
   background-color: #DC2626 !important;
@@ -3021,8 +3042,10 @@
   color: #FFFFFF !important;
   font-size: 12px !important;
   max-width: 240px !important;
-  padding-x: 8px !important;
-  padding-y: 4px !important;
+  padding-left: 8px !important;
+  padding-right: 8px !important;
+  padding-top: 4px !important;
+  padding-bottom: 4px !important;
   font-family: Inter !important;
   font-weight: 400 !important;
   background-color: #3B82F6 !important;
@@ -3036,24 +3059,30 @@
 .ionic-tooltip[data-size="lg"] {
   font-size: 14px !important;
   max-width: 240px !important;
-  padding-x: 12px !important;
-  padding-y: 8px !important;
+  padding-left: 12px !important;
+  padding-right: 12px !important;
+  padding-top: 8px !important;
+  padding-bottom: 8px !important;
   font-family: Inter !important;
   font-weight: 400 !important;
 }
 .ionic-tooltip[data-size="md"] {
   font-size: 12px !important;
   max-width: 240px !important;
-  padding-x: 8px !important;
-  padding-y: 4px !important;
+  padding-left: 8px !important;
+  padding-right: 8px !important;
+  padding-top: 4px !important;
+  padding-bottom: 4px !important;
   font-family: Inter !important;
   font-weight: 400 !important;
 }
 .ionic-tooltip[data-size="sm"] {
   font-size: 12px !important;
   max-width: 240px !important;
-  padding-x: 8px !important;
-  padding-y: 4px !important;
+  padding-left: 8px !important;
+  padding-right: 8px !important;
+  padding-top: 4px !important;
+  padding-bottom: 4px !important;
   font-family: Inter !important;
   font-weight: 400 !important;
 }
