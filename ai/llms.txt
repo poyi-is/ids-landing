@@ -41,8 +41,9 @@ stylesheet targets. Invalid variant values are silently ignored.
 
 ### Button
 Interactive button with optional icon. Extends `<button>` HTML attributes.
-Props: label (string), icon (string, registry name e.g. "Plus"), iconPosition ("left"|"right"), iconOnly (boolean), interactions (Interaction[]), size (string), intent (string), color (string), appearance (string), shape (string)
-Usage: `<Button label="Save" color="primary" size="md" />`
+Props: label (string), icon (string, registry name e.g. "Plus"), iconPosition ("left"|"right"), iconOnly (boolean), interactions (Interaction[]), size ("sm"|"md"|"lg"), intent ("primary"|"secondary"|"danger"|"success"|"warning"|"info"|"neutral"), appearance ("solid"|"soft"|"outline"|"ghost"), shape ("rounded"|"pill"|"sharp")
+Note: Use `intent` for color selection (not `color`). Appearance + intent combine: e.g., appearance="solid" intent="primary" gives a blue filled button.
+Usage: `<Button label="Save" intent="primary" appearance="solid" size="md" />`
 
 ### Text
 Text element with semantic tag control. Extends `<span>` HTML attributes.

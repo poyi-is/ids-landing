@@ -1,7 +1,10 @@
 # Ionic Design System — Default Design System Context
 
-> AI-readable context for the Default Design System tokens and component variants.
+> AI-readable context for design system tokens and component variants.
 > For component API reference, see llms.txt
+
+> IMPORTANT: Button uses `intent` (not `color`) for color selection.
+> Appearance + intent combine: e.g., appearance="solid" intent="primary"
 
 ## Base Tokens
 
@@ -504,12 +507,14 @@
 
 ## Component Variants
 
-Each component accepts variant props. Available options per component:
+Each component accepts variant props as data-attributes. Available options:
 
 ### Alert
 - appearance: soft, solid, outline
 - intent: info, danger, neutral, success, warning
 - shape: sharp, rounded
+  - appearance.solid combines with intent: info, danger, neutral, success, warning
+  - appearance.outline combines with intent: info, danger, neutral, success, warning
 
 ### Avatar
 - badge: busy, none, online, offline
@@ -524,12 +529,19 @@ Each component accepts variant props. Available options per component:
 - intent: info, danger, default, primary, success, warning
 - shape: pill, sharp, rounded
 - size: lg, md, sm
+  - appearance.soft combines with intent: info, danger, default, primary, success, warning
+  - appearance.solid combines with intent: info, danger, default, primary, success, warning
+  - appearance.outline combines with intent: info, danger, default, primary, success, warning
 
 ### Button
 - appearance: soft, ghost, solid, outline
 - intent: info, danger, primary, success, warning, secondary
 - shape: pill, sharp, rounded
 - size: lg, md, sm
+  - appearance.soft combines with intent: info, danger, primary, success, warning, secondary
+  - appearance.ghost combines with intent: info, danger, primary, success, warning, secondary
+  - appearance.solid combines with intent: info, danger, primary, success, warning, secondary
+  - appearance.outline combines with intent: info, danger, primary, success, warning, secondary
 
 ### Checkbox
 - border: none, pill, sharp, rounded
