@@ -92,8 +92,9 @@ Usage: `<Slider value={50} min={0} max={100} onChange={setVal} />`
 
 ### Badge
 Small label for status/counts. Extends `<span>` HTML attributes.
-Props: label (string), interactions (Interaction[]), color ("default"|"primary"|"success"|"warning"|"danger"|"info"|"muted"), size ("sm"|"md"|"lg"), shape ("rounded"|"pill"|"sharp")
-Usage: `<Badge label="New" color="success" size="sm" />`
+Props: label (string), interactions (Interaction[]), color ("default"|"primary"|"success"|"warning"|"danger"|"info"|"muted"), variant ("solid"|"soft"|"outline"), size ("sm"|"md"|"lg"), shape ("rounded"|"pill"|"sharp")
+Variant + color combine: variant="solid" gives filled background, variant="soft" gives tinted background, variant="outline" gives bordered.
+Usage: `<Badge label="New" color="success" variant="soft" size="sm" shape="pill" />`
 
 ### Alert
 Notification banner with title, description, icon, and dismiss.
