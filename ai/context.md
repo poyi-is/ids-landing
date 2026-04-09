@@ -4,7 +4,9 @@
 > For component API reference, see llms.txt
 
 > IMPORTANT: Button uses `intent` (not `color`) for color selection.
-> Appearance + intent combine: e.g., appearance="solid" intent="primary"
+> Appearance + intent combine: e.g., appearance="solid" intent="primary".
+> Badge uses `color` prop (maps to intent in DB).
+> Toast uses `variant` prop (maps to type in DB).
 
 ## Base Tokens
 
@@ -507,6 +509,8 @@
 
 ## Component Variants
 
+Each component accepts variant props. The prop name is listed below (may differ from internal DB name).
+
 ### Alert
 - appearance: soft, solid, outline
 - intent: info, danger, neutral, success, warning
@@ -521,8 +525,8 @@
 - size: lg, md, sm, xl
 
 ### Badge
-- appearance: soft, solid, outline
-- intent: info, danger, default, primary, success, warning
+- variant: soft, solid, outline
+- color: info, danger, default, primary, success, warning
 - shape: pill, sharp, rounded
 - size: lg, md, sm
 
@@ -574,7 +578,7 @@
 - size: lg, sm, default
 
 ### Link
-- appearance: subtle, default
+- underline: subtle, default
 - color: muted, default
 - size: default
 - weight: medium, normal, semibold
@@ -608,7 +612,7 @@
 - animation: none, wave, pulse
 - color: dark, light, medium
 - size: lg, md, sm, xl, xs
-- variant: text, circle, rectangle
+- shape: text, circle, rectangle
 
 ### Slider
 - color: info, danger, neutral, primary, success, warning
@@ -646,7 +650,7 @@
 ### Toast
 - position: top-left, top-right, top-center, bottom-left, bottom-right, bottom-center
 - size: lg, md, sm
-- type: info, error, default, success, warning
+- variant: info, error, default, success, warning
 
 ### ToggleButton
 - appearance: ghost, filled, outline
