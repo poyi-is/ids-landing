@@ -507,14 +507,10 @@
 
 ## Component Variants
 
-Each component accepts variant props as data-attributes. Available options:
-
 ### Alert
 - appearance: soft, solid, outline
 - intent: info, danger, neutral, success, warning
 - shape: sharp, rounded
-  - appearance.solid combines with intent: info, danger, neutral, success, warning
-  - appearance.outline combines with intent: info, danger, neutral, success, warning
 
 ### Avatar
 - badge: busy, none, online, offline
@@ -529,19 +525,12 @@ Each component accepts variant props as data-attributes. Available options:
 - intent: info, danger, default, primary, success, warning
 - shape: pill, sharp, rounded
 - size: lg, md, sm
-  - appearance.soft combines with intent: info, danger, default, primary, success, warning
-  - appearance.solid combines with intent: info, danger, default, primary, success, warning
-  - appearance.outline combines with intent: info, danger, default, primary, success, warning
 
 ### Button
 - appearance: soft, ghost, solid, outline
 - intent: info, danger, primary, success, warning, secondary
 - shape: pill, sharp, rounded
 - size: lg, md, sm
-  - appearance.soft combines with intent: info, danger, primary, success, warning, secondary
-  - appearance.ghost combines with intent: info, danger, primary, success, warning, secondary
-  - appearance.solid combines with intent: info, danger, primary, success, warning, secondary
-  - appearance.outline combines with intent: info, danger, primary, success, warning, secondary
 
 ### Checkbox
 - border: none, pill, sharp, rounded

@@ -1,5 +1,5 @@
-/* Ionic Design System — Default Design System */
-/* Generated 2026-04-09T01:52:44.849Z */
+/* Ionic Design System — Default DS (Clean) */
+/* Generated 2026-04-09T03:39:34.677Z */
 /* Usage: <link rel="stylesheet" href="https://ionic-design-system.github.io/ids-landing/styles/default.css"> */
 
 /* ========================= */
@@ -1020,7 +1020,7 @@
 }
 .ionic-button[data-appearance="solid"][data-intent="info"]:focus-visible {
   outline: none;
-  box-shadow: 0 0 0 3px rgba(59,130,246,0.35);
+  box-shadow: 0 0 0 3px #BAE6FD;
 }
 .ionic-button[data-appearance="solid"][data-intent="info"]:hover {
   background-color: #0369A1;
@@ -1041,7 +1041,7 @@
 }
 .ionic-button[data-appearance="solid"][data-intent="danger"]:focus-visible {
   outline: none;
-  box-shadow: 0 0 0 3px rgba(239,68,68,0.35);
+  box-shadow: 0 0 0 3px #FECACA;
 }
 .ionic-button[data-appearance="solid"][data-intent="danger"]:hover {
   background-color: #B91C1C;
@@ -1062,7 +1062,7 @@
 }
 .ionic-button[data-appearance="solid"][data-intent="primary"]:focus-visible {
   outline: none;
-  box-shadow: 0 0 0 3px rgba(59,130,246,0.35);
+  box-shadow: 0 0 0 3px #3B82F6;
 }
 .ionic-button[data-appearance="solid"][data-intent="primary"]:hover {
   background-color: #1669f1;
@@ -1083,7 +1083,7 @@
 }
 .ionic-button[data-appearance="solid"][data-intent="success"]:focus-visible {
   outline: none;
-  box-shadow: 0 0 0 3px rgba(34,197,94,0.35);
+  box-shadow: 0 0 0 3px #BBF7D0;
 }
 .ionic-button[data-appearance="solid"][data-intent="success"]:hover {
   background-color: #15803D;
@@ -1104,7 +1104,7 @@
 }
 .ionic-button[data-appearance="solid"][data-intent="warning"]:focus-visible {
   outline: none;
-  box-shadow: 0 0 0 3px rgba(234,179,8,0.35);
+  box-shadow: 0 0 0 3px #FDE68A;
 }
 .ionic-button[data-appearance="solid"][data-intent="warning"]:hover {
   background-color: #D97706;
@@ -1125,7 +1125,7 @@
 }
 .ionic-button[data-appearance="solid"][data-intent="secondary"]:focus-visible {
   outline: none;
-  box-shadow: 0 0 0 3px rgba(107,114,128,0.35);
+  box-shadow: 0 0 0 3px #E5E7EB;
 }
 .ionic-button[data-appearance="solid"][data-intent="secondary"]:hover {
   background-color: #E5E7EB;
@@ -1240,7 +1240,7 @@
 }
 .ionic-button[data-intent="info"]:focus-visible {
   outline: none;
-  box-shadow: 0 0 0 3px rgba(59,130,246,0.35);
+  box-shadow: 0 0 0 3px #BAE6FD;
 }
 .ionic-button[data-intent="info"]:hover {
   background-color: #0369A1;
@@ -1261,7 +1261,7 @@
 }
 .ionic-button[data-intent="danger"]:focus-visible {
   outline: none;
-  box-shadow: 0 0 0 3px rgba(239,68,68,0.35);
+  box-shadow: 0 0 0 3px #FECACA;
 }
 .ionic-button[data-intent="danger"]:hover {
   background-color: #B91C1C;
@@ -1282,7 +1282,7 @@
 }
 .ionic-button[data-intent="primary"]:focus-visible {
   outline: none;
-  box-shadow: 0 0 0 3px rgba(59,130,246,0.35);
+  box-shadow: 0 0 0 3px #3B82F6;
 }
 .ionic-button[data-intent="primary"]:hover {
   background-color: #1669f1;
@@ -1303,7 +1303,7 @@
 }
 .ionic-button[data-intent="success"]:focus-visible {
   outline: none;
-  box-shadow: 0 0 0 3px rgba(34,197,94,0.35);
+  box-shadow: 0 0 0 3px #BBF7D0;
 }
 .ionic-button[data-intent="success"]:hover {
   background-color: #15803D;
@@ -1324,7 +1324,7 @@
 }
 .ionic-button[data-intent="warning"]:focus-visible {
   outline: none;
-  box-shadow: 0 0 0 3px rgba(234,179,8,0.35);
+  box-shadow: 0 0 0 3px #FDE68A;
 }
 .ionic-button[data-intent="warning"]:hover {
   background-color: #D97706;
@@ -1345,7 +1345,7 @@
 }
 .ionic-button[data-intent="secondary"]:focus-visible {
   outline: none;
-  box-shadow: 0 0 0 3px rgba(107,114,128,0.35);
+  box-shadow: 0 0 0 3px #E5E7EB;
 }
 .ionic-button[data-intent="secondary"]:hover {
   background-color: #E5E7EB;
@@ -1421,7 +1421,7 @@
   background-color: #FFFFFF;
 }
 .ionic-checkbox[data-color="default"]:focus-visible {
-  box-shadow: 0 0 0 2px rgba(59,130,246,0.2);
+  box-shadow: 0 0 0 2px #3B82F6;
 }
 .ionic-checkbox[data-color="default"]:hover {
   border-color: #79a3e7;
@@ -1601,7 +1601,7 @@
   gap: 16px;
 }
 .ionic-container[data-spacing="sm"] {
-  gap: 8px;
+  gap: 4px;
 }
 .ionic-container[data-spacing="none"] {
   gap: 0;
@@ -1679,6 +1679,21 @@
 .ionic-icon[data-state="show"] {
   display: inline-flex;
 }
+.ionic-image[data-aspectRatio="1/1"] {
+  aspect-ratio: 1/1;
+}
+.ionic-image[data-aspectRatio="3/2"] {
+  aspect-ratio: 3/2;
+}
+.ionic-image[data-aspectRatio="4/3"] {
+  aspect-ratio: 4/3;
+}
+.ionic-image[data-aspectRatio="16/9"] {
+  aspect-ratio: 16/9;
+}
+.ionic-image[data-aspectRatio="auto"] {
+  aspect-ratio: auto;
+}
 .ionic-image[data-fit="fill"] {
   object-fit: fill;
 }
@@ -1702,6 +1717,11 @@
 }
 .ionic-input[data-align="center"] {
   text-align: center;
+}
+.ionic-input[data-color="default"] {
+  color: #111827;
+  border-color: #E5E7EB;
+  background-color: #F9FAFB;
 }
 .ionic-input[data-elevation="md"] {
   box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
@@ -1750,6 +1770,9 @@
 }
 .ionic-link[data-color="default"] {
   color: #3B82F6;
+}
+.ionic-link[data-size="default"] {
+  font-size: 16px;
 }
 .ionic-link[data-weight="medium"] {
   font-weight: 500;
@@ -1821,7 +1844,7 @@
 .ionic-menuitem[data-size="sm"] {
   gap: 8px;
   padding: 6px 12px;
-  font-size: 13px;
+  font-size: 12px;
   min-height: 32px;
   font-family: Inter;
   font-weight: 500;
@@ -1917,11 +1940,11 @@
   background-color: #FFFFFF;
 }
 .ionic-radio[data-color="default"]:focus-visible {
-  box-shadow: 0 0 0 3px rgba(59,130,246,0.35);
+  box-shadow: 0 0 0 3px #cad4e4;
   border-color: #3B82F6;
 }
 .ionic-radio[data-color="default"]:hover {
-  box-shadow: 0 0 0 2px rgba(59,130,246,0.15);
+  box-shadow: 0 0 0 2px #e2e5eb;
   border-color: #79a3e7;
 }
 .ionic-radio[data-color="default"]:checked {
@@ -1940,10 +1963,11 @@
   background-color: #F9FAFB;
 }
 .ionic-radio[data-color="neutral"]:focus-visible {
-  box-shadow: 0 0 0 3px rgba(107,114,128,0.35);
+  box-shadow: 0 0 0 3px #E5E7EB;
   border-color: #4B5563;
 }
 .ionic-radio[data-color="neutral"]:hover {
+  box-shadow: 0 0 0 2px #F3F4F6;
   border-color: #6B7280;
 }
 .ionic-radio[data-color="neutral"]:checked {
@@ -1962,10 +1986,11 @@
   background-color: #FFFFFF;
 }
 .ionic-radio[data-color="primary"]:focus-visible {
-  box-shadow: 0 0 0 4px rgba(59,130,246,0.4);
+  box-shadow: 0 0 0 3px #cad4e4;
   border-color: #1054c2;
 }
 .ionic-radio[data-color="primary"]:hover {
+  box-shadow: 0 0 0 2px #e2e5eb;
   border-color: #1669f1;
 }
 .ionic-radio[data-color="primary"]:checked {
@@ -2003,7 +2028,7 @@
   background-color: transparent;
 }
 .ionic-select[data-appearance="ghost"]:focus-visible {
-  box-shadow: 0 0 0 2px rgba(59,130,246,0.2);
+  box-shadow: 0 0 0 2px #3B82F6;
   background-color: #F3F4F6;
 }
 .ionic-select[data-appearance="ghost"]:hover {
@@ -2036,7 +2061,7 @@
   --select-field-caption-color: #4B5563;
 }
 .ionic-select[data-color="muted"]:focus-visible {
-  box-shadow: 0 0 0 3px rgba(107,114,128,0.35);
+  box-shadow: 0 0 0 3px #E5E7EB;
   border-color: #9CA3AF;
 }
 .ionic-select[data-color="muted"]:hover {
@@ -2056,7 +2081,7 @@
   --select-field-caption-color: #4B5563;
 }
 .ionic-select[data-color="default"]:focus-visible {
-  box-shadow: 0 0 0 3px rgba(59,130,246,0.35);
+  box-shadow: 0 0 0 3px #3B82F6;
   border-color: #3B82F6;
 }
 .ionic-select[data-color="default"]:hover {
@@ -2076,7 +2101,7 @@
   --select-field-caption-color: #4B5563;
 }
 .ionic-select[data-color="primary"]:focus-visible {
-  box-shadow: 0 0 0 4px rgba(59,130,246,0.4);
+  box-shadow: 0 0 0 4px #3B82F6;
   border-color: #1669f1;
 }
 .ionic-select[data-color="primary"]:hover {
@@ -2138,7 +2163,7 @@
   --select-field-caption-color: #DC2626;
 }
 .ionic-select[data-state="invalid"]:focus-visible {
-  box-shadow: 0 0 0 3px rgba(239,68,68,0.35);
+  box-shadow: 0 0 0 3px #FECACA;
   border-color: #DC2626;
 }
 .ionic-select[data-state="invalid"]:hover {
@@ -2250,6 +2275,7 @@
 }
 .ionic-spinner[data-color="white"] {
   color: #FFFFFF;
+  background-color: rgba(255,255,255,0.3);
 }
 .ionic-spinner[data-color="danger"] {
   color: #DC2626;
@@ -2298,7 +2324,7 @@
   background-color: #D1D5DB;
 }
 .ionic-switch[data-color="info"]:focus-visible {
-  box-shadow: 0 0 0 3px rgba(59,130,246,0.35);
+  box-shadow: 0 0 0 3px #BAE6FD;
 }
 .ionic-switch[data-color="info"]:hover {
   background-color: #9CA3AF;
@@ -2316,7 +2342,7 @@
   background-color: #D1D5DB;
 }
 .ionic-switch[data-color="danger"]:focus-visible {
-  box-shadow: 0 0 0 3px rgba(239,68,68,0.35);
+  box-shadow: 0 0 0 3px #FECACA;
 }
 .ionic-switch[data-color="danger"]:hover {
   background-color: #9CA3AF;
@@ -2334,7 +2360,7 @@
   background-color: #D1D5DB;
 }
 .ionic-switch[data-color="neutral"]:focus-visible {
-  box-shadow: 0 0 0 3px rgba(107,114,128,0.35);
+  box-shadow: 0 0 0 3px #E5E7EB;
 }
 .ionic-switch[data-color="neutral"]:hover {
   background-color: #9CA3AF;
@@ -2350,6 +2376,9 @@
 .ionic-switch[data-color="primary"] {
   color: #FFFFFF;
   background-color: #D1D5DB;
+}
+.ionic-switch[data-color="primary"]:focus-visible {
+  box-shadow: 0 0 0 3px #3B82F6;
 }
 .ionic-switch[data-color="primary"]:hover {
   background-color: #9CA3AF;
@@ -2367,7 +2396,7 @@
   background-color: #D1D5DB;
 }
 .ionic-switch[data-color="success"]:focus-visible {
-  box-shadow: 0 0 0 3px rgba(34,197,94,0.35);
+  box-shadow: 0 0 0 3px #BBF7D0;
 }
 .ionic-switch[data-color="success"]:hover {
   background-color: #9CA3AF;
@@ -2385,7 +2414,7 @@
   background-color: #D1D5DB;
 }
 .ionic-switch[data-color="warning"]:focus-visible {
-  box-shadow: 0 0 0 3px rgba(234,179,8,0.35);
+  box-shadow: 0 0 0 3px #FDE68A;
 }
 .ionic-switch[data-color="warning"]:hover {
   background-color: #9CA3AF;
@@ -2561,7 +2590,7 @@
 }
 .ionic-tab[data-size="sm"] {
   padding: 6px 12px;
-  font-size: 13px;
+  font-size: 12px;
   font-family: Inter;
   line-height: 1.4;
 }
@@ -2591,7 +2620,7 @@
 }
 .ionic-text[data-size="lg"] {
   font-size: 18px;
-  line-height: 1.625;
+  line-height: 1.75;
 }
 .ionic-text[data-size="sm"] {
   font-size: 14px;
@@ -2599,7 +2628,7 @@
 }
 .ionic-text[data-size="xl"] {
   font-size: 20px;
-  line-height: 1.75;
+  line-height: 1.6;
 }
 .ionic-text[data-size="xs"] {
   font-size: 12px;
@@ -2607,9 +2636,10 @@
 }
 .ionic-text[data-size="2xl"] {
   font-size: 24px;
-  line-height: 2;
+  line-height: 1.6;
 }
 .ionic-text[data-size="base"] {
+  font-size: 16px;
   line-height: 1.5;
 }
 .ionic-text[data-weight="bold"] {
@@ -2631,7 +2661,7 @@
   placeholder-color: #6B7280;
 }
 .ionic-textarea[data-color="muted"]:focus-visible {
-  box-shadow: 0 0 0 3px rgba(107,114,128,0.35);
+  box-shadow: 0 0 0 3px #E5E7EB;
   border-color: #9CA3AF;
 }
 .ionic-textarea[data-color="muted"]:hover {
@@ -2649,7 +2679,7 @@
   placeholder-color: #6B7280;
 }
 .ionic-textarea[data-color="default"]:focus-visible {
-  box-shadow: 0 0 0 2px rgba(59,130,246,0.2);
+  box-shadow: 0 0 0 2px #3B82F6;
   border-color: #3B82F6;
 }
 .ionic-textarea[data-color="default"]:hover {
@@ -2667,7 +2697,7 @@
   placeholder-color: #6B7280;
 }
 .ionic-textarea[data-color="primary"]:focus-visible {
-  box-shadow: 0 0 0 2px rgba(59,130,246,0.2);
+  box-shadow: 0 0 0 2px #3B82F6;
   border-color: #1669f1;
 }
 .ionic-textarea[data-color="primary"]:hover {
@@ -2949,7 +2979,7 @@
 .ionic-togglebutton[data-size="sm"] {
   gap: 6px;
   padding: 6px 12px;
-  font-size: 13px;
+  font-size: 12px;
   font-family: Inter;
   font-weight: 500;
   line-height: 1.4;
@@ -3012,7 +3042,7 @@
   font-weight: 400;
 }
 .ionic-tooltip[data-size="md"] {
-  font-size: 13px;
+  font-size: 12px;
   max-width: 240px;
   padding-x: 8px;
   padding-y: 4px;
