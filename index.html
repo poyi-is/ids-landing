@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ionic Design System</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #0a0a0a; color: #e5e5e5; line-height: 1.6; }
+    .container { max-width: 720px; margin: 0 auto; padding: 80px 24px; }
+    h1 { font-size: 2rem; font-weight: 700; color: #fff; margin-bottom: 8px; }
+    .subtitle { color: #a3a3a3; font-size: 1.1rem; margin-bottom: 48px; }
+    h2 { font-size: 1.1rem; font-weight: 600; color: #fff; margin-top: 48px; margin-bottom: 16px; }
+    pre { background: #171717; border: 1px solid #262626; border-radius: 8px; padding: 16px; overflow-x: auto; font-size: 14px; margin-bottom: 16px; }
+    code { font-family: 'SF Mono', 'Fira Code', monospace; color: #a5f3fc; }
+    p { margin-bottom: 12px; color: #d4d4d4; }
+    a { color: #60a5fa; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .links { display: flex; flex-direction: column; gap: 8px; margin: 24px 0; }
+    .link-card { display: flex; justify-content: space-between; align-items: center; padding: 14px 18px; background: #171717; border: 1px solid #262626; border-radius: 8px; transition: border-color 0.15s; }
+    .link-card:hover { border-color: #404040; text-decoration: none; }
+    .link-label { font-weight: 500; color: #fff; }
+    .link-desc { font-size: 13px; color: #737373; }
+    .arrow { color: #525252; }
+    .badge { display: inline-block; background: #1e3a5f; color: #60a5fa; font-size: 12px; padding: 2px 8px; border-radius: 4px; font-weight: 500; margin-left: 8px; }
+    .divider { border: none; border-top: 1px solid #262626; margin: 48px 0; }
+    .footer { color: #525252; font-size: 13px; margin-top: 48px; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Ionic Design System</h1>
+    <p class="subtitle">Component library + design tokens for React</p>
+
+    <h2>Install</h2>
+    <pre><code>npm install ionic-design-system</code></pre>
+
+    <h2>Link the stylesheet</h2>
+    <p>Add the design system CSS to your app for full theming:</p>
+    <pre><code>import 'https://ionic-design-system.github.io/ids-landing/styles/default.css';
+import { Button, Badge } from 'ionic-design-system';</code></pre>
+    <p>Or via <code>&lt;link&gt;</code> tag:</p>
+    <pre><code>&lt;link rel="stylesheet" href="https://ionic-design-system.github.io/ids-landing/styles/default.css"&gt;</code></pre>
+
+    <h2>Resources</h2>
+    <div class="links">
+      <a class="link-card" href="./styles/default.css">
+        <div>
+          <div class="link-label">Stylesheet (CSS)</div>
+          <div class="link-desc">Default Design System theme</div>
+        </div>
+        <span class="arrow">&rarr;</span>
+      </a>
+      <a class="link-card" href="./ai/llms.txt">
+        <div>
+          <div class="link-label">llms.txt <span class="badge">AI</span></div>
+          <div class="link-desc">Component API reference for AI coding agents</div>
+        </div>
+        <span class="arrow">&rarr;</span>
+      </a>
+      <a class="link-card" href="./ai/context.md">
+        <div>
+          <div class="link-label">Design System Context <span class="badge">AI</span></div>
+          <div class="link-desc">Tokens, semantic colors, and variant options</div>
+        </div>
+        <span class="arrow">&rarr;</span>
+      </a>
+      <a class="link-card" href="https://www.npmjs.com/package/ionic-design-system">
+        <div>
+          <div class="link-label">npm package</div>
+          <div class="link-desc">ionic-design-system on npm</div>
+        </div>
+        <span class="arrow">&rarr;</span>
+      </a>
+      <a class="link-card" href="https://github.com/poyi-is/ids">
+        <div>
+          <div class="link-label">GitHub</div>
+          <div class="link-desc">Source code</div>
+        </div>
+        <span class="arrow">&rarr;</span>
+      </a>
+    </div>
+
+    <hr class="divider">
+
+    <h2>Quick start</h2>
+    <pre><code>import 'https://ionic-design-system.github.io/ids-landing/styles/default.css';
+import { Button, Badge, Input, Container } from 'ionic-design-system';
+
+function App() {
+  return (
+    &lt;Container&gt;
+      &lt;Button label="Save" color="primary" size="md" /&gt;
+      &lt;Badge label="New" color="success" /&gt;
+      &lt;Input placeholder="Enter your name" /&gt;
+    &lt;/Container&gt;
+  );
+}</code></pre>
+
+    <h2>For AI coding agents</h2>
+    <p>Point your AI tool at these URLs for full library context:</p>
+    <pre><code># Component API (props, variants, usage)
+https://ionic-design-system.github.io/ids-landing/ai/llms.txt
+
+# Design system tokens and variant values
+https://ionic-design-system.github.io/ids-landing/ai/context.md</code></pre>
+
+    <p class="footer">MIT License &middot; Ionic Design System</p>
+  </div>
+</body>
+</html>

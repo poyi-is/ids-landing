@@ -1,0 +1,2509 @@
+/* Ionic Design System — Default Design System */
+/* Generated 2026-04-08T23:59:27.892Z */
+/* Usage: <link rel="stylesheet" href="https://poyi-is.github.io/ids/styles/default.css"> */
+
+/* ========================= */
+/* Base Token CSS Variables  */
+/* ========================= */
+:root {
+  --ids-borderRadius-default: 8px;
+  --ids-borderRadius-full: 9999px;
+  --ids-borderRadius-lg: 12px;
+  --ids-borderRadius-md: 8px;
+  --ids-borderRadius-none: 0;
+  --ids-borderRadius-sm: 4px;
+  --ids-borderRadius-xl: 16px;
+  --ids-borderWidth-default: 1px;
+  --ids-borderWidth-heavy: 3px;
+  --ids-borderWidth-medium: 2px;
+  --ids-borderWidth-none: 0;
+  --ids-borderWidth-thick: 4px;
+  --ids-borderWidth-thin: 1px;
+  --ids-color-black: #000000;
+  --ids-color-blue-100: #dbeafe;
+  --ids-color-blue-200: #bfdbfe;
+  --ids-color-blue-300: #93c5fd;
+  --ids-color-blue-400: #60a5fa;
+  --ids-color-blue-50: #eff6ff;
+  --ids-color-blue-500: #3b82f6;
+  --ids-color-blue-600: #2563eb;
+  --ids-color-blue-700: #1d4ed8;
+  --ids-color-blue-800: #1e40af;
+  --ids-color-blue-900: #1e3a8a;
+  --ids-color-danger-100: #FEE2E2;
+  --ids-color-danger-200: #FECACA;
+  --ids-color-danger-300: #FCA5A5;
+  --ids-color-danger-400: #F87171;
+  --ids-color-danger-50: #FEF2F2;
+  --ids-color-danger-500: #DC2626;
+  --ids-color-danger-600: #B91C1C;
+  --ids-color-danger-700: #991B1B;
+  --ids-color-danger-800: #7F1D1D;
+  --ids-color-danger-900: #450A0A;
+  --ids-color-danger-950: #2D0707;
+  --ids-color-gray-100: #F3F4F6;
+  --ids-color-gray-200: #E5E7EB;
+  --ids-color-gray-300: #D1D5DB;
+  --ids-color-gray-400: #9CA3AF;
+  --ids-color-gray-50: #F9FAFB;
+  --ids-color-gray-500: #6B7280;
+  --ids-color-gray-600: #4B5563;
+  --ids-color-gray-700: #374151;
+  --ids-color-gray-800: #1F2937;
+  --ids-color-gray-900: #111827;
+  --ids-color-gray-950: #0A0A0A;
+  --ids-color-info-100: #E0F2FE;
+  --ids-color-info-200: #BAE6FD;
+  --ids-color-info-300: #7DD3FC;
+  --ids-color-info-400: #38BDF8;
+  --ids-color-info-50: #F0F9FF;
+  --ids-color-info-500: #0284C7;
+  --ids-color-info-600: #0369A1;
+  --ids-color-info-700: #075985;
+  --ids-color-info-800: #0C4A6E;
+  --ids-color-info-900: #082F49;
+  --ids-color-info-950: #051E30;
+  --ids-color-neutral-100: #F3F4F6;
+  --ids-color-neutral-200: #E5E7EB;
+  --ids-color-neutral-300: #D1D5DB;
+  --ids-color-neutral-400: #9CA3AF;
+  --ids-color-neutral-50: #F9FAFB;
+  --ids-color-neutral-500: #6B7280;
+  --ids-color-neutral-600: #4B5563;
+  --ids-color-neutral-700: #374151;
+  --ids-color-neutral-800: #1F2937;
+  --ids-color-neutral-900: #111827;
+  --ids-color-neutral-950: #0A0A0A;
+  --ids-color-primary: #3B82F6;
+  --ids-color-primary-100: #e2e5eb;
+  --ids-color-primary-200: #cad4e4;
+  --ids-color-primary-300: #a5bce2;
+  --ids-color-primary-400: #79a3e7;
+  --ids-color-primary-50: #eff0f2;
+  --ids-color-primary-500: #3B82F6;
+  --ids-color-primary-600: #1669f1;
+  --ids-color-primary-700: #1054c2;
+  --ids-color-primary-800: #0f3f8e;
+  --ids-color-primary-900: #0c2a5c;
+  --ids-color-primary-950: #061123;
+  --ids-color-red-100: #FEE2E2;
+  --ids-color-red-200: #FECACA;
+  --ids-color-red-300: #FCA5A5;
+  --ids-color-red-400: #F87171;
+  --ids-color-red-50: #FEF2F2;
+  --ids-color-red-500: #EF4444;
+  --ids-color-red-600: #DC2626;
+  --ids-color-red-700: #B91C1C;
+  --ids-color-red-800: #991B1B;
+  --ids-color-red-900: #7F1D1D;
+  --ids-color-red-950: #450A0A;
+  --ids-color-success-100: #DCFCE7;
+  --ids-color-success-200: #BBF7D0;
+  --ids-color-success-300: #86EFAC;
+  --ids-color-success-400: #4ADE80;
+  --ids-color-success-50: #F0FDF4;
+  --ids-color-success-500: #16A34A;
+  --ids-color-success-600: #15803D;
+  --ids-color-success-700: #166534;
+  --ids-color-success-800: #14532D;
+  --ids-color-success-900: #134E2A;
+  --ids-color-success-950: #052E16;
+  --ids-color-transparent: transparent;
+  --ids-color-warning-100: #FEF3C7;
+  --ids-color-warning-200: #FDE68A;
+  --ids-color-warning-300: #FCD34D;
+  --ids-color-warning-400: #FBBF24;
+  --ids-color-warning-50: #FFFBEB;
+  --ids-color-warning-500: #F59E0B;
+  --ids-color-warning-600: #D97706;
+  --ids-color-warning-700: #B45309;
+  --ids-color-warning-800: #92400E;
+  --ids-color-warning-900: #78350F;
+  --ids-color-warning-950: #451A03;
+  --ids-color-white: #FFFFFF;
+  --ids-color-white-alpha-30: rgba(255, 255, 255, 0.3);
+  --ids-fontFamily-display: Geist;
+  --ids-fontFamily-mono: Geist Mono;
+  --ids-fontFamily-text: Inter;
+  --ids-fontSize-2xl: 24px;
+  --ids-fontSize-3xl: 30px;
+  --ids-fontSize-4xl: 36px;
+  --ids-fontSize-lg: 18px;
+  --ids-fontSize-md: 16px;
+  --ids-fontSize-sm: 14px;
+  --ids-fontSize-tab-sm: 13px;
+  --ids-fontSize-xl: 20px;
+  --ids-fontSize-xs: 12px;
+  --ids-fontWeight-bold: 700;
+  --ids-fontWeight-medium: 500;
+  --ids-fontWeight-normal: 400;
+  --ids-fontWeight-semibold: 600;
+  --ids-lineHeight-compact: 1.4;
+  --ids-lineHeight-loose: 1.6;
+  --ids-lineHeight-normal: 1.5;
+  --ids-lineHeight-relaxed: 1.75;
+  --ids-lineHeight-snug: 1.375;
+  --ids-lineHeight-tight: 1.25;
+  --ids-menu-accentPreset: subtle;
+  --ids-menu-colorPreset: light;
+  --ids-motion-duration-fast: 150ms;
+  --ids-motion-duration-instant: 0ms;
+  --ids-motion-duration-normal: 250ms;
+  --ids-motion-duration-slow: 400ms;
+  --ids-motion-duration-slower: 600ms;
+  --ids-motion-easing-ease-in: cubic-bezier(0.4, 0, 1, 1);
+  --ids-motion-easing-ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+  --ids-motion-easing-ease-out: cubic-bezier(0, 0, 0.2, 1);
+  --ids-motion-easing-linear: linear;
+  --ids-motion-easing-sharp: cubic-bezier(0.4, 0, 0.6, 1);
+  --ids-motion-easing-spring: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  --ids-objectFit-contain: contain;
+  --ids-objectFit-cover: cover;
+  --ids-objectFit-fill: fill;
+  --ids-objectFit-none: none;
+  --ids-objectFit-scaleDown: scale-down;
+  --ids-opacity-25: 0.25;
+  --ids-opacity-50: 0.5;
+  --ids-opacity-60: 0.6;
+  --ids-opacity-75: 0.75;
+  --ids-opacity-opaque: 1;
+  --ids-opacity-transparent: 0;
+  --ids-outline-focusDanger: 2px solid {semantic.status.danger};
+  --ids-outline-focusPrimary: 2px solid {semantic.focus.ring};
+  --ids-outline-none: none;
+  --ids-preset-auto: auto;
+  --ids-preset-border-bottom-none: none;
+  --ids-preset-border-style-none: none;
+  --ids-preset-contain: contain;
+  --ids-preset-cover: cover;
+  --ids-preset-fill: fill;
+  --ids-preset-focus-danger: 2px solid {semantic.status.danger};
+  --ids-preset-focus-primary: 2px solid {semantic.focus.ring};
+  --ids-preset-none: none;
+  --ids-preset-photo32: 3 / 2;
+  --ids-preset-pointer-none: none;
+  --ids-preset-pressed: scale(0.98);
+  --ids-preset-scaleDown: scale-down;
+  --ids-preset-solid: solid;
+  --ids-preset-square: 1 / 1;
+  --ids-preset-standard43: 4 / 3;
+  --ids-preset-video169: 16 / 9;
+  --ids-shadow-button-focus-danger: 0 0 0 3px {semantic.intent.danger.layer200};
+  --ids-shadow-button-focus-info: 0 0 0 3px {semantic.intent.info.layer200};
+  --ids-shadow-button-focus-neutral: 0 0 0 3px {semantic.intent.neutral.layer200};
+  --ids-shadow-button-focus-success: 0 0 0 3px {semantic.intent.success.layer200};
+  --ids-shadow-button-focus-warning: 0 0 0 3px {semantic.intent.warning.layer200};
+  --ids-shadow-focus-ring-ghost: 0 0 0 2px {semantic.focus.ring};
+  --ids-shadow-focus-ring-neutral: 0 0 0 3px {semantic.intent.neutral.layer200};
+  --ids-shadow-focus-ring-primary: 0 0 0 3px {semantic.focus.ring};
+  --ids-shadow-focus-ring-primary-strong: 0 0 0 4px {semantic.focus.ring};
+  --ids-shadow-focus-ring-soft: 0 0 0 2px {semantic.focus.ring};
+  --ids-shadow-lg: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --ids-shadow-md: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  --ids-shadow-none: none;
+  --ids-shadow-preset: sm;
+  --ids-shadow-radio-focus-neutral: 0 0 0 3px {semantic.intent.neutral.layer200};
+  --ids-shadow-radio-focus-primary: 0 0 0 3px {semantic.intent.primary.layer200};
+  --ids-shadow-radio-focus-primary-strong: 0 0 0 3px {semantic.intent.primary.layer200};
+  --ids-shadow-radio-hover-neutral: 0 0 0 2px {semantic.intent.neutral.layer100};
+  --ids-shadow-radio-hover-primary: 0 0 0 2px {semantic.intent.primary.layer100};
+  --ids-shadow-radio-hover-primary-strong: 0 0 0 2px {semantic.intent.primary.layer100};
+  --ids-shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --ids-shadow-switch-focus-danger: 0 0 0 3px {semantic.intent.danger.layer200};
+  --ids-shadow-switch-focus-info: 0 0 0 3px {semantic.intent.info.layer200};
+  --ids-shadow-switch-focus-neutral: 0 0 0 3px {semantic.intent.neutral.layer200};
+  --ids-shadow-switch-focus-primary: 0 0 0 3px {semantic.focus.ring};
+  --ids-shadow-switch-focus-success: 0 0 0 3px {semantic.intent.success.layer200};
+  --ids-shadow-switch-focus-warning: 0 0 0 3px {semantic.intent.warning.layer200};
+  --ids-shadow-xl: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --ids-size-alert-gap: 8px;
+  --ids-size-alert-paddingX: 16px;
+  --ids-size-alert-paddingY: 8px;
+  --ids-size-avatar-lg: 40px;
+  --ids-size-avatar-md: 32px;
+  --ids-size-avatar-sm: 24px;
+  --ids-size-avatar-xl: 56px;
+  --ids-size-badge-paddingX-lg: 10px;
+  --ids-size-badge-paddingX-md: 8px;
+  --ids-size-badge-paddingX-sm: 6px;
+  --ids-size-badge-paddingY-lg: 4px;
+  --ids-size-badge-paddingY-md: 3px;
+  --ids-size-badge-paddingY-sm: 2px;
+  --ids-size-checkbox-height-lg: 24px;
+  --ids-size-checkbox-height-md: 18px;
+  --ids-size-checkbox-height-sm: 14px;
+  --ids-size-checkbox-padding-lg: 3px;
+  --ids-size-checkbox-padding-md: 2px;
+  --ids-size-checkbox-padding-sm: 2px;
+  --ids-size-checkbox-width-lg: 24px;
+  --ids-size-checkbox-width-md: 18px;
+  --ids-size-checkbox-width-sm: 14px;
+  --ids-size-height-progressLg: 12px;
+  --ids-size-height-progressMd: 8px;
+  --ids-size-height-progressSm: 4px;
+  --ids-size-height-sliderTrackLg: 8px;
+  --ids-size-height-sliderTrackMd: 6px;
+  --ids-size-height-sliderTrackSm: 4px;
+  --ids-size-height-spinnerLg: 32px;
+  --ids-size-height-spinnerMd: 24px;
+  --ids-size-height-spinnerSm: 16px;
+  --ids-size-height-switchLg: 28px;
+  --ids-size-height-switchMd: 24px;
+  --ids-size-height-switchSm: 20px;
+  --ids-size-icon-lg: 24px;
+  --ids-size-icon-md: 20px;
+  --ids-size-icon-sm: 16px;
+  --ids-size-layout-minHeight-em: 1em;
+  --ids-size-layout-percent-full: 100%;
+  --ids-size-menuitem-gap-lg: 12px;
+  --ids-size-menuitem-gap-md: 10px;
+  --ids-size-menuitem-gap-sm: 8px;
+  --ids-size-menuitem-inset-lg: 10px 16px;
+  --ids-size-menuitem-inset-md: 8px 12px;
+  --ids-size-menuitem-inset-sm: 6px 12px;
+  --ids-size-menuitem-minHeight-lg: 44px;
+  --ids-size-menuitem-minHeight-md: 36px;
+  --ids-size-menuitem-minHeight-sm: 32px;
+  --ids-size-minHeight-controlLg: 48px;
+  --ids-size-minHeight-controlMd: 40px;
+  --ids-size-minHeight-controlSm: 32px;
+  --ids-size-modal-padding-lg: 48px;
+  --ids-size-modal-padding-md: 32px;
+  --ids-size-modal-padding-sm: 24px;
+  --ids-size-modal-width-lg: 720px;
+  --ids-size-modal-width-md: 560px;
+  --ids-size-modal-width-sm: 400px;
+  --ids-size-modal-width-xl: 900px;
+  --ids-size-outline-offset-menuInset: -2px;
+  --ids-size-outline-offset-tabDefault: 2px;
+  --ids-size-outline-offset-tabUnderline: -2px;
+  --ids-size-radio-height-lg: 24px;
+  --ids-size-radio-height-md: 20px;
+  --ids-size-radio-height-sm: 16px;
+  --ids-size-radio-width-lg: 24px;
+  --ids-size-radio-width-md: 20px;
+  --ids-size-radio-width-sm: 16px;
+  --ids-size-select-chevronInset-lg: 36px;
+  --ids-size-select-chevronInset-md: 32px;
+  --ids-size-select-chevronInset-sm: 28px;
+  --ids-size-select-paddingX-lg: 16px;
+  --ids-size-select-paddingX-md: 12px;
+  --ids-size-select-paddingX-sm: 10px;
+  --ids-size-select-paddingY-lg: 12px;
+  --ids-size-select-paddingY-md: 8px;
+  --ids-size-select-paddingY-sm: 6px;
+  --ids-size-tab-inset-lg: 10px 20px;
+  --ids-size-tab-inset-md: 8px 16px;
+  --ids-size-tab-inset-sm: 6px 12px;
+  --ids-size-textarea-minHeight-lg: 120px;
+  --ids-size-textarea-minHeight-md: 80px;
+  --ids-size-textarea-minHeight-sm: 60px;
+  --ids-size-toggle-gap-lg: 10px;
+  --ids-size-toggle-gap-md: 8px;
+  --ids-size-toggle-gap-sm: 6px;
+  --ids-size-toggle-inset-lg: 10px 20px;
+  --ids-size-toggle-inset-md: 8px 16px;
+  --ids-size-toggle-inset-sm: 6px 12px;
+  --ids-size-tooltip-maxWidth: 240px;
+  --ids-size-tooltip-paddingX: 8px;
+  --ids-size-tooltip-paddingY: 4px;
+  --ids-size-width-sliderLg: 280px;
+  --ids-size-width-sliderMd: 200px;
+  --ids-size-width-sliderSm: 150px;
+  --ids-size-width-spinnerLg: 32px;
+  --ids-size-width-spinnerMd: 24px;
+  --ids-size-width-spinnerSm: 16px;
+  --ids-size-width-switchLg: 52px;
+  --ids-size-width-switchMd: 44px;
+  --ids-size-width-switchSm: 36px;
+  --ids-spacing-2xl: 48px;
+  --ids-spacing-3xl: 64px;
+  --ids-spacing-lg: 24px;
+  --ids-spacing-md: 16px;
+  --ids-spacing-md-sm: 12px;
+  --ids-spacing-none: 0;
+  --ids-spacing-sm: 8px;
+  --ids-spacing-xl: 32px;
+  --ids-spacing-xs: 4px;
+  --ids-typography-fontsize-base: 16px;
+  --ids-typography-fontsize-lg: 18px;
+  --ids-typography-fontsize-sm: 14px;
+  --ids-typography-fontweight-bold: 700;
+  --ids-typography-fontweight-medium: 500;
+  --ids-typography-fontweight-normal: 400;
+}
+
+/* ========================= */
+/* Semantic Token Variables  */
+/* ========================= */
+:root {
+  --ids-action-primary-background: {base.color.primary.500};
+  --ids-action-primary-border: {base.color.primary.500};
+  --ids-action-primary-hover: {base.color.primary.600};
+  --ids-action-primary-pressed: {base.color.primary.700};
+  --ids-action-primary-text: #FFFFFF;
+  --ids-black: {color.black};
+  --ids-border-default: {base.color.neutral.200};
+  --ids-border-focus: {base.color.primary.500};
+  --ids-border-strong: {base.color.neutral.400};
+  --ids-border-subtle: {base.color.neutral.100};
+  --ids-danger-500: {base.color.danger.500};
+  --ids-danger-600: {color.red.600};
+  --ids-focus-ring: {base.color.primary.500};
+  --ids-focus-ringOffset: #FFFFFF;
+  --ids-fontsize-base: {base.typography.fontsize.base};
+  --ids-fontsize-lg: {base.typography.fontsize.lg};
+  --ids-fontsize-sm: {base.typography.fontsize.sm};
+  --ids-fontweight-bold: {base.typography.fontweight.bold};
+  --ids-fontweight-medium: {base.typography.fontweight.medium};
+  --ids-fontweight-normal: {base.typography.fontweight.normal};
+  --ids-gray-100: {base.color.gray.100};
+  --ids-gray-300: {base.color.gray.300};
+  --ids-gray-900: {base.color.gray.900};
+  --ids-intent-danger-layer100: {base.color.danger.100};
+  --ids-intent-danger-layer200: {base.color.danger.200};
+  --ids-intent-danger-layer300: {base.color.danger.300};
+  --ids-intent-danger-layer400: {base.color.danger.400};
+  --ids-intent-danger-layer50: {base.color.danger.50};
+  --ids-intent-danger-layer500: {base.color.danger.500};
+  --ids-intent-danger-layer600: {base.color.danger.600};
+  --ids-intent-danger-layer700: {base.color.danger.700};
+  --ids-intent-danger-layer800: {base.color.danger.800};
+  --ids-intent-danger-layer900: {base.color.danger.900};
+  --ids-intent-danger-layer950: {base.color.danger.950};
+  --ids-intent-info-layer100: {base.color.info.100};
+  --ids-intent-info-layer200: {base.color.info.200};
+  --ids-intent-info-layer300: {base.color.info.300};
+  --ids-intent-info-layer400: {base.color.info.400};
+  --ids-intent-info-layer50: {base.color.info.50};
+  --ids-intent-info-layer500: {base.color.info.500};
+  --ids-intent-info-layer600: {base.color.info.600};
+  --ids-intent-info-layer700: {base.color.info.700};
+  --ids-intent-info-layer800: {base.color.info.800};
+  --ids-intent-info-layer900: {base.color.info.900};
+  --ids-intent-info-layer950: {base.color.info.950};
+  --ids-intent-neutral-layer100: {base.color.neutral.100};
+  --ids-intent-neutral-layer200: {base.color.neutral.200};
+  --ids-intent-neutral-layer300: {base.color.neutral.300};
+  --ids-intent-neutral-layer400: {base.color.neutral.400};
+  --ids-intent-neutral-layer50: {base.color.neutral.50};
+  --ids-intent-neutral-layer500: {base.color.neutral.500};
+  --ids-intent-neutral-layer600: {base.color.neutral.600};
+  --ids-intent-neutral-layer700: {base.color.neutral.700};
+  --ids-intent-neutral-layer800: {base.color.neutral.800};
+  --ids-intent-neutral-layer900: {base.color.neutral.900};
+  --ids-intent-neutral-layer950: {base.color.neutral.950};
+  --ids-intent-primary-layer100: {base.color.primary.100};
+  --ids-intent-primary-layer200: {base.color.primary.200};
+  --ids-intent-primary-layer300: {base.color.primary.300};
+  --ids-intent-primary-layer400: {base.color.primary.400};
+  --ids-intent-primary-layer50: {base.color.primary.50};
+  --ids-intent-primary-layer500: {base.color.primary.500};
+  --ids-intent-primary-layer600: {base.color.primary.600};
+  --ids-intent-primary-layer700: {base.color.primary.700};
+  --ids-intent-primary-layer800: {base.color.primary.800};
+  --ids-intent-primary-layer900: {base.color.primary.900};
+  --ids-intent-primary-layer950: {base.color.primary.950};
+  --ids-intent-red-layer100: {base.color.red.100};
+  --ids-intent-red-layer200: {base.color.red.200};
+  --ids-intent-red-layer300: {base.color.red.300};
+  --ids-intent-red-layer400: {base.color.red.400};
+  --ids-intent-red-layer50: {base.color.red.50};
+  --ids-intent-red-layer500: {base.color.red.500};
+  --ids-intent-red-layer600: {base.color.red.600};
+  --ids-intent-red-layer700: {base.color.red.700};
+  --ids-intent-red-layer800: {base.color.red.800};
+  --ids-intent-red-layer900: {base.color.red.900};
+  --ids-intent-red-layer950: {base.color.red.950};
+  --ids-intent-success-layer100: {base.color.success.100};
+  --ids-intent-success-layer200: {base.color.success.200};
+  --ids-intent-success-layer300: {base.color.success.300};
+  --ids-intent-success-layer400: {base.color.success.400};
+  --ids-intent-success-layer50: {base.color.success.50};
+  --ids-intent-success-layer500: {base.color.success.500};
+  --ids-intent-success-layer600: {base.color.success.600};
+  --ids-intent-success-layer700: {base.color.success.700};
+  --ids-intent-success-layer800: {base.color.success.800};
+  --ids-intent-success-layer900: {base.color.success.900};
+  --ids-intent-success-layer950: {base.color.success.950};
+  --ids-intent-warning-layer100: {base.color.warning.100};
+  --ids-intent-warning-layer200: {base.color.warning.200};
+  --ids-intent-warning-layer300: {base.color.warning.300};
+  --ids-intent-warning-layer400: {base.color.warning.400};
+  --ids-intent-warning-layer50: {base.color.warning.50};
+  --ids-intent-warning-layer500: {base.color.warning.500};
+  --ids-intent-warning-layer600: {base.color.warning.600};
+  --ids-intent-warning-layer700: {base.color.warning.700};
+  --ids-intent-warning-layer800: {base.color.warning.800};
+  --ids-intent-warning-layer900: {base.color.warning.900};
+  --ids-intent-warning-layer950: {base.color.warning.950};
+  --ids-lg: 24px;
+  --ids-lg: 12px;
+  --ids-lg: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --ids-md: 16px;
+  --ids-md: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  --ids-md: 8px;
+  --ids-neutral-100: {color.gray.100};
+  --ids-neutral-300: {color.gray.300};
+  --ids-neutral-900: {color.gray.900};
+  --ids-none: none;
+  --ids-primary-100: {base.color.primary.100};
+  --ids-primary-50: {base.color.primary.50};
+  --ids-primary-500: {base.color.primary.500};
+  --ids-primary-600: {base.color.primary.600};
+  --ids-primary-700: {base.color.primary.700};
+  --ids-primary-900: {base.color.primary.900};
+  --ids-sm: 4px;
+  --ids-sm: 8px;
+  --ids-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --ids-status-danger: {base.color.danger.500};
+  --ids-status-info: {base.color.info.500};
+  --ids-status-success: {base.color.success.500};
+  --ids-status-warning: {base.color.warning.500};
+  --ids-success-500: {base.color.success.500};
+  --ids-surface-background: {base.color.neutral.50};
+  --ids-surface-card: #FFFFFF;
+  --ids-surface-elevated: #FFFFFF;
+  --ids-surface-inverse: {base.color.neutral.900};
+  --ids-text-disabled: {base.color.neutral.400};
+  --ids-text-inverse: #FFFFFF;
+  --ids-text-primary: {base.color.neutral.900};
+  --ids-text-secondary: {base.color.neutral.600};
+  --ids-text-tertiary: {base.color.neutral.500};
+  --ids-white: #FFFFFF;
+  --ids-xl: 16px;
+}
+
+/* ========================= */
+/* Component Variant Styles  */
+/* ========================= */
+.ionic-alert[data-appearance="solid"] {
+  color: #FFFFFF;
+}
+.ionic-alert[data-appearance="outline"] {
+  border-style: solid;
+  border-width: 1px;
+  background-color: transparent;
+}
+.ionic-alert[data-intent="info"] {
+  gap: 8px;
+  color: {base.color.info.800};
+  font-size: 14px;
+  padding-x: 16px;
+  padding-y: 8px;
+  font-family: Inter;
+  font-weight: 400;
+  border-color: {base.color.info.200};
+  background-color: {base.color.info.50};
+}
+.ionic-alert[data-intent="danger"] {
+  gap: 8px;
+  color: {base.color.danger.800};
+  font-size: 14px;
+  padding-x: 16px;
+  padding-y: 8px;
+  font-family: Inter;
+  font-weight: 400;
+  border-color: {base.color.danger.200};
+  background-color: {base.color.danger.50};
+}
+.ionic-alert[data-intent="neutral"] {
+  gap: 8px;
+  color: {base.color.neutral.600};
+  font-size: 14px;
+  padding-x: 16px;
+  padding-y: 8px;
+  font-family: Inter;
+  font-weight: 400;
+  border-color: {base.color.neutral.200};
+  background-color: {base.color.neutral.50};
+}
+.ionic-alert[data-intent="success"] {
+  gap: 8px;
+  color: {base.color.success.800};
+  font-size: 14px;
+  padding-x: 16px;
+  padding-y: 8px;
+  font-family: Inter;
+  font-weight: 400;
+  border-color: {base.color.success.200};
+  background-color: {base.color.success.50};
+}
+.ionic-alert[data-intent="warning"] {
+  gap: 8px;
+  color: {base.color.warning.800};
+  font-size: 14px;
+  padding-x: 16px;
+  padding-y: 8px;
+  font-family: Inter;
+  font-weight: 400;
+  border-color: {base.color.warning.200};
+  background-color: {base.color.warning.50};
+}
+.ionic-alert[data-shape="sharp"] {
+  border-radius: 0;
+}
+.ionic-alert[data-shape="rounded"] {
+  border-radius: 8px;
+}
+.ionic-avatar[data-color="default"] {
+  color: {base.color.neutral.600};
+  background-color: {base.color.neutral.100};
+}
+.ionic-avatar[data-color="neutral"] {
+  color: {base.color.neutral.600};
+  background-color: {base.color.neutral.200};
+}
+.ionic-avatar[data-color="primary"] {
+  color: {base.color.primary.700};
+  background-color: {base.color.primary.100};
+}
+.ionic-avatar[data-shape="sharp"] {
+  border-radius: 0;
+}
+.ionic-avatar[data-shape="circle"] {
+  border-radius: 9999px;
+}
+.ionic-avatar[data-shape="rounded"] {
+  border-radius: 8px;
+}
+.ionic-avatar[data-size="lg"] {
+  width: 40px;
+  height: 40px;
+  font-size: 16px;
+  font-family: Inter;
+  font-weight: 500;
+}
+.ionic-avatar[data-size="md"] {
+  width: 32px;
+  height: 32px;
+  font-size: 14px;
+  font-family: Inter;
+  font-weight: 500;
+}
+.ionic-avatar[data-size="sm"] {
+  width: 24px;
+  height: 24px;
+  font-size: 12px;
+  font-family: Inter;
+  font-weight: 500;
+}
+.ionic-avatar[data-size="xl"] {
+  width: 56px;
+  height: 56px;
+  font-size: 20px;
+  font-family: Inter;
+  font-weight: 500;
+}
+.ionic-badge[data-appearance="soft"] {
+  display: inline-flex;
+  align-items: center;
+  font-family: Inter;
+  font-weight: 500;
+  line-height: 1.25;
+}
+.ionic-badge[data-appearance="solid"] {
+  display: inline-flex;
+  align-items: center;
+  font-family: Inter;
+  font-weight: 500;
+  line-height: 1.25;
+}
+.ionic-badge[data-appearance="outline"] {
+  display: inline-flex;
+  align-items: center;
+  font-family: Inter;
+  font-weight: 500;
+  line-height: 1.25;
+  border-style: solid;
+  border-width: 1px;
+  background-color: transparent;
+}
+.ionic-badge[data-intent="info"] {
+  color: {base.color.info.900};
+  border-color: {base.color.info.300};
+  background-color: {base.color.info.200};
+}
+.ionic-badge[data-intent="danger"] {
+  color: {base.color.danger.900};
+  border-color: {base.color.danger.300};
+  background-color: {base.color.danger.200};
+}
+.ionic-badge[data-intent="default"] {
+  color: {base.color.neutral.600};
+  border-color: {base.color.neutral.300};
+  background-color: {base.color.neutral.200};
+}
+.ionic-badge[data-intent="primary"] {
+  color: {base.color.primary.900};
+  border-color: {base.color.primary.300};
+  background-color: {base.color.primary.200};
+}
+.ionic-badge[data-intent="success"] {
+  color: {base.color.success.900};
+  border-color: {base.color.success.300};
+  background-color: {base.color.success.200};
+}
+.ionic-badge[data-intent="warning"] {
+  color: {base.color.warning.900};
+  border-color: {base.color.warning.300};
+  background-color: {base.color.warning.200};
+}
+.ionic-badge[data-shape="pill"] {
+  border-radius: 9999px;
+}
+.ionic-badge[data-shape="sharp"] {
+  border-radius: 0;
+}
+.ionic-badge[data-shape="rounded"] {
+  border-radius: 8px;
+}
+.ionic-badge[data-size="lg"] {
+  font-size: 16px;
+  padding-x: 10px;
+  padding-y: 4px;
+  font-family: Inter;
+}
+.ionic-badge[data-size="md"] {
+  font-size: 14px;
+  padding-x: 8px;
+  padding-y: 3px;
+  font-family: Inter;
+}
+.ionic-badge[data-size="sm"] {
+  font-size: 12px;
+  padding-x: 6px;
+  padding-y: 2px;
+  font-family: Inter;
+}
+.ionic-button[data-appearance="ghost"] {
+  background-color: transparent;
+}
+.ionic-button[data-appearance="outline"] {
+  border-style: solid;
+  border-width: 1px;
+}
+.ionic-button[data-intent="info"] {
+  color: #FFFFFF;
+  border-color: {base.color.info.500};
+  background-color: {base.color.info.500};
+}
+.ionic-button[data-intent="info"]:focus-visible {
+  outline: none;
+  box-shadow: {base.shadow.button.focusInfo};
+}
+.ionic-button[data-intent="info"]:hover {
+  background-color: {base.color.info.600};
+}
+.ionic-button[data-intent="info"]:active {
+  transform: {base.motion.transform.pressed};
+  background-color: {base.color.info.700};
+}
+.ionic-button[data-intent="info"]:disabled {
+  color: #FFFFFF;
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+.ionic-button[data-intent="danger"] {
+  color: #FFFFFF;
+  border-color: {base.color.danger.500};
+  background-color: {base.color.danger.500};
+}
+.ionic-button[data-intent="danger"]:focus-visible {
+  outline: none;
+  box-shadow: {base.shadow.button.focusDanger};
+}
+.ionic-button[data-intent="danger"]:hover {
+  background-color: {base.color.danger.600};
+}
+.ionic-button[data-intent="danger"]:active {
+  transform: {base.motion.transform.pressed};
+  background-color: {base.color.danger.700};
+}
+.ionic-button[data-intent="danger"]:disabled {
+  color: #FFFFFF;
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+.ionic-button[data-intent="primary"] {
+  color: #FFFFFF;
+  border-color: {base.color.primary.500};
+  background-color: {base.color.primary.500};
+}
+.ionic-button[data-intent="primary"]:focus-visible {
+  outline: none;
+  box-shadow: {base.shadow.focus.ringPrimary};
+}
+.ionic-button[data-intent="primary"]:hover {
+  background-color: {base.color.primary.600};
+}
+.ionic-button[data-intent="primary"]:active {
+  transform: {base.motion.transform.pressed};
+  background-color: {base.color.primary.700};
+}
+.ionic-button[data-intent="primary"]:disabled {
+  color: #FFFFFF;
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+.ionic-button[data-intent="success"] {
+  color: #FFFFFF;
+  border-color: {base.color.success.500};
+  background-color: {base.color.success.500};
+}
+.ionic-button[data-intent="success"]:focus-visible {
+  outline: none;
+  box-shadow: {base.shadow.button.focusSuccess};
+}
+.ionic-button[data-intent="success"]:hover {
+  background-color: {base.color.success.600};
+}
+.ionic-button[data-intent="success"]:active {
+  transform: {base.motion.transform.pressed};
+  background-color: {base.color.success.700};
+}
+.ionic-button[data-intent="success"]:disabled {
+  color: #FFFFFF;
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+.ionic-button[data-intent="warning"] {
+  color: {base.color.warning.900};
+  border-color: {base.color.warning.500};
+  background-color: {base.color.warning.500};
+}
+.ionic-button[data-intent="warning"]:focus-visible {
+  outline: none;
+  box-shadow: {base.shadow.button.focusWarning};
+}
+.ionic-button[data-intent="warning"]:hover {
+  background-color: {base.color.warning.600};
+}
+.ionic-button[data-intent="warning"]:active {
+  transform: {base.motion.transform.pressed};
+  background-color: {base.color.warning.700};
+}
+.ionic-button[data-intent="warning"]:disabled {
+  color: {base.color.warning.900};
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+.ionic-button[data-intent="secondary"] {
+  color: {base.color.neutral.900};
+  border-color: {base.color.neutral.200};
+  background-color: {base.color.neutral.100};
+}
+.ionic-button[data-intent="secondary"]:focus-visible {
+  outline: none;
+  box-shadow: {base.shadow.button.focusNeutral};
+}
+.ionic-button[data-intent="secondary"]:hover {
+  background-color: {base.color.neutral.200};
+}
+.ionic-button[data-intent="secondary"]:active {
+  transform: {base.motion.transform.pressed};
+  background-color: {base.color.neutral.300};
+}
+.ionic-button[data-intent="secondary"]:disabled {
+  color: {base.color.neutral.400};
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+.ionic-button[data-shape="pill"] {
+  border-radius: 9999px;
+}
+.ionic-button[data-shape="sharp"] {
+  border-radius: 0;
+}
+.ionic-button[data-shape="rounded"] {
+  border-radius: 8px;
+}
+.ionic-button[data-size="lg"] {
+  gap: 16px;
+  padding: {base.spacing.md} {base.spacing.lg};
+  font-size: 18px;
+  icon-size: 24px;
+  min-height: 48px;
+  font-family: Inter;
+  font-weight: 500;
+}
+.ionic-button[data-size="md"] {
+  gap: 8px;
+  padding: {base.spacing.sm} {base.spacing.md};
+  font-size: 16px;
+  icon-size: 20px;
+  min-height: 40px;
+  font-family: Inter;
+  font-weight: 500;
+}
+.ionic-button[data-size="sm"] {
+  gap: 4px;
+  padding: {base.spacing.xs} {base.spacing.sm};
+  font-size: 14px;
+  icon-size: 16px;
+  min-height: 32px;
+  font-family: Inter;
+  font-weight: 500;
+}
+.ionic-checkbox[data-border="none"] {
+  border-style: none;
+  border-width: 0;
+  border-radius: 0;
+}
+.ionic-checkbox[data-border="pill"] {
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 9999px;
+}
+.ionic-checkbox[data-border="sharp"] {
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 0;
+}
+.ionic-checkbox[data-border="rounded"] {
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 4px;
+}
+.ionic-checkbox[data-color="default"] {
+  color: #FFFFFF;
+  border-color: {base.color.neutral.200};
+  background-color: #FFFFFF;
+}
+.ionic-checkbox[data-color="default"]:focus-visible {
+  box-shadow: {base.shadow.focus.ringSoft};
+}
+.ionic-checkbox[data-color="default"]:hover {
+  border-color: {base.color.primary.400};
+}
+.ionic-checkbox[data-color="default"]:checked {
+  border-color: {base.color.primary.500};
+  background-color: {base.color.primary.500};
+}
+.ionic-checkbox[data-color="default"]:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+  background-color: {base.color.neutral.100};
+}
+.ionic-checkbox[data-label="right"] {
+  gap: 8px;
+}
+.ionic-checkbox[data-size="lg"] {
+  width: 24px;
+  height: 24px;
+  font-family: Inter;
+  font-weight: 500;
+}
+.ionic-checkbox[data-size="md"] {
+  width: 18px;
+  height: 18px;
+  font-family: Inter;
+  font-weight: 500;
+}
+.ionic-checkbox[data-size="sm"] {
+  width: 14px;
+  height: 14px;
+  font-family: Inter;
+  font-weight: 500;
+}
+.ionic-container[data-alignment="end"] {
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+.ionic-container[data-alignment="start"] {
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.ionic-container[data-alignment="center"] {
+  align-items: center;
+  justify-content: center;
+}
+.ionic-container[data-color="card"] {
+  border-color: {base.color.neutral.200};
+  background-color: #FFFFFF;
+}
+.ionic-container[data-color="muted"] {
+  border-color: transparent;
+  background-color: {base.color.neutral.100};
+}
+.ionic-container[data-color="neutral"] {
+  border-color: transparent;
+  background-color: transparent;
+}
+.ionic-container[data-color="primary"] {
+  border-color: {base.color.primary.500};
+  background-color: {base.color.primary.500};
+}
+.ionic-container[data-color="secondary"] {
+  border-color: {base.color.neutral.200};
+  background-color: {base.color.neutral.100};
+}
+.ionic-container[data-color="alert-info"] {
+  border-color: {base.color.info.200};
+  border-style: solid;
+  border-width: 1px;
+  background-color: {base.color.info.50};
+}
+.ionic-container[data-color="alert-error"] {
+  border-color: {base.color.danger.200};
+  border-style: solid;
+  border-width: 1px;
+  background-color: {base.color.danger.50};
+}
+.ionic-container[data-color="alert-default"] {
+  border-color: {base.color.neutral.200};
+  border-style: solid;
+  border-width: 1px;
+  background-color: {base.color.neutral.100};
+}
+.ionic-container[data-color="alert-success"] {
+  border-color: {base.color.success.200};
+  border-style: solid;
+  border-width: 1px;
+  background-color: {base.color.success.50};
+}
+.ionic-container[data-color="alert-warning"] {
+  border-color: {base.color.warning.200};
+  border-style: solid;
+  border-width: 1px;
+  background-color: {base.color.warning.50};
+}
+.ionic-container[data-columns="1"] {
+  grid-template-columns: repeat(1, 1fr);
+}
+.ionic-container[data-columns="2"] {
+  grid-template-columns: repeat(2, 1fr);
+}
+.ionic-container[data-columns="3"] {
+  grid-template-columns: repeat(3, 1fr);
+}
+.ionic-container[data-columns="4"] {
+  grid-template-columns: repeat(4, 1fr);
+}
+.ionic-container[data-direction="row"] {
+  flex-direction: row;
+}
+.ionic-container[data-direction="column"] {
+  flex-direction: column;
+}
+.ionic-container[data-display="flex"] {
+  display: flex;
+}
+.ionic-container[data-display="block"] {
+  display: block;
+}
+.ionic-container[data-elevation="lg"] {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+}
+.ionic-container[data-elevation="md"] {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+}
+.ionic-container[data-elevation="sm"] {
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+.ionic-container[data-elevation="xl"] {
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+}
+.ionic-container[data-elevation="none"] {
+  box-shadow: none;
+}
+.ionic-container[data-padding="lg"] {
+  padding: {base.spacing.6};
+}
+.ionic-container[data-padding="md"] {
+  padding: {base.spacing.4};
+}
+.ionic-container[data-padding="sm"] {
+  padding: {base.spacing.3};
+}
+.ionic-container[data-padding="none"] {
+  padding: 0;
+}
+.ionic-container[data-shape="none"] {
+  border-radius: 0;
+}
+.ionic-container[data-shape="rounded"] {
+  border-radius: 8px;
+}
+.ionic-container[data-size="lg"] {
+  max-width: 576px;
+}
+.ionic-container[data-size="md"] {
+  max-width: 448px;
+}
+.ionic-container[data-size="sm"] {
+  max-width: 320px;
+}
+.ionic-container[data-size="xl"] {
+  max-width: 768px;
+}
+.ionic-container[data-size="auto"] {
+  width: auto;
+  height: auto;
+}
+.ionic-container[data-size="full"] {
+  width: 100%;
+}
+.ionic-container[data-spacing="lg"] {
+  gap: {base.spacing.6};
+}
+.ionic-container[data-spacing="md"] {
+  gap: {base.spacing.4};
+}
+.ionic-container[data-spacing="sm"] {
+  gap: {base.spacing.2};
+}
+.ionic-container[data-spacing="none"] {
+  gap: 0;
+}
+.ionic-container[data-wrap="wrap"] {
+  flex-wrap: wrap;
+}
+.ionic-container[data-wrap="nowrap"] {
+  flex-wrap: nowrap;
+}
+.ionic-divider[data-color="strong"] {
+  font-family: Inter;
+  background-color: {base.color.neutral.400};
+}
+.ionic-divider[data-color="subtle"] {
+  font-family: Inter;
+  background-color: {base.color.neutral.100};
+}
+.ionic-divider[data-color="default"] {
+  font-family: Inter;
+  font-weight: 400;
+  background-color: {base.color.neutral.200};
+}
+.ionic-divider[data-orientation="vertical"] {
+  width: 1px;
+  height: 100%;
+  min-height: 1em;
+}
+.ionic-divider[data-orientation="horizontal"] {
+  width: 100%;
+  height: 1px;
+}
+.ionic-divider[data-size="thin"] {
+  height: 1px;
+  font-family: Inter;
+}
+.ionic-divider[data-size="thick"] {
+  height: 4px;
+  font-family: Inter;
+}
+.ionic-divider[data-size="medium"] {
+  height: 2px;
+  font-family: Inter;
+}
+.ionic-icon[data-color="muted"] {
+  color: {base.color.neutral.600};
+}
+.ionic-icon[data-color="inherit"] {
+  color: currentColor;
+}
+.ionic-icon[data-color="primary"] {
+  color: {base.color.primary.500};
+}
+.ionic-icon[data-size="lg"] {
+  width: 24px;
+  height: 24px;
+  font-family: Inter;
+  font-weight: 400;
+}
+.ionic-icon[data-size="md"] {
+  width: 20px;
+  height: 20px;
+  font-family: Inter;
+  font-weight: 400;
+}
+.ionic-icon[data-size="sm"] {
+  width: 16px;
+  height: 16px;
+  font-family: Inter;
+  font-weight: 400;
+}
+.ionic-icon[data-state="hide"] {
+  display: none;
+}
+.ionic-icon[data-state="show"] {
+  display: inline-flex;
+}
+.ionic-image[data-aspectRatio="1/1"] {
+  aspect-ratio: {base.aspectRatio.square};
+}
+.ionic-image[data-aspectRatio="3/2"] {
+  aspect-ratio: {base.aspectRatio.photo32};
+}
+.ionic-image[data-aspectRatio="4/3"] {
+  aspect-ratio: {base.aspectRatio.standard43};
+}
+.ionic-image[data-aspectRatio="16/9"] {
+  aspect-ratio: {base.aspectRatio.video169};
+}
+.ionic-image[data-aspectRatio="auto"] {
+  aspect-ratio: {base.aspectRatio.auto};
+}
+.ionic-image[data-fit="fill"] {
+  object-fit: fill;
+}
+.ionic-image[data-fit="none"] {
+  object-fit: none;
+}
+.ionic-image[data-fit="cover"] {
+  object-fit: cover;
+}
+.ionic-image[data-fit="contain"] {
+  object-fit: contain;
+}
+.ionic-image[data-fit="scale-down"] {
+  object-fit: scale-down;
+}
+.ionic-input[data-align="left"] {
+  text-align: left;
+}
+.ionic-input[data-align="right"] {
+  text-align: right;
+}
+.ionic-input[data-align="center"] {
+  text-align: center;
+}
+.ionic-input[data-color="default"] {
+  color: {semantic.foreground};
+  border-color: {semantic.input};
+  background-color: {semantic.background};
+}
+.ionic-input[data-elevation="md"] {
+  box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+}
+.ionic-input[data-elevation="sm"] {
+  box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+}
+.ionic-input[data-elevation="none"] {
+  box-shadow: none;
+}
+.ionic-input[data-shape="pill"] {
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 9999px;
+}
+.ionic-input[data-shape="square"] {
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 0;
+}
+.ionic-input[data-shape="rounded"] {
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 8px;
+}
+.ionic-input[data-size="lg"] {
+  padding: 12px 16px;
+  font-size: 16px;
+}
+.ionic-input[data-size="sm"] {
+  padding: 6px 10px;
+  font-size: 14px;
+}
+.ionic-input[data-size="default"] {
+  padding: 8px 12px;
+  font-size: 14px;
+}
+.ionic-link[data-appearance="subtle"] {
+  text-decoration: none;
+}
+.ionic-link[data-appearance="default"] {
+  text-decoration: underline;
+}
+.ionic-link[data-color="muted"] {
+  color: {base.color.neutral.600};
+}
+.ionic-link[data-color="default"] {
+  color: {base.color.primary.500};
+}
+.ionic-link[data-size="default"] {
+  font-size: {base.fontSize.base};
+}
+.ionic-link[data-weight="medium"] {
+  font-weight: 500;
+}
+.ionic-link[data-weight="normal"] {
+  font-weight: 400;
+}
+.ionic-link[data-weight="semibold"] {
+  font-weight: 600;
+}
+.ionic-menuitem[data-color="danger"] {
+  color: {base.color.danger.600};
+  background-color: transparent;
+}
+.ionic-menuitem[data-color="danger"]:focus-visible {
+  outline: 2px solid {semantic.status.danger};
+  outline-offset: -2px;
+  background-color: {base.color.danger.50};
+}
+.ionic-menuitem[data-color="danger"]:hover {
+  color: {base.color.danger.700};
+  background-color: {base.color.danger.50};
+}
+.ionic-menuitem[data-color="danger"]:active {
+  color: {base.color.danger.800};
+  background-color: {base.color.danger.100};
+}
+.ionic-menuitem[data-color="danger"]:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+  pointer-events: {base.interaction.pointerEvents.none};
+}
+.ionic-menuitem[data-color="default"] {
+  color: {base.color.neutral.600};
+  background-color: transparent;
+}
+.ionic-menuitem[data-color="default"]:focus-visible {
+  outline: 2px solid {semantic.focus.ring};
+  outline-offset: -2px;
+  background-color: {base.color.neutral.100};
+}
+.ionic-menuitem[data-color="default"]:hover {
+  background-color: {base.color.neutral.100};
+}
+.ionic-menuitem[data-color="default"]:active {
+  background-color: {base.color.neutral.200};
+}
+.ionic-menuitem[data-color="default"]:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+  pointer-events: {base.interaction.pointerEvents.none};
+}
+.ionic-menuitem[data-size="lg"] {
+  gap: 12px;
+  padding: 10px 16px;
+  font-size: 16px;
+  min-height: 44px;
+  font-family: Inter;
+  font-weight: 500;
+}
+.ionic-menuitem[data-size="md"] {
+  gap: 10px;
+  padding: 8px 12px;
+  font-size: 14px;
+  min-height: 36px;
+  font-family: Inter;
+  font-weight: 500;
+}
+.ionic-menuitem[data-size="sm"] {
+  gap: 8px;
+  padding: 6px 12px;
+  font-size: {base.fontSize.tab.sm};
+  min-height: 32px;
+  font-family: Inter;
+  font-weight: 500;
+}
+.ionic-modal[data-color="default"] {
+  color: {base.color.neutral.900};
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  font-family: Inter;
+  font-weight: 400;
+  border-color: {base.color.neutral.100};
+  background-color: #FFFFFF;
+}
+.ionic-modal[data-shape="sharp"] {
+  border-radius: 0;
+}
+.ionic-modal[data-shape="rounded"] {
+  border-radius: 12px;
+}
+.ionic-modal[data-size="lg"] {
+  width: 720px;
+  padding: 48px;
+  font-family: Inter;
+}
+.ionic-modal[data-size="md"] {
+  width: 560px;
+  padding: 32px;
+  font-family: Inter;
+}
+.ionic-modal[data-size="sm"] {
+  width: 400px;
+  padding: 24px;
+  font-family: Inter;
+}
+.ionic-modal[data-size="xl"] {
+  width: 900px;
+  padding: 48px;
+  font-family: Inter;
+}
+.ionic-progress[data-color="info"] {
+  color: {base.color.info.500};
+  background-color: {base.color.neutral.100};
+}
+.ionic-progress[data-color="danger"] {
+  color: {base.color.danger.500};
+  background-color: {base.color.neutral.100};
+}
+.ionic-progress[data-color="neutral"] {
+  color: {base.color.neutral.900};
+  background-color: {base.color.neutral.100};
+}
+.ionic-progress[data-color="primary"] {
+  color: {base.color.primary.500};
+  background-color: {base.color.neutral.100};
+}
+.ionic-progress[data-color="success"] {
+  color: {base.color.success.500};
+  background-color: {base.color.neutral.100};
+}
+.ionic-progress[data-color="warning"] {
+  color: {base.color.warning.500};
+  background-color: {base.color.neutral.100};
+}
+.ionic-progress[data-size="lg"] {
+  height: 12px;
+  font-family: Inter;
+  font-weight: 400;
+}
+.ionic-progress[data-size="md"] {
+  height: 8px;
+  font-family: Inter;
+  font-weight: 400;
+}
+.ionic-progress[data-size="sm"] {
+  height: 4px;
+  font-family: Inter;
+  font-weight: 400;
+}
+.ionic-radio[data-border="thin"] {
+  border-style: solid;
+  border-width: 1px;
+}
+.ionic-radio[data-border="thick"] {
+  border-style: solid;
+  border-width: 3px;
+}
+.ionic-radio[data-border="default"] {
+  border-style: solid;
+  border-width: 2px;
+}
+.ionic-radio[data-color="default"] {
+  color: {base.color.primary.500};
+  border-color: {base.color.neutral.400};
+  background-color: #FFFFFF;
+}
+.ionic-radio[data-color="default"]:focus-visible {
+  box-shadow: {base.shadow.radio.focusPrimary};
+  border-color: {base.color.primary.500};
+}
+.ionic-radio[data-color="default"]:hover {
+  box-shadow: {base.shadow.radio.hoverPrimary};
+  border-color: {base.color.primary.400};
+}
+.ionic-radio[data-color="default"]:checked {
+  border-color: {base.color.primary.500};
+  background-color: {base.color.primary.500};
+}
+.ionic-radio[data-color="default"]:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+  border-color: {base.color.neutral.300};
+  background-color: {base.color.neutral.100};
+}
+.ionic-radio[data-color="neutral"] {
+  color: {base.color.neutral.600};
+  border-color: {base.color.neutral.100};
+  background-color: {base.color.neutral.50};
+}
+.ionic-radio[data-color="neutral"]:focus-visible {
+  box-shadow: {base.shadow.radio.focusNeutral};
+  border-color: {base.color.neutral.600};
+}
+.ionic-radio[data-color="neutral"]:hover {
+  box-shadow: {base.shadow.radio.hoverNeutral};
+  border-color: {base.color.neutral.500};
+}
+.ionic-radio[data-color="neutral"]:checked {
+  border-color: {base.color.neutral.700};
+  background-color: {base.color.neutral.700};
+}
+.ionic-radio[data-color="neutral"]:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+  border-color: {base.color.neutral.200};
+  background-color: {base.color.neutral.100};
+}
+.ionic-radio[data-color="primary"] {
+  color: {base.color.primary.500};
+  border-color: {base.color.primary.500};
+  background-color: #FFFFFF;
+}
+.ionic-radio[data-color="primary"]:focus-visible {
+  box-shadow: {base.shadow.radio.focusPrimaryStrong};
+  border-color: {base.color.primary.700};
+}
+.ionic-radio[data-color="primary"]:hover {
+  box-shadow: {base.shadow.radio.hoverPrimaryStrong};
+  border-color: {base.color.primary.600};
+}
+.ionic-radio[data-color="primary"]:checked {
+  border-color: {base.color.primary.600};
+  background-color: {base.color.primary.500};
+}
+.ionic-radio[data-color="primary"]:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+  border-color: {base.color.primary.300};
+  background-color: {base.color.neutral.100};
+}
+.ionic-radio[data-size="lg"] {
+  width: 24px;
+  height: 24px;
+  font-family: Inter;
+  font-weight: 500;
+}
+.ionic-radio[data-size="md"] {
+  width: 20px;
+  height: 20px;
+  font-family: Inter;
+  font-weight: 500;
+}
+.ionic-radio[data-size="sm"] {
+  width: 16px;
+  height: 16px;
+  font-family: Inter;
+  font-weight: 500;
+}
+.ionic-select[data-appearance="ghost"] {
+  border-color: transparent;
+  border-style: none;
+  border-width: 0;
+  background-color: transparent;
+}
+.ionic-select[data-appearance="ghost"]:focus-visible {
+  box-shadow: {base.shadow.focus.ringGhost};
+  background-color: {base.color.neutral.100};
+}
+.ionic-select[data-appearance="ghost"]:hover {
+  background-color: {base.color.neutral.100};
+}
+.ionic-select[data-appearance="filled"] {
+  border-color: transparent;
+  border-style: solid;
+  border-width: 1px;
+  background-color: {base.color.neutral.100};
+}
+.ionic-select[data-appearance="filled"]:focus-visible {
+  border-color: {base.color.primary.500};
+  background-color: #FFFFFF;
+}
+.ionic-select[data-appearance="filled"]:hover {
+  background-color: {base.color.neutral.200};
+}
+.ionic-select[data-appearance="outline"] {
+  border-style: solid;
+  border-width: 1px;
+  background-color: transparent;
+}
+.ionic-select[data-color="muted"] {
+  color: {base.color.neutral.900};
+  border-color: {base.color.neutral.100};
+  background-color: {base.color.neutral.50};
+  placeholder-color: {base.color.neutral.600};
+  --select-field-label-color: {base.color.neutral.900};
+  --select-field-caption-color: {base.color.neutral.600};
+}
+.ionic-select[data-color="muted"]:focus-visible {
+  box-shadow: {base.shadow.focus.ringNeutral};
+  border-color: {base.color.neutral.400};
+}
+.ionic-select[data-color="muted"]:hover {
+  border-color: {base.color.neutral.200};
+}
+.ionic-select[data-color="muted"]:disabled {
+  color: {base.color.neutral.400};
+  cursor: not-allowed;
+  background-color: {base.color.neutral.100};
+}
+.ionic-select[data-color="default"] {
+  color: {base.color.neutral.900};
+  border-color: {base.color.neutral.200};
+  background-color: #FFFFFF;
+  placeholder-color: {base.color.neutral.600};
+  --select-field-label-color: {base.color.neutral.900};
+  --select-field-caption-color: {base.color.neutral.600};
+}
+.ionic-select[data-color="default"]:focus-visible {
+  box-shadow: {base.shadow.focus.ringPrimary};
+  border-color: {base.color.primary.500};
+}
+.ionic-select[data-color="default"]:hover {
+  border-color: {base.color.neutral.400};
+}
+.ionic-select[data-color="default"]:disabled {
+  color: {base.color.neutral.400};
+  cursor: not-allowed;
+  background-color: {base.color.neutral.100};
+}
+.ionic-select[data-color="primary"] {
+  color: {base.color.neutral.900};
+  border-color: {base.color.primary.500};
+  background-color: #FFFFFF;
+  placeholder-color: {base.color.neutral.600};
+  --select-field-label-color: {base.color.neutral.900};
+  --select-field-caption-color: {base.color.neutral.600};
+}
+.ionic-select[data-color="primary"]:focus-visible {
+  box-shadow: {base.shadow.focus.ringPrimaryStrong};
+  border-color: {base.color.primary.600};
+}
+.ionic-select[data-color="primary"]:hover {
+  border-color: {base.color.primary.600};
+}
+.ionic-select[data-color="primary"]:disabled {
+  color: {base.color.neutral.400};
+  cursor: not-allowed;
+  border-color: {base.color.neutral.200};
+  background-color: {base.color.neutral.100};
+}
+.ionic-select[data-shape="pill"] {
+  border-radius: 9999px;
+}
+.ionic-select[data-shape="sharp"] {
+  border-radius: 0;
+}
+.ionic-select[data-shape="rounded"] {
+  border-radius: 8px;
+}
+.ionic-select[data-size="lg"] {
+  height: 48px;
+  font-size: 16px;
+  font-family: Inter;
+  font-weight: 500;
+  line-height: 1.5;
+  padding-top: 12px;
+  padding-left: 16px;
+  padding-right: 36px;
+  padding-bottom: 12px;
+}
+.ionic-select[data-size="md"] {
+  height: 40px;
+  font-size: 14px;
+  font-family: Inter;
+  font-weight: 500;
+  line-height: 1.5;
+  padding-top: 8px;
+  padding-left: 12px;
+  padding-right: 32px;
+  padding-bottom: 8px;
+}
+.ionic-select[data-size="sm"] {
+  height: 32px;
+  font-size: 14px;
+  font-family: Inter;
+  font-weight: 500;
+  line-height: 1.4;
+  padding-top: 6px;
+  padding-left: 10px;
+  padding-right: 28px;
+  padding-bottom: 6px;
+}
+.ionic-select[data-state="invalid"] {
+  color: {base.color.neutral.900};
+  border-color: {base.color.danger.500};
+  border-style: solid;
+  border-width: 1px;
+  --select-field-caption-color: {base.color.danger.500};
+}
+.ionic-select[data-state="invalid"]:focus-visible {
+  box-shadow: {base.shadow.button.focusDanger};
+  border-color: {base.color.danger.500};
+}
+.ionic-select[data-state="invalid"]:hover {
+  border-color: {base.color.danger.500};
+}
+.ionic-select[data-state="required"] {
+  --select-required-indicator-color: {base.color.danger.500};
+}
+.ionic-skeleton[data-color="dark"] {
+  background-color: {base.color.neutral.400};
+}
+.ionic-skeleton[data-color="light"] {
+  background-color: {base.color.neutral.200};
+}
+.ionic-skeleton[data-color="medium"] {
+  background-color: {base.color.neutral.300};
+}
+.ionic-skeleton[data-size="lg"] {
+  height: 32px;
+  font-family: Inter;
+  font-weight: 400;
+}
+.ionic-skeleton[data-size="md"] {
+  height: 24px;
+  font-family: Inter;
+  font-weight: 400;
+}
+.ionic-skeleton[data-size="sm"] {
+  height: 16px;
+  font-family: Inter;
+  font-weight: 400;
+}
+.ionic-skeleton[data-size="xl"] {
+  height: 48px;
+  font-family: Inter;
+  font-weight: 400;
+}
+.ionic-skeleton[data-size="xs"] {
+  height: 12px;
+  font-family: Inter;
+  font-weight: 400;
+}
+.ionic-skeleton[data-variant="text"] {
+  border-radius: 4px;
+}
+.ionic-skeleton[data-variant="circle"] {
+  border-radius: 50%;
+}
+.ionic-skeleton[data-variant="rectangle"] {
+  border-radius: 8px;
+}
+.ionic-slider[data-color="info"] {
+  color: {base.color.info.500};
+  border-color: {base.color.info.500};
+  background-color: {base.color.neutral.100};
+}
+.ionic-slider[data-color="danger"] {
+  color: {base.color.danger.500};
+  border-color: {base.color.danger.500};
+  background-color: {base.color.neutral.100};
+}
+.ionic-slider[data-color="neutral"] {
+  color: {base.color.neutral.600};
+  border-color: {base.color.neutral.600};
+  background-color: {base.color.neutral.100};
+}
+.ionic-slider[data-color="primary"] {
+  color: {base.color.primary.500};
+  border-color: {base.color.primary.500};
+  background-color: {base.color.neutral.100};
+}
+.ionic-slider[data-color="success"] {
+  color: {base.color.success.500};
+  border-color: {base.color.success.500};
+  background-color: {base.color.neutral.100};
+}
+.ionic-slider[data-color="warning"] {
+  color: {base.color.warning.500};
+  border-color: {base.color.warning.500};
+  background-color: {base.color.neutral.100};
+}
+.ionic-slider[data-orientation="vertical"] {
+  flex-direction: column;
+}
+.ionic-slider[data-orientation="horizontal"] {
+  flex-direction: row;
+}
+.ionic-slider[data-size="lg"] {
+  width: 280px;
+  height: 8px;
+  font-family: Inter;
+  font-weight: 500;
+}
+.ionic-slider[data-size="md"] {
+  width: 200px;
+  height: 6px;
+  font-family: Inter;
+  font-weight: 500;
+}
+.ionic-slider[data-size="sm"] {
+  width: 150px;
+  height: 4px;
+  font-family: Inter;
+  font-weight: 500;
+}
+.ionic-spinner[data-color="info"] {
+  color: {base.color.info.500};
+  background-color: {base.color.neutral.100};
+}
+.ionic-spinner[data-color="white"] {
+  color: #FFFFFF;
+  background-color: {base.color.whiteAlpha30};
+}
+.ionic-spinner[data-color="danger"] {
+  color: {base.color.danger.500};
+  background-color: {base.color.neutral.100};
+}
+.ionic-spinner[data-color="neutral"] {
+  color: {base.color.neutral.600};
+  background-color: {base.color.neutral.100};
+}
+.ionic-spinner[data-color="primary"] {
+  color: {base.color.primary.500};
+  background-color: {base.color.neutral.100};
+}
+.ionic-spinner[data-color="success"] {
+  color: {base.color.success.500};
+  background-color: {base.color.neutral.100};
+}
+.ionic-spinner[data-color="warning"] {
+  color: {base.color.warning.500};
+  background-color: {base.color.neutral.100};
+}
+.ionic-spinner[data-color="secondary"] {
+  color: {base.color.neutral.600};
+  background-color: {base.color.neutral.100};
+}
+.ionic-spinner[data-size="lg"] {
+  width: 32px;
+  height: 32px;
+  font-family: Inter;
+  font-weight: 400;
+}
+.ionic-spinner[data-size="md"] {
+  width: 24px;
+  height: 24px;
+  font-family: Inter;
+  font-weight: 400;
+}
+.ionic-spinner[data-size="sm"] {
+  width: 16px;
+  height: 16px;
+  font-family: Inter;
+  font-weight: 400;
+}
+.ionic-switch[data-color="info"] {
+  color: #FFFFFF;
+  background-color: {base.color.neutral.300};
+}
+.ionic-switch[data-color="info"]:focus-visible {
+  box-shadow: {base.shadow.switch.focusInfo};
+}
+.ionic-switch[data-color="info"]:hover {
+  background-color: {base.color.neutral.400};
+}
+.ionic-switch[data-color="info"]:checked {
+  background-color: {base.color.info.500};
+}
+.ionic-switch[data-color="info"]:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+  background-color: {base.color.neutral.100};
+}
+.ionic-switch[data-color="danger"] {
+  color: #FFFFFF;
+  background-color: {base.color.neutral.300};
+}
+.ionic-switch[data-color="danger"]:focus-visible {
+  box-shadow: {base.shadow.switch.focusDanger};
+}
+.ionic-switch[data-color="danger"]:hover {
+  background-color: {base.color.neutral.400};
+}
+.ionic-switch[data-color="danger"]:checked {
+  background-color: {base.color.danger.500};
+}
+.ionic-switch[data-color="danger"]:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+  background-color: {base.color.neutral.100};
+}
+.ionic-switch[data-color="neutral"] {
+  color: #FFFFFF;
+  background-color: {base.color.neutral.300};
+}
+.ionic-switch[data-color="neutral"]:focus-visible {
+  box-shadow: {base.shadow.switch.focusNeutral};
+}
+.ionic-switch[data-color="neutral"]:hover {
+  background-color: {base.color.neutral.400};
+}
+.ionic-switch[data-color="neutral"]:checked {
+  background-color: {base.color.neutral.700};
+}
+.ionic-switch[data-color="neutral"]:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+  background-color: {base.color.neutral.100};
+}
+.ionic-switch[data-color="primary"] {
+  color: #FFFFFF;
+  background-color: {base.color.neutral.300};
+}
+.ionic-switch[data-color="primary"]:focus-visible {
+  box-shadow: {base.shadow.switch.focusPrimary};
+}
+.ionic-switch[data-color="primary"]:hover {
+  background-color: {base.color.neutral.400};
+}
+.ionic-switch[data-color="primary"]:checked {
+  background-color: {base.color.primary.500};
+}
+.ionic-switch[data-color="primary"]:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+  background-color: {base.color.neutral.100};
+}
+.ionic-switch[data-color="success"] {
+  color: #FFFFFF;
+  background-color: {base.color.neutral.300};
+}
+.ionic-switch[data-color="success"]:focus-visible {
+  box-shadow: {base.shadow.switch.focusSuccess};
+}
+.ionic-switch[data-color="success"]:hover {
+  background-color: {base.color.neutral.400};
+}
+.ionic-switch[data-color="success"]:checked {
+  background-color: {base.color.success.500};
+}
+.ionic-switch[data-color="success"]:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+  background-color: {base.color.neutral.100};
+}
+.ionic-switch[data-color="warning"] {
+  color: #FFFFFF;
+  background-color: {base.color.neutral.300};
+}
+.ionic-switch[data-color="warning"]:focus-visible {
+  box-shadow: {base.shadow.switch.focusWarning};
+}
+.ionic-switch[data-color="warning"]:hover {
+  background-color: {base.color.neutral.400};
+}
+.ionic-switch[data-color="warning"]:checked {
+  background-color: {base.color.warning.500};
+}
+.ionic-switch[data-color="warning"]:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+  background-color: {base.color.neutral.100};
+}
+.ionic-switch[data-size="lg"] {
+  width: 52px;
+  height: 28px;
+  font-family: Inter;
+  font-weight: 500;
+}
+.ionic-switch[data-size="md"] {
+  width: 44px;
+  height: 24px;
+  font-family: Inter;
+  font-weight: 500;
+}
+.ionic-switch[data-size="sm"] {
+  width: 36px;
+  height: 20px;
+  font-family: Inter;
+  font-weight: 500;
+}
+.ionic-tab[data-appearance="line"] {
+  font-family: Inter;
+  font-weight: 400;
+  border-radius: 0;
+  padding-bottom: 4px;
+  background-color: transparent;
+  border-bottom-color: {base.color.neutral.600};
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+}
+.ionic-tab[data-appearance="line"]:focus-visible {
+  outline: 2px solid {semantic.focus.ring};
+  outline-offset: -2px;
+}
+.ionic-tab[data-appearance="line"]:hover {
+  border-bottom-color: {base.color.neutral.400};
+}
+.ionic-tab[data-appearance="line"]:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+  pointer-events: {base.interaction.pointerEvents.none};
+}
+.ionic-tab[data-appearance="line"]:selected {
+  color: {base.color.primary.700};
+  font-weight: 500;
+  border-bottom-color: {base.color.primary.600};
+}
+.ionic-tab[data-appearance="pills"] {
+  font-family: Inter;
+  font-weight: 400;
+  border-radius: 9999px;
+  background-color: transparent;
+}
+.ionic-tab[data-appearance="pills"]:focus-visible {
+  outline: 2px solid {semantic.focus.ring};
+  outline-offset: 2px;
+}
+.ionic-tab[data-appearance="pills"]:hover {
+  background-color: {base.color.neutral.100};
+}
+.ionic-tab[data-appearance="pills"]:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+  pointer-events: {base.interaction.pointerEvents.none};
+}
+.ionic-tab[data-appearance="pills"]:selected {
+  color: {base.color.primary.700};
+  font-weight: 500;
+  background-color: {base.color.primary.100};
+}
+.ionic-tab[data-appearance="contained"] {
+  font-family: Inter;
+  font-weight: 400;
+  border-radius: 8px;
+  background-color: transparent;
+}
+.ionic-tab[data-appearance="contained"]:focus-visible {
+  outline: 2px solid {semantic.focus.ring};
+  outline-offset: 2px;
+}
+.ionic-tab[data-appearance="contained"]:hover {
+  background-color: {base.color.neutral.200};
+}
+.ionic-tab[data-appearance="contained"]:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+  pointer-events: {base.interaction.pointerEvents.none};
+}
+.ionic-tab[data-appearance="contained"]:selected {
+  color: {base.color.neutral.900};
+  box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  font-weight: 500;
+  border-radius: 8px;
+  background-color: #FFFFFF;
+}
+.ionic-tab[data-color="default"] {
+  color: {base.color.neutral.600};
+  font-family: Inter;
+  font-weight: 400;
+}
+.ionic-tab[data-color="default"]:hover {
+  color: {base.color.neutral.900};
+}
+.ionic-tab[data-color="default"]:disabled {
+  color: {base.color.neutral.400};
+  opacity: 0.5;
+}
+.ionic-tab[data-color="default"]:selected {
+  color: {base.color.neutral.900};
+  font-weight: 500;
+}
+.ionic-tab[data-color="neutral"] {
+  color: {base.color.neutral.500};
+  font-family: Inter;
+  font-weight: 400;
+}
+.ionic-tab[data-color="neutral"]:hover {
+  color: {base.color.neutral.600};
+}
+.ionic-tab[data-color="neutral"]:disabled {
+  opacity: 0.5;
+}
+.ionic-tab[data-color="neutral"]:selected {
+  color: {base.color.neutral.900};
+  font-weight: 500;
+}
+.ionic-tab[data-color="primary"] {
+  color: {base.color.primary.600};
+  font-family: Inter;
+  font-weight: 400;
+}
+.ionic-tab[data-color="primary"]:hover {
+  color: {base.color.primary.700};
+}
+.ionic-tab[data-color="primary"]:disabled {
+  opacity: 0.5;
+}
+.ionic-tab[data-color="primary"]:selected {
+  color: {base.color.primary.700};
+  font-weight: 500;
+}
+.ionic-tab[data-icon="leading"] {
+  gap: 4px;
+}
+.ionic-tab[data-orientation="vertical"] {
+  border-left-color: transparent;
+  border-left-style: solid;
+  border-left-width: 1px;
+  border-bottom-style: none;
+  border-bottom-width: 0;
+}
+.ionic-tab[data-size="lg"] {
+  padding: 10px 20px;
+  font-size: 16px;
+  font-family: Inter;
+  line-height: 1.5;
+}
+.ionic-tab[data-size="md"] {
+  padding: 8px 16px;
+  font-size: 14px;
+  font-family: Inter;
+  line-height: 1.5;
+}
+.ionic-tab[data-size="sm"] {
+  padding: 6px 12px;
+  font-size: {base.fontSize.tab.sm};
+  font-family: Inter;
+  line-height: 1.4;
+}
+.ionic-text[data-align="left"] {
+  text-align: left;
+}
+.ionic-text[data-align="right"] {
+  text-align: right;
+}
+.ionic-text[data-align="center"] {
+  text-align: center;
+}
+.ionic-text[data-color="muted"] {
+  color: {base.color.neutral.600};
+}
+.ionic-text[data-color="default"] {
+  color: {base.color.neutral.900};
+}
+.ionic-text[data-color="primary"] {
+  color: {base.color.primary.500};
+}
+.ionic-text[data-color="success"] {
+  color: {base.color.success.500};
+}
+.ionic-text[data-color="destructive"] {
+  color: {base.color.danger.500};
+}
+.ionic-text[data-size="lg"] {
+  font-size: 18px;
+  line-height: {base.lineHeight.lg};
+}
+.ionic-text[data-size="sm"] {
+  font-size: 14px;
+  line-height: {base.lineHeight.sm};
+}
+.ionic-text[data-size="xl"] {
+  font-size: 20px;
+  line-height: {base.lineHeight.xl};
+}
+.ionic-text[data-size="xs"] {
+  font-size: 12px;
+  line-height: {base.lineHeight.xs};
+}
+.ionic-text[data-size="2xl"] {
+  font-size: 24px;
+  line-height: {base.lineHeight.2xl};
+}
+.ionic-text[data-size="base"] {
+  font-size: {base.fontSize.base};
+  line-height: {base.lineHeight.base};
+}
+.ionic-text[data-weight="bold"] {
+  font-weight: 700;
+}
+.ionic-text[data-weight="medium"] {
+  font-weight: 500;
+}
+.ionic-text[data-weight="normal"] {
+  font-weight: 400;
+}
+.ionic-text[data-weight="semibold"] {
+  font-weight: 600;
+}
+.ionic-textarea[data-color="muted"] {
+  color: {base.color.neutral.600};
+  border-color: {base.color.neutral.100};
+  background-color: {base.color.neutral.50};
+  placeholder-color: {base.color.neutral.500};
+}
+.ionic-textarea[data-color="muted"]:focus-visible {
+  box-shadow: {base.shadow.focus.ringNeutral};
+  border-color: {base.color.neutral.400};
+}
+.ionic-textarea[data-color="muted"]:hover {
+  border-color: {base.color.neutral.200};
+}
+.ionic-textarea[data-color="muted"]:disabled {
+  color: {base.color.neutral.400};
+  cursor: not-allowed;
+  background-color: {base.color.neutral.100};
+}
+.ionic-textarea[data-color="default"] {
+  color: {base.color.neutral.900};
+  border-color: {base.color.neutral.200};
+  background-color: #FFFFFF;
+  placeholder-color: {base.color.neutral.500};
+}
+.ionic-textarea[data-color="default"]:focus-visible {
+  box-shadow: {base.shadow.focus.ringSoft};
+  border-color: {base.color.primary.500};
+}
+.ionic-textarea[data-color="default"]:hover {
+  border-color: {base.color.neutral.400};
+}
+.ionic-textarea[data-color="default"]:disabled {
+  color: {base.color.neutral.400};
+  cursor: not-allowed;
+  background-color: {base.color.neutral.100};
+}
+.ionic-textarea[data-color="primary"] {
+  color: {base.color.neutral.900};
+  border-color: {base.color.primary.500};
+  background-color: #FFFFFF;
+  placeholder-color: {base.color.neutral.500};
+}
+.ionic-textarea[data-color="primary"]:focus-visible {
+  box-shadow: {base.shadow.focus.ringSoft};
+  border-color: {base.color.primary.600};
+}
+.ionic-textarea[data-color="primary"]:hover {
+  border-color: {base.color.primary.600};
+}
+.ionic-textarea[data-color="primary"]:disabled {
+  color: {base.color.neutral.400};
+  cursor: not-allowed;
+  background-color: {base.color.neutral.100};
+}
+.ionic-textarea[data-shape="pill"] {
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 9999px;
+}
+.ionic-textarea[data-shape="sharp"] {
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 0;
+}
+.ionic-textarea[data-shape="rounded"] {
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 8px;
+}
+.ionic-textarea[data-size="lg"] {
+  padding: {base.spacing.md} {base.spacing.lg};
+  font-size: 18px;
+  min-height: 120px;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: 1.6;
+}
+.ionic-textarea[data-size="md"] {
+  padding: {base.spacing.sm} {base.spacing.md};
+  font-size: 16px;
+  min-height: 80px;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: 1.5;
+}
+.ionic-textarea[data-size="sm"] {
+  padding: {base.spacing.xs} {base.spacing.sm};
+  font-size: 14px;
+  min-height: 60px;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: 1.4;
+}
+.ionic-toast[data-position="top-left"] {
+  top: 16px;
+  left: 16px;
+  right: auto;
+  bottom: auto;
+}
+.ionic-toast[data-position="top-right"] {
+  top: 16px;
+  left: auto;
+  right: 16px;
+  bottom: auto;
+}
+.ionic-toast[data-position="top-center"] {
+  top: 16px;
+  left: 50%;
+  right: auto;
+  bottom: auto;
+  transform: translateX(-50%);
+}
+.ionic-toast[data-position="bottom-left"] {
+  top: auto;
+  left: 16px;
+  right: auto;
+  bottom: 16px;
+}
+.ionic-toast[data-position="bottom-right"] {
+  top: auto;
+  left: auto;
+  right: 16px;
+  bottom: 16px;
+}
+.ionic-toast[data-position="bottom-center"] {
+  top: auto;
+  left: 50%;
+  right: auto;
+  bottom: 16px;
+  transform: translateX(-50%);
+}
+.ionic-toast[data-size="lg"] {
+  padding: 20px 24px;
+  max-width: 480px;
+  min-width: 380px;
+}
+.ionic-toast[data-size="md"] {
+  padding: 16px 20px;
+  max-width: 400px;
+  min-width: 320px;
+}
+.ionic-toast[data-size="sm"] {
+  padding: 12px 16px;
+  max-width: 320px;
+  min-width: 280px;
+}
+.ionic-toast[data-type="info"] {
+  color: {base.color.primary.100};
+  font-family: Inter;
+  font-weight: 400;
+  border-color: {base.color.primary.500};
+  background-color: {base.color.primary.900};
+}
+.ionic-toast[data-type="error"] {
+  color: {base.color.danger.100};
+  font-family: Inter;
+  font-weight: 400;
+  border-color: {base.color.danger.500};
+  background-color: {base.color.danger.900};
+}
+.ionic-toast[data-type="default"] {
+  color: {base.color.neutral.50};
+  font-family: Inter;
+  font-weight: 400;
+  border-color: {base.color.neutral.600};
+  background-color: {base.color.neutral.800};
+}
+.ionic-toast[data-type="success"] {
+  color: {base.color.success.100};
+  font-family: Inter;
+  font-weight: 400;
+  border-color: {base.color.success.600};
+  background-color: {base.color.success.800};
+}
+.ionic-toast[data-type="warning"] {
+  color: {base.color.warning.100};
+  font-family: Inter;
+  font-weight: 400;
+  border-color: {base.color.warning.600};
+  background-color: {base.color.warning.800};
+}
+.ionic-togglebutton[data-appearance="ghost"] {
+  border-color: transparent;
+  border-style: none;
+  border-width: 0;
+  border-radius: 8px;
+  background-color: transparent;
+}
+.ionic-togglebutton[data-appearance="ghost"]:focus-visible {
+  outline: 2px solid {semantic.focus.ring};
+  outline-offset: 2px;
+}
+.ionic-togglebutton[data-appearance="ghost"]:hover {
+  background-color: {base.color.neutral.100};
+}
+.ionic-togglebutton[data-appearance="ghost"]:active {
+  color: {base.color.primary.700};
+  background-color: {base.color.primary.100};
+}
+.ionic-togglebutton[data-appearance="ghost"]:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+  pointer-events: {base.interaction.pointerEvents.none};
+}
+.ionic-togglebutton[data-appearance="filled"] {
+  border-color: transparent;
+  border-style: none;
+  border-width: 0;
+  border-radius: 8px;
+  background-color: {base.color.neutral.100};
+}
+.ionic-togglebutton[data-appearance="filled"]:focus-visible {
+  outline: 2px solid {semantic.focus.ring};
+  outline-offset: 2px;
+}
+.ionic-togglebutton[data-appearance="filled"]:hover {
+  background-color: {base.color.neutral.200};
+}
+.ionic-togglebutton[data-appearance="filled"]:active {
+  color: #FFFFFF;
+  background-color: {base.color.primary.500};
+}
+.ionic-togglebutton[data-appearance="filled"]:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+  pointer-events: {base.interaction.pointerEvents.none};
+}
+.ionic-togglebutton[data-appearance="outline"] {
+  border-color: {base.color.neutral.200};
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 8px;
+  background-color: transparent;
+}
+.ionic-togglebutton[data-appearance="outline"]:focus-visible {
+  outline: 2px solid {semantic.focus.ring};
+  outline-offset: 2px;
+}
+.ionic-togglebutton[data-appearance="outline"]:hover {
+  border-color: {base.color.neutral.400};
+  background-color: {base.color.neutral.100};
+}
+.ionic-togglebutton[data-appearance="outline"]:active {
+  color: {base.color.primary.700};
+  border-color: {base.color.primary.500};
+  background-color: {base.color.primary.100};
+}
+.ionic-togglebutton[data-appearance="outline"]:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+  pointer-events: {base.interaction.pointerEvents.none};
+}
+.ionic-togglebutton[data-color="danger"] {
+  color: {base.color.red.600};
+  background-color: transparent;
+}
+.ionic-togglebutton[data-color="danger"]:hover {
+  color: {base.color.red.700};
+}
+.ionic-togglebutton[data-color="danger"]:active {
+  color: {base.color.red.800};
+  background-color: {base.color.red.100};
+}
+.ionic-togglebutton[data-color="default"] {
+  color: {base.color.neutral.600};
+  background-color: transparent;
+}
+.ionic-togglebutton[data-color="default"]:hover {
+  color: {base.color.neutral.900};
+}
+.ionic-togglebutton[data-color="default"]:active {
+  color: {base.color.primary.700};
+}
+.ionic-togglebutton[data-color="primary"] {
+  color: {base.color.primary.600};
+  background-color: transparent;
+}
+.ionic-togglebutton[data-color="primary"]:hover {
+  color: {base.color.primary.700};
+}
+.ionic-togglebutton[data-color="primary"]:active {
+  color: {base.color.primary.800};
+  background-color: {base.color.primary.100};
+}
+.ionic-togglebutton[data-color="success"] {
+  color: {base.color.success.600};
+  background-color: transparent;
+}
+.ionic-togglebutton[data-color="success"]:hover {
+  color: {base.color.success.700};
+}
+.ionic-togglebutton[data-color="success"]:active {
+  color: {base.color.success.800};
+  background-color: {base.color.success.100};
+}
+.ionic-togglebutton[data-color="warning"] {
+  color: {base.color.warning.600};
+  background-color: transparent;
+}
+.ionic-togglebutton[data-color="warning"]:hover {
+  color: {base.color.warning.700};
+}
+.ionic-togglebutton[data-color="warning"]:active {
+  color: {base.color.warning.800};
+  background-color: {base.color.warning.100};
+}
+.ionic-togglebutton[data-size="lg"] {
+  gap: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-family: Inter;
+  font-weight: 500;
+  line-height: 1.5;
+}
+.ionic-togglebutton[data-size="md"] {
+  gap: 8px;
+  padding: 8px 16px;
+  font-size: 14px;
+  font-family: Inter;
+  font-weight: 500;
+  line-height: 1.5;
+}
+.ionic-togglebutton[data-size="sm"] {
+  gap: 6px;
+  padding: 6px 12px;
+  font-size: {base.fontSize.tab.sm};
+  font-family: Inter;
+  font-weight: 500;
+  line-height: 1.4;
+}
+.ionic-tooltip[data-color="dark"] {
+  color: #FFFFFF;
+  font-size: 12px;
+  max-width: 240px;
+  padding-x: 8px;
+  padding-y: 4px;
+  font-family: Inter;
+  font-weight: 400;
+  background-color: {base.color.neutral.900};
+}
+.ionic-tooltip[data-color="light"] {
+  color: {base.color.neutral.900};
+  font-size: 12px;
+  max-width: 240px;
+  padding-x: 8px;
+  padding-y: 4px;
+  font-family: Inter;
+  font-weight: 400;
+  border-color: {base.color.neutral.200};
+  border-style: solid;
+  border-width: 1px;
+  background-color: #FFFFFF;
+}
+.ionic-tooltip[data-color="danger"] {
+  color: #FFFFFF;
+  font-size: 12px;
+  max-width: 240px;
+  padding-x: 8px;
+  padding-y: 4px;
+  font-family: Inter;
+  font-weight: 400;
+  background-color: {base.color.danger.500};
+}
+.ionic-tooltip[data-color="primary"] {
+  color: #FFFFFF;
+  font-size: 12px;
+  max-width: 240px;
+  padding-x: 8px;
+  padding-y: 4px;
+  font-family: Inter;
+  font-weight: 400;
+  background-color: {base.color.primary.500};
+}
+.ionic-tooltip[data-shape="sharp"] {
+  border-radius: 0;
+}
+.ionic-tooltip[data-shape="rounded"] {
+  border-radius: 4px;
+}
+.ionic-tooltip[data-size="lg"] {
+  font-size: 14px;
+  max-width: 240px;
+  padding-x: 12px;
+  padding-y: 8px;
+  font-family: Inter;
+  font-weight: 400;
+}
+.ionic-tooltip[data-size="md"] {
+  font-size: {base.fontSize.tab.sm};
+  max-width: 240px;
+  padding-x: 8px;
+  padding-y: 4px;
+  font-family: Inter;
+  font-weight: 400;
+}
+.ionic-tooltip[data-size="sm"] {
+  font-size: 12px;
+  max-width: 240px;
+  padding-x: 8px;
+  padding-y: 4px;
+  font-family: Inter;
+  font-weight: 400;
+}
