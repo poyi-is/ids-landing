@@ -1,5 +1,5 @@
 /* Ionic Design System — Default DS (Clean) */
-/* Generated 2026-04-09T04:39:01.754Z */
+/* Generated 2026-04-09T04:51:13.051Z */
 /* Usage: <link rel="stylesheet" href="https://ionic-design-system.github.io/ids-landing/styles/default.css"> */
 
 /* ========================= */
@@ -1426,7 +1426,7 @@
 .ionic-checkbox[data-color="default"]:hover {
   border-color: #79a3e7 !important;
 }
-.ionic-checkbox[data-color="default"]:checked {
+.ionic-checkbox[data-color="default"][aria-checked="true"], .ionic-checkbox[data-color="default"]:checked {
   border-color: #3B82F6 !important;
   background-color: #3B82F6 !important;
 }
@@ -1947,7 +1947,7 @@
   box-shadow: 0 0 0 2px #e2e5eb !important;
   border-color: #79a3e7 !important;
 }
-.ionic-radio[data-color="default"]:checked {
+.ionic-radio[data-color="default"][aria-checked="true"], .ionic-radio[data-color="default"]:checked {
   border-color: #3B82F6 !important;
   background-color: #3B82F6 !important;
 }
@@ -1970,7 +1970,7 @@
   box-shadow: 0 0 0 2px #F3F4F6 !important;
   border-color: #6B7280 !important;
 }
-.ionic-radio[data-color="neutral"]:checked {
+.ionic-radio[data-color="neutral"][aria-checked="true"], .ionic-radio[data-color="neutral"]:checked {
   border-color: #374151 !important;
   background-color: #374151 !important;
 }
@@ -1993,7 +1993,7 @@
   box-shadow: 0 0 0 2px #e2e5eb !important;
   border-color: #1669f1 !important;
 }
-.ionic-radio[data-color="primary"]:checked {
+.ionic-radio[data-color="primary"][aria-checked="true"], .ionic-radio[data-color="primary"]:checked {
   border-color: #1669f1 !important;
   background-color: #3B82F6 !important;
 }
@@ -2329,7 +2329,7 @@
 .ionic-switch[data-color="info"]:hover {
   background-color: #9CA3AF !important;
 }
-.ionic-switch[data-color="info"]:checked {
+.ionic-switch[data-color="info"][aria-checked="true"], .ionic-switch[data-color="info"]:checked {
   background-color: #0284C7 !important;
 }
 .ionic-switch[data-color="info"]:disabled {
@@ -2347,7 +2347,7 @@
 .ionic-switch[data-color="danger"]:hover {
   background-color: #9CA3AF !important;
 }
-.ionic-switch[data-color="danger"]:checked {
+.ionic-switch[data-color="danger"][aria-checked="true"], .ionic-switch[data-color="danger"]:checked {
   background-color: #DC2626 !important;
 }
 .ionic-switch[data-color="danger"]:disabled {
@@ -2365,7 +2365,7 @@
 .ionic-switch[data-color="neutral"]:hover {
   background-color: #9CA3AF !important;
 }
-.ionic-switch[data-color="neutral"]:checked {
+.ionic-switch[data-color="neutral"][aria-checked="true"], .ionic-switch[data-color="neutral"]:checked {
   background-color: #374151 !important;
 }
 .ionic-switch[data-color="neutral"]:disabled {
@@ -2383,7 +2383,7 @@
 .ionic-switch[data-color="primary"]:hover {
   background-color: #9CA3AF !important;
 }
-.ionic-switch[data-color="primary"]:checked {
+.ionic-switch[data-color="primary"][aria-checked="true"], .ionic-switch[data-color="primary"]:checked {
   background-color: #3B82F6 !important;
 }
 .ionic-switch[data-color="primary"]:disabled {
@@ -2401,7 +2401,7 @@
 .ionic-switch[data-color="success"]:hover {
   background-color: #9CA3AF !important;
 }
-.ionic-switch[data-color="success"]:checked {
+.ionic-switch[data-color="success"][aria-checked="true"], .ionic-switch[data-color="success"]:checked {
   background-color: #16A34A !important;
 }
 .ionic-switch[data-color="success"]:disabled {
@@ -2419,7 +2419,7 @@
 .ionic-switch[data-color="warning"]:hover {
   background-color: #9CA3AF !important;
 }
-.ionic-switch[data-color="warning"]:checked {
+.ionic-switch[data-color="warning"][aria-checked="true"], .ionic-switch[data-color="warning"]:checked {
   background-color: #F59E0B !important;
 }
 .ionic-switch[data-color="warning"]:disabled {
