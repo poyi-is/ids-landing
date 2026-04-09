@@ -1,5 +1,5 @@
 /* Ionic Design System — Default DS (Clean) */
-/* Generated 2026-04-09T04:05:36.088Z */
+/* Generated 2026-04-09T04:39:01.754Z */
 /* Usage: <link rel="stylesheet" href="https://ionic-design-system.github.io/ids-landing/styles/default.css"> */
 
 /* ========================= */
@@ -492,2570 +492,2570 @@
 /* Component Variant Styles  */
 /* ========================= */
 .ionic-alert[data-appearance="solid"] {
-  color: #FFFFFF;
+  color: #FFFFFF !important;
 }
 .ionic-alert[data-appearance="solid"][data-intent="info"] {
-  color: #FFFFFF;
-  border-color: #0284C7;
-  background-color: #0284C7;
+  color: #FFFFFF !important;
+  border-color: #0284C7 !important;
+  background-color: #0284C7 !important;
 }
 .ionic-alert[data-appearance="solid"][data-intent="danger"] {
-  color: #FFFFFF;
-  border-color: #DC2626;
-  background-color: #DC2626;
+  color: #FFFFFF !important;
+  border-color: #DC2626 !important;
+  background-color: #DC2626 !important;
 }
 .ionic-alert[data-appearance="solid"][data-intent="neutral"] {
-  color: #FFFFFF;
-  border-color: #374151;
-  background-color: #374151;
+  color: #FFFFFF !important;
+  border-color: #374151 !important;
+  background-color: #374151 !important;
 }
 .ionic-alert[data-appearance="solid"][data-intent="success"] {
-  color: #FFFFFF;
-  border-color: #16A34A;
-  background-color: #16A34A;
+  color: #FFFFFF !important;
+  border-color: #16A34A !important;
+  background-color: #16A34A !important;
 }
 .ionic-alert[data-appearance="solid"][data-intent="warning"] {
-  color: #78350F;
-  border-color: #F59E0B;
-  background-color: #F59E0B;
+  color: #78350F !important;
+  border-color: #F59E0B !important;
+  background-color: #F59E0B !important;
 }
 .ionic-alert[data-appearance="outline"] {
-  border-style: solid;
-  border-width: 1px;
-  background-color: transparent;
+  border-style: solid !important;
+  border-width: 1px !important;
+  background-color: transparent !important;
 }
 .ionic-alert[data-appearance="outline"][data-intent="info"] {
-  color: #075985;
-  border-color: #BAE6FD;
-  background-color: transparent;
+  color: #075985 !important;
+  border-color: #BAE6FD !important;
+  background-color: transparent !important;
 }
 .ionic-alert[data-appearance="outline"][data-intent="danger"] {
-  color: #991B1B;
-  border-color: #FECACA;
-  background-color: transparent;
+  color: #991B1B !important;
+  border-color: #FECACA !important;
+  background-color: transparent !important;
 }
 .ionic-alert[data-appearance="outline"][data-intent="neutral"] {
-  color: #4B5563;
-  border-color: #E5E7EB;
-  background-color: transparent;
+  color: #4B5563 !important;
+  border-color: #E5E7EB !important;
+  background-color: transparent !important;
 }
 .ionic-alert[data-appearance="outline"][data-intent="success"] {
-  color: #166534;
-  border-color: #BBF7D0;
-  background-color: transparent;
+  color: #166534 !important;
+  border-color: #BBF7D0 !important;
+  background-color: transparent !important;
 }
 .ionic-alert[data-appearance="outline"][data-intent="warning"] {
-  color: #B45309;
-  border-color: #FDE68A;
-  background-color: transparent;
+  color: #B45309 !important;
+  border-color: #FDE68A !important;
+  background-color: transparent !important;
 }
 .ionic-alert[data-intent="info"] {
-  gap: 8px;
-  color: #0C4A6E;
-  font-size: 14px;
-  padding-x: 16px;
-  padding-y: 8px;
-  font-family: Inter;
-  font-weight: 400;
-  border-color: #BAE6FD;
-  background-color: #F0F9FF;
+  gap: 8px !important;
+  color: #0C4A6E !important;
+  font-size: 14px !important;
+  padding-x: 16px !important;
+  padding-y: 8px !important;
+  font-family: Inter !important;
+  font-weight: 400 !important;
+  border-color: #BAE6FD !important;
+  background-color: #F0F9FF !important;
 }
 .ionic-alert[data-intent="danger"] {
-  gap: 8px;
-  color: #7F1D1D;
-  font-size: 14px;
-  padding-x: 16px;
-  padding-y: 8px;
-  font-family: Inter;
-  font-weight: 400;
-  border-color: #FECACA;
-  background-color: #FEF2F2;
+  gap: 8px !important;
+  color: #7F1D1D !important;
+  font-size: 14px !important;
+  padding-x: 16px !important;
+  padding-y: 8px !important;
+  font-family: Inter !important;
+  font-weight: 400 !important;
+  border-color: #FECACA !important;
+  background-color: #FEF2F2 !important;
 }
 .ionic-alert[data-intent="neutral"] {
-  gap: 8px;
-  color: #4B5563;
-  font-size: 14px;
-  padding-x: 16px;
-  padding-y: 8px;
-  font-family: Inter;
-  font-weight: 400;
-  border-color: #E5E7EB;
-  background-color: #F9FAFB;
+  gap: 8px !important;
+  color: #4B5563 !important;
+  font-size: 14px !important;
+  padding-x: 16px !important;
+  padding-y: 8px !important;
+  font-family: Inter !important;
+  font-weight: 400 !important;
+  border-color: #E5E7EB !important;
+  background-color: #F9FAFB !important;
 }
 .ionic-alert[data-intent="success"] {
-  gap: 8px;
-  color: #14532D;
-  font-size: 14px;
-  padding-x: 16px;
-  padding-y: 8px;
-  font-family: Inter;
-  font-weight: 400;
-  border-color: #BBF7D0;
-  background-color: #F0FDF4;
+  gap: 8px !important;
+  color: #14532D !important;
+  font-size: 14px !important;
+  padding-x: 16px !important;
+  padding-y: 8px !important;
+  font-family: Inter !important;
+  font-weight: 400 !important;
+  border-color: #BBF7D0 !important;
+  background-color: #F0FDF4 !important;
 }
 .ionic-alert[data-intent="warning"] {
-  gap: 8px;
-  color: #92400E;
-  font-size: 14px;
-  padding-x: 16px;
-  padding-y: 8px;
-  font-family: Inter;
-  font-weight: 400;
-  border-color: #FDE68A;
-  background-color: #FFFBEB;
+  gap: 8px !important;
+  color: #92400E !important;
+  font-size: 14px !important;
+  padding-x: 16px !important;
+  padding-y: 8px !important;
+  font-family: Inter !important;
+  font-weight: 400 !important;
+  border-color: #FDE68A !important;
+  background-color: #FFFBEB !important;
 }
 .ionic-alert[data-shape="sharp"] {
-  border-radius: 0;
+  border-radius: 0 !important;
 }
 .ionic-alert[data-shape="rounded"] {
-  border-radius: 8px;
+  border-radius: 8px !important;
 }
 .ionic-avatar[data-color="default"] {
-  color: #4B5563;
-  background-color: #F3F4F6;
+  color: #4B5563 !important;
+  background-color: #F3F4F6 !important;
 }
 .ionic-avatar[data-color="neutral"] {
-  color: #4B5563;
-  background-color: #E5E7EB;
+  color: #4B5563 !important;
+  background-color: #E5E7EB !important;
 }
 .ionic-avatar[data-color="primary"] {
-  color: #1054c2;
-  background-color: #e2e5eb;
+  color: #1054c2 !important;
+  background-color: #e2e5eb !important;
 }
 .ionic-avatar[data-shape="sharp"] {
-  border-radius: 0;
+  border-radius: 0 !important;
 }
 .ionic-avatar[data-shape="circle"] {
-  border-radius: 9999px;
+  border-radius: 9999px !important;
 }
 .ionic-avatar[data-shape="rounded"] {
-  border-radius: 8px;
+  border-radius: 8px !important;
 }
 .ionic-avatar[data-size="lg"] {
-  width: 40px;
-  height: 40px;
-  font-size: 16px;
-  font-family: Inter;
-  font-weight: 500;
+  width: 40px !important;
+  height: 40px !important;
+  font-size: 16px !important;
+  font-family: Inter !important;
+  font-weight: 500 !important;
 }
 .ionic-avatar[data-size="md"] {
-  width: 32px;
-  height: 32px;
-  font-size: 14px;
-  font-family: Inter;
-  font-weight: 500;
+  width: 32px !important;
+  height: 32px !important;
+  font-size: 14px !important;
+  font-family: Inter !important;
+  font-weight: 500 !important;
 }
 .ionic-avatar[data-size="sm"] {
-  width: 24px;
-  height: 24px;
-  font-size: 12px;
-  font-family: Inter;
-  font-weight: 500;
+  width: 24px !important;
+  height: 24px !important;
+  font-size: 12px !important;
+  font-family: Inter !important;
+  font-weight: 500 !important;
 }
 .ionic-avatar[data-size="xl"] {
-  width: 56px;
-  height: 56px;
-  font-size: 20px;
-  font-family: Inter;
-  font-weight: 500;
+  width: 56px !important;
+  height: 56px !important;
+  font-size: 20px !important;
+  font-family: Inter !important;
+  font-weight: 500 !important;
 }
 .ionic-badge[data-variant="soft"] {
-  display: inline-flex;
-  align-items: center;
-  font-family: Inter;
-  font-weight: 500;
-  line-height: 1.25;
+  display: inline-flex !important;
+  align-items: center !important;
+  font-family: Inter !important;
+  font-weight: 500 !important;
+  line-height: 1.25 !important;
 }
 .ionic-badge[data-variant="soft"][data-color="info"] {
-  color: #082F49;
-  border-color: #7DD3FC;
-  background-color: #BAE6FD;
+  color: #082F49 !important;
+  border-color: #7DD3FC !important;
+  background-color: #BAE6FD !important;
 }
 .ionic-badge[data-variant="soft"][data-color="danger"] {
-  color: #450A0A;
-  border-color: #FCA5A5;
-  background-color: #FECACA;
+  color: #450A0A !important;
+  border-color: #FCA5A5 !important;
+  background-color: #FECACA !important;
 }
 .ionic-badge[data-variant="soft"][data-color="default"] {
-  color: #4B5563;
-  border-color: #D1D5DB;
-  background-color: #E5E7EB;
+  color: #4B5563 !important;
+  border-color: #D1D5DB !important;
+  background-color: #E5E7EB !important;
 }
 .ionic-badge[data-variant="soft"][data-color="primary"] {
-  color: #0c2a5c;
-  border-color: #a5bce2;
-  background-color: #cad4e4;
+  color: #0c2a5c !important;
+  border-color: #a5bce2 !important;
+  background-color: #cad4e4 !important;
 }
 .ionic-badge[data-variant="soft"][data-color="success"] {
-  color: #134E2A;
-  border-color: #86EFAC;
-  background-color: #BBF7D0;
+  color: #134E2A !important;
+  border-color: #86EFAC !important;
+  background-color: #BBF7D0 !important;
 }
 .ionic-badge[data-variant="soft"][data-color="warning"] {
-  color: #78350F;
-  border-color: #FCD34D;
-  background-color: #FDE68A;
+  color: #78350F !important;
+  border-color: #FCD34D !important;
+  background-color: #FDE68A !important;
 }
 .ionic-badge[data-variant="solid"] {
-  display: inline-flex;
-  align-items: center;
-  font-family: Inter;
-  font-weight: 500;
-  line-height: 1.25;
+  display: inline-flex !important;
+  align-items: center !important;
+  font-family: Inter !important;
+  font-weight: 500 !important;
+  line-height: 1.25 !important;
 }
 .ionic-badge[data-variant="solid"][data-color="info"] {
-  color: #FFFFFF;
-  border-color: #0284C7;
-  background-color: #0284C7;
+  color: #FFFFFF !important;
+  border-color: #0284C7 !important;
+  background-color: #0284C7 !important;
 }
 .ionic-badge[data-variant="solid"][data-color="danger"] {
-  color: #FFFFFF;
-  border-color: #DC2626;
-  background-color: #DC2626;
+  color: #FFFFFF !important;
+  border-color: #DC2626 !important;
+  background-color: #DC2626 !important;
 }
 .ionic-badge[data-variant="solid"][data-color="default"] {
-  color: #FFFFFF;
-  border-color: #374151;
-  background-color: #374151;
+  color: #FFFFFF !important;
+  border-color: #374151 !important;
+  background-color: #374151 !important;
 }
 .ionic-badge[data-variant="solid"][data-color="primary"] {
-  color: #FFFFFF;
-  border-color: #3B82F6;
-  background-color: #3B82F6;
+  color: #FFFFFF !important;
+  border-color: #3B82F6 !important;
+  background-color: #3B82F6 !important;
 }
 .ionic-badge[data-variant="solid"][data-color="success"] {
-  color: #FFFFFF;
-  border-color: #16A34A;
-  background-color: #16A34A;
+  color: #FFFFFF !important;
+  border-color: #16A34A !important;
+  background-color: #16A34A !important;
 }
 .ionic-badge[data-variant="solid"][data-color="warning"] {
-  color: #78350F;
-  border-color: #F59E0B;
-  background-color: #F59E0B;
+  color: #78350F !important;
+  border-color: #F59E0B !important;
+  background-color: #F59E0B !important;
 }
 .ionic-badge[data-variant="outline"] {
-  display: inline-flex;
-  align-items: center;
-  font-family: Inter;
-  font-weight: 500;
-  line-height: 1.25;
-  border-style: solid;
-  border-width: 1px;
-  background-color: transparent;
+  display: inline-flex !important;
+  align-items: center !important;
+  font-family: Inter !important;
+  font-weight: 500 !important;
+  line-height: 1.25 !important;
+  border-style: solid !important;
+  border-width: 1px !important;
+  background-color: transparent !important;
 }
 .ionic-badge[data-variant="outline"][data-color="info"] {
-  color: #0C4A6E;
-  border-color: #0284C7;
-  border-width: 1px;
-  background-color: transparent;
+  color: #0C4A6E !important;
+  border-color: #0284C7 !important;
+  border-width: 1px !important;
+  background-color: transparent !important;
 }
 .ionic-badge[data-variant="outline"][data-color="danger"] {
-  color: #7F1D1D;
-  border-color: #DC2626;
-  border-width: 1px;
-  background-color: transparent;
+  color: #7F1D1D !important;
+  border-color: #DC2626 !important;
+  border-width: 1px !important;
+  background-color: transparent !important;
 }
 .ionic-badge[data-variant="outline"][data-color="default"] {
-  color: #4B5563;
-  border-color: #E5E7EB;
-  border-width: 1px;
-  background-color: transparent;
+  color: #4B5563 !important;
+  border-color: #E5E7EB !important;
+  border-width: 1px !important;
+  background-color: transparent !important;
 }
 .ionic-badge[data-variant="outline"][data-color="primary"] {
-  color: #0f3f8e;
-  border-color: #3B82F6;
-  border-width: 1px;
-  background-color: transparent;
+  color: #0f3f8e !important;
+  border-color: #3B82F6 !important;
+  border-width: 1px !important;
+  background-color: transparent !important;
 }
 .ionic-badge[data-variant="outline"][data-color="success"] {
-  color: #14532D;
-  border-color: #16A34A;
-  border-width: 1px;
-  background-color: transparent;
+  color: #14532D !important;
+  border-color: #16A34A !important;
+  border-width: 1px !important;
+  background-color: transparent !important;
 }
 .ionic-badge[data-variant="outline"][data-color="warning"] {
-  color: #92400E;
-  border-color: #F59E0B;
-  border-width: 1px;
-  background-color: transparent;
+  color: #92400E !important;
+  border-color: #F59E0B !important;
+  border-width: 1px !important;
+  background-color: transparent !important;
 }
 .ionic-badge[data-color="info"] {
-  color: #082F49;
-  border-color: #7DD3FC;
-  background-color: #BAE6FD;
+  color: #082F49 !important;
+  border-color: #7DD3FC !important;
+  background-color: #BAE6FD !important;
 }
 .ionic-badge[data-color="danger"] {
-  color: #450A0A;
-  border-color: #FCA5A5;
-  background-color: #FECACA;
+  color: #450A0A !important;
+  border-color: #FCA5A5 !important;
+  background-color: #FECACA !important;
 }
 .ionic-badge[data-color="default"] {
-  color: #4B5563;
-  border-color: #D1D5DB;
-  background-color: #E5E7EB;
+  color: #4B5563 !important;
+  border-color: #D1D5DB !important;
+  background-color: #E5E7EB !important;
 }
 .ionic-badge[data-color="primary"] {
-  color: #0c2a5c;
-  border-color: #a5bce2;
-  background-color: #cad4e4;
+  color: #0c2a5c !important;
+  border-color: #a5bce2 !important;
+  background-color: #cad4e4 !important;
 }
 .ionic-badge[data-color="success"] {
-  color: #134E2A;
-  border-color: #86EFAC;
-  background-color: #BBF7D0;
+  color: #134E2A !important;
+  border-color: #86EFAC !important;
+  background-color: #BBF7D0 !important;
 }
 .ionic-badge[data-color="warning"] {
-  color: #78350F;
-  border-color: #FCD34D;
-  background-color: #FDE68A;
+  color: #78350F !important;
+  border-color: #FCD34D !important;
+  background-color: #FDE68A !important;
 }
 .ionic-badge[data-shape="pill"] {
-  border-radius: 9999px;
+  border-radius: 9999px !important;
 }
 .ionic-badge[data-shape="sharp"] {
-  border-radius: 0;
+  border-radius: 0 !important;
 }
 .ionic-badge[data-shape="rounded"] {
-  border-radius: 8px;
+  border-radius: 8px !important;
 }
 .ionic-badge[data-size="lg"] {
-  font-size: 16px;
-  padding-x: 10px;
-  padding-y: 4px;
-  font-family: Inter;
+  font-size: 16px !important;
+  padding-x: 10px !important;
+  padding-y: 4px !important;
+  font-family: Inter !important;
 }
 .ionic-badge[data-size="md"] {
-  font-size: 14px;
-  padding-x: 8px;
-  padding-y: 3px;
-  font-family: Inter;
+  font-size: 14px !important;
+  padding-x: 8px !important;
+  padding-y: 3px !important;
+  font-family: Inter !important;
 }
 .ionic-badge[data-size="sm"] {
-  font-size: 12px;
-  padding-x: 6px;
-  padding-y: 2px;
-  font-family: Inter;
+  font-size: 12px !important;
+  padding-x: 6px !important;
+  padding-y: 2px !important;
+  font-family: Inter !important;
 }
 .ionic-button[data-appearance="soft"][data-intent="info"] {
-  color: #075985;
-  border-color: transparent;
-  background-color: #E0F2FE;
+  color: #075985 !important;
+  border-color: transparent !important;
+  background-color: #E0F2FE !important;
 }
 .ionic-button[data-appearance="soft"][data-intent="info"]:hover {
-  background-color: #BAE6FD;
+  background-color: #BAE6FD !important;
 }
 .ionic-button[data-appearance="soft"][data-intent="info"]:active {
-  transform: scale(0.98);
-  background-color: #7DD3FC;
+  transform: scale(0.98) !important;
+  background-color: #7DD3FC !important;
 }
 .ionic-button[data-appearance="soft"][data-intent="info"]:disabled {
-  color: #075985;
+  color: #075985 !important;
 }
 .ionic-button[data-appearance="soft"][data-intent="danger"] {
-  color: #991B1B;
-  border-color: transparent;
-  background-color: #FEE2E2;
+  color: #991B1B !important;
+  border-color: transparent !important;
+  background-color: #FEE2E2 !important;
 }
 .ionic-button[data-appearance="soft"][data-intent="danger"]:hover {
-  background-color: #FECACA;
+  background-color: #FECACA !important;
 }
 .ionic-button[data-appearance="soft"][data-intent="danger"]:active {
-  transform: scale(0.98);
-  background-color: #FCA5A5;
+  transform: scale(0.98) !important;
+  background-color: #FCA5A5 !important;
 }
 .ionic-button[data-appearance="soft"][data-intent="danger"]:disabled {
-  color: #991B1B;
+  color: #991B1B !important;
 }
 .ionic-button[data-appearance="soft"][data-intent="primary"] {
-  color: #1054c2;
-  border-color: transparent;
-  background-color: #e2e5eb;
+  color: #1054c2 !important;
+  border-color: transparent !important;
+  background-color: #e2e5eb !important;
 }
 .ionic-button[data-appearance="soft"][data-intent="primary"]:hover {
-  background-color: #cad4e4;
+  background-color: #cad4e4 !important;
 }
 .ionic-button[data-appearance="soft"][data-intent="primary"]:active {
-  transform: scale(0.98);
-  background-color: #a5bce2;
+  transform: scale(0.98) !important;
+  background-color: #a5bce2 !important;
 }
 .ionic-button[data-appearance="soft"][data-intent="primary"]:disabled {
-  color: #1054c2;
+  color: #1054c2 !important;
 }
 .ionic-button[data-appearance="soft"][data-intent="success"] {
-  color: #166534;
-  border-color: transparent;
-  background-color: #DCFCE7;
+  color: #166534 !important;
+  border-color: transparent !important;
+  background-color: #DCFCE7 !important;
 }
 .ionic-button[data-appearance="soft"][data-intent="success"]:hover {
-  background-color: #BBF7D0;
+  background-color: #BBF7D0 !important;
 }
 .ionic-button[data-appearance="soft"][data-intent="success"]:active {
-  transform: scale(0.98);
-  background-color: #86EFAC;
+  transform: scale(0.98) !important;
+  background-color: #86EFAC !important;
 }
 .ionic-button[data-appearance="soft"][data-intent="success"]:disabled {
-  color: #166534;
+  color: #166534 !important;
 }
 .ionic-button[data-appearance="soft"][data-intent="warning"] {
-  color: #B45309;
-  border-color: transparent;
-  background-color: #FEF3C7;
+  color: #B45309 !important;
+  border-color: transparent !important;
+  background-color: #FEF3C7 !important;
 }
 .ionic-button[data-appearance="soft"][data-intent="warning"]:hover {
-  background-color: #FDE68A;
+  background-color: #FDE68A !important;
 }
 .ionic-button[data-appearance="soft"][data-intent="warning"]:active {
-  transform: scale(0.98);
-  background-color: #FCD34D;
+  transform: scale(0.98) !important;
+  background-color: #FCD34D !important;
 }
 .ionic-button[data-appearance="soft"][data-intent="warning"]:disabled {
-  color: #B45309;
+  color: #B45309 !important;
 }
 .ionic-button[data-appearance="soft"][data-intent="secondary"] {
-  color: #111827;
-  border-color: transparent;
-  background-color: #F3F4F6;
+  color: #111827 !important;
+  border-color: transparent !important;
+  background-color: #F3F4F6 !important;
 }
 .ionic-button[data-appearance="soft"][data-intent="secondary"]:hover {
-  background-color: #E5E7EB;
+  background-color: #E5E7EB !important;
 }
 .ionic-button[data-appearance="soft"][data-intent="secondary"]:active {
-  transform: scale(0.98);
-  background-color: #D1D5DB;
+  transform: scale(0.98) !important;
+  background-color: #D1D5DB !important;
 }
 .ionic-button[data-appearance="soft"][data-intent="secondary"]:disabled {
-  color: #9CA3AF;
+  color: #9CA3AF !important;
 }
 .ionic-button[data-appearance="ghost"] {
-  background-color: transparent;
+  background-color: transparent !important;
 }
 .ionic-button[data-appearance="ghost"][data-intent="info"] {
-  color: #0369A1;
-  border-color: transparent;
+  color: #0369A1 !important;
+  border-color: transparent !important;
 }
 .ionic-button[data-appearance="ghost"][data-intent="info"]:hover {
-  background-color: #F0F9FF;
+  background-color: #F0F9FF !important;
 }
 .ionic-button[data-appearance="ghost"][data-intent="info"]:active {
-  transform: scale(0.98);
-  background-color: #E0F2FE;
+  transform: scale(0.98) !important;
+  background-color: #E0F2FE !important;
 }
 .ionic-button[data-appearance="ghost"][data-intent="info"]:disabled {
-  color: #0369A1;
+  color: #0369A1 !important;
 }
 .ionic-button[data-appearance="ghost"][data-intent="danger"] {
-  color: #B91C1C;
-  border-color: transparent;
+  color: #B91C1C !important;
+  border-color: transparent !important;
 }
 .ionic-button[data-appearance="ghost"][data-intent="danger"]:hover {
-  background-color: #FEF2F2;
+  background-color: #FEF2F2 !important;
 }
 .ionic-button[data-appearance="ghost"][data-intent="danger"]:active {
-  transform: scale(0.98);
-  background-color: #FEE2E2;
+  transform: scale(0.98) !important;
+  background-color: #FEE2E2 !important;
 }
 .ionic-button[data-appearance="ghost"][data-intent="danger"]:disabled {
-  color: #B91C1C;
+  color: #B91C1C !important;
 }
 .ionic-button[data-appearance="ghost"][data-intent="primary"] {
-  color: #1669f1;
-  border-color: transparent;
+  color: #1669f1 !important;
+  border-color: transparent !important;
 }
 .ionic-button[data-appearance="ghost"][data-intent="primary"]:hover {
-  background-color: #eff0f2;
+  background-color: #eff0f2 !important;
 }
 .ionic-button[data-appearance="ghost"][data-intent="primary"]:active {
-  transform: scale(0.98);
-  background-color: #e2e5eb;
+  transform: scale(0.98) !important;
+  background-color: #e2e5eb !important;
 }
 .ionic-button[data-appearance="ghost"][data-intent="primary"]:disabled {
-  color: #1669f1;
+  color: #1669f1 !important;
 }
 .ionic-button[data-appearance="ghost"][data-intent="success"] {
-  color: #15803D;
-  border-color: transparent;
+  color: #15803D !important;
+  border-color: transparent !important;
 }
 .ionic-button[data-appearance="ghost"][data-intent="success"]:hover {
-  background-color: #F0FDF4;
+  background-color: #F0FDF4 !important;
 }
 .ionic-button[data-appearance="ghost"][data-intent="success"]:active {
-  transform: scale(0.98);
-  background-color: #DCFCE7;
+  transform: scale(0.98) !important;
+  background-color: #DCFCE7 !important;
 }
 .ionic-button[data-appearance="ghost"][data-intent="success"]:disabled {
-  color: #15803D;
+  color: #15803D !important;
 }
 .ionic-button[data-appearance="ghost"][data-intent="warning"] {
-  color: #B45309;
-  border-color: transparent;
+  color: #B45309 !important;
+  border-color: transparent !important;
 }
 .ionic-button[data-appearance="ghost"][data-intent="warning"]:hover {
-  background-color: #FFFBEB;
+  background-color: #FFFBEB !important;
 }
 .ionic-button[data-appearance="ghost"][data-intent="warning"]:active {
-  transform: scale(0.98);
-  background-color: #FEF3C7;
+  transform: scale(0.98) !important;
+  background-color: #FEF3C7 !important;
 }
 .ionic-button[data-appearance="ghost"][data-intent="warning"]:disabled {
-  color: #B45309;
+  color: #B45309 !important;
 }
 .ionic-button[data-appearance="ghost"][data-intent="secondary"] {
-  color: #111827;
-  border-color: transparent;
+  color: #111827 !important;
+  border-color: transparent !important;
 }
 .ionic-button[data-appearance="ghost"][data-intent="secondary"]:hover {
-  background-color: #F9FAFB;
+  background-color: #F9FAFB !important;
 }
 .ionic-button[data-appearance="ghost"][data-intent="secondary"]:active {
-  transform: scale(0.98);
-  background-color: #F3F4F6;
+  transform: scale(0.98) !important;
+  background-color: #F3F4F6 !important;
 }
 .ionic-button[data-appearance="ghost"][data-intent="secondary"]:disabled {
-  color: #9CA3AF;
+  color: #9CA3AF !important;
 }
 .ionic-button[data-appearance="solid"][data-intent="info"] {
-  color: #FFFFFF;
-  border-color: #0284C7;
-  background-color: #0284C7;
+  color: #FFFFFF !important;
+  border-color: #0284C7 !important;
+  background-color: #0284C7 !important;
 }
 .ionic-button[data-appearance="solid"][data-intent="info"]:focus-visible {
-  outline: none;
-  box-shadow: 0 0 0 3px #BAE6FD;
+  outline: none !important;
+  box-shadow: 0 0 0 3px #BAE6FD !important;
 }
 .ionic-button[data-appearance="solid"][data-intent="info"]:hover {
-  background-color: #0369A1;
+  background-color: #0369A1 !important;
 }
 .ionic-button[data-appearance="solid"][data-intent="info"]:active {
-  transform: scale(0.98);
-  background-color: #075985;
+  transform: scale(0.98) !important;
+  background-color: #075985 !important;
 }
 .ionic-button[data-appearance="solid"][data-intent="info"]:disabled {
-  color: #FFFFFF;
-  cursor: not-allowed;
-  opacity: 0.5;
+  color: #FFFFFF !important;
+  cursor: not-allowed !important;
+  opacity: 0.5 !important;
 }
 .ionic-button[data-appearance="solid"][data-intent="danger"] {
-  color: #FFFFFF;
-  border-color: #DC2626;
-  background-color: #DC2626;
+  color: #FFFFFF !important;
+  border-color: #DC2626 !important;
+  background-color: #DC2626 !important;
 }
 .ionic-button[data-appearance="solid"][data-intent="danger"]:focus-visible {
-  outline: none;
-  box-shadow: 0 0 0 3px #FECACA;
+  outline: none !important;
+  box-shadow: 0 0 0 3px #FECACA !important;
 }
 .ionic-button[data-appearance="solid"][data-intent="danger"]:hover {
-  background-color: #B91C1C;
+  background-color: #B91C1C !important;
 }
 .ionic-button[data-appearance="solid"][data-intent="danger"]:active {
-  transform: scale(0.98);
-  background-color: #991B1B;
+  transform: scale(0.98) !important;
+  background-color: #991B1B !important;
 }
 .ionic-button[data-appearance="solid"][data-intent="danger"]:disabled {
-  color: #FFFFFF;
-  cursor: not-allowed;
-  opacity: 0.5;
+  color: #FFFFFF !important;
+  cursor: not-allowed !important;
+  opacity: 0.5 !important;
 }
 .ionic-button[data-appearance="solid"][data-intent="primary"] {
-  color: #FFFFFF;
-  border-color: #3B82F6;
-  background-color: #3B82F6;
+  color: #FFFFFF !important;
+  border-color: #3B82F6 !important;
+  background-color: #3B82F6 !important;
 }
 .ionic-button[data-appearance="solid"][data-intent="primary"]:focus-visible {
-  outline: none;
-  box-shadow: 0 0 0 3px #3B82F6;
+  outline: none !important;
+  box-shadow: 0 0 0 3px #3B82F6 !important;
 }
 .ionic-button[data-appearance="solid"][data-intent="primary"]:hover {
-  background-color: #1669f1;
+  background-color: #1669f1 !important;
 }
 .ionic-button[data-appearance="solid"][data-intent="primary"]:active {
-  transform: scale(0.98);
-  background-color: #1054c2;
+  transform: scale(0.98) !important;
+  background-color: #1054c2 !important;
 }
 .ionic-button[data-appearance="solid"][data-intent="primary"]:disabled {
-  color: #FFFFFF;
-  cursor: not-allowed;
-  opacity: 0.5;
+  color: #FFFFFF !important;
+  cursor: not-allowed !important;
+  opacity: 0.5 !important;
 }
 .ionic-button[data-appearance="solid"][data-intent="success"] {
-  color: #FFFFFF;
-  border-color: #16A34A;
-  background-color: #16A34A;
+  color: #FFFFFF !important;
+  border-color: #16A34A !important;
+  background-color: #16A34A !important;
 }
 .ionic-button[data-appearance="solid"][data-intent="success"]:focus-visible {
-  outline: none;
-  box-shadow: 0 0 0 3px #BBF7D0;
+  outline: none !important;
+  box-shadow: 0 0 0 3px #BBF7D0 !important;
 }
 .ionic-button[data-appearance="solid"][data-intent="success"]:hover {
-  background-color: #15803D;
+  background-color: #15803D !important;
 }
 .ionic-button[data-appearance="solid"][data-intent="success"]:active {
-  transform: scale(0.98);
-  background-color: #166534;
+  transform: scale(0.98) !important;
+  background-color: #166534 !important;
 }
 .ionic-button[data-appearance="solid"][data-intent="success"]:disabled {
-  color: #FFFFFF;
-  cursor: not-allowed;
-  opacity: 0.5;
+  color: #FFFFFF !important;
+  cursor: not-allowed !important;
+  opacity: 0.5 !important;
 }
 .ionic-button[data-appearance="solid"][data-intent="warning"] {
-  color: #78350F;
-  border-color: #F59E0B;
-  background-color: #F59E0B;
+  color: #78350F !important;
+  border-color: #F59E0B !important;
+  background-color: #F59E0B !important;
 }
 .ionic-button[data-appearance="solid"][data-intent="warning"]:focus-visible {
-  outline: none;
-  box-shadow: 0 0 0 3px #FDE68A;
+  outline: none !important;
+  box-shadow: 0 0 0 3px #FDE68A !important;
 }
 .ionic-button[data-appearance="solid"][data-intent="warning"]:hover {
-  background-color: #D97706;
+  background-color: #D97706 !important;
 }
 .ionic-button[data-appearance="solid"][data-intent="warning"]:active {
-  transform: scale(0.98);
-  background-color: #B45309;
+  transform: scale(0.98) !important;
+  background-color: #B45309 !important;
 }
 .ionic-button[data-appearance="solid"][data-intent="warning"]:disabled {
-  color: #78350F;
-  cursor: not-allowed;
-  opacity: 0.5;
+  color: #78350F !important;
+  cursor: not-allowed !important;
+  opacity: 0.5 !important;
 }
 .ionic-button[data-appearance="solid"][data-intent="secondary"] {
-  color: #111827;
-  border-color: #E5E7EB;
-  background-color: #F3F4F6;
+  color: #111827 !important;
+  border-color: #E5E7EB !important;
+  background-color: #F3F4F6 !important;
 }
 .ionic-button[data-appearance="solid"][data-intent="secondary"]:focus-visible {
-  outline: none;
-  box-shadow: 0 0 0 3px #E5E7EB;
+  outline: none !important;
+  box-shadow: 0 0 0 3px #E5E7EB !important;
 }
 .ionic-button[data-appearance="solid"][data-intent="secondary"]:hover {
-  background-color: #E5E7EB;
+  background-color: #E5E7EB !important;
 }
 .ionic-button[data-appearance="solid"][data-intent="secondary"]:active {
-  transform: scale(0.98);
-  background-color: #D1D5DB;
+  transform: scale(0.98) !important;
+  background-color: #D1D5DB !important;
 }
 .ionic-button[data-appearance="solid"][data-intent="secondary"]:disabled {
-  color: #9CA3AF;
-  cursor: not-allowed;
-  opacity: 0.5;
+  color: #9CA3AF !important;
+  cursor: not-allowed !important;
+  opacity: 0.5 !important;
 }
 .ionic-button[data-appearance="outline"] {
-  border-style: solid;
-  border-width: 1px;
+  border-style: solid !important;
+  border-width: 1px !important;
 }
 .ionic-button[data-appearance="outline"][data-intent="info"] {
-  color: #0369A1;
-  border-color: #0284C7;
-  background-color: transparent;
+  color: #0369A1 !important;
+  border-color: #0284C7 !important;
+  background-color: transparent !important;
 }
 .ionic-button[data-appearance="outline"][data-intent="info"]:hover {
-  background-color: #F0F9FF;
+  background-color: #F0F9FF !important;
 }
 .ionic-button[data-appearance="outline"][data-intent="info"]:active {
-  transform: scale(0.98);
-  background-color: #E0F2FE;
+  transform: scale(0.98) !important;
+  background-color: #E0F2FE !important;
 }
 .ionic-button[data-appearance="outline"][data-intent="info"]:disabled {
-  color: #0369A1;
+  color: #0369A1 !important;
 }
 .ionic-button[data-appearance="outline"][data-intent="danger"] {
-  color: #B91C1C;
-  border-color: #DC2626;
-  background-color: transparent;
+  color: #B91C1C !important;
+  border-color: #DC2626 !important;
+  background-color: transparent !important;
 }
 .ionic-button[data-appearance="outline"][data-intent="danger"]:hover {
-  background-color: #FEF2F2;
+  background-color: #FEF2F2 !important;
 }
 .ionic-button[data-appearance="outline"][data-intent="danger"]:active {
-  transform: scale(0.98);
-  background-color: #FEE2E2;
+  transform: scale(0.98) !important;
+  background-color: #FEE2E2 !important;
 }
 .ionic-button[data-appearance="outline"][data-intent="danger"]:disabled {
-  color: #B91C1C;
+  color: #B91C1C !important;
 }
 .ionic-button[data-appearance="outline"][data-intent="primary"] {
-  color: #1669f1;
-  border-color: #3B82F6;
-  background-color: transparent;
+  color: #1669f1 !important;
+  border-color: #3B82F6 !important;
+  background-color: transparent !important;
 }
 .ionic-button[data-appearance="outline"][data-intent="primary"]:hover {
-  background-color: #eff0f2;
+  background-color: #eff0f2 !important;
 }
 .ionic-button[data-appearance="outline"][data-intent="primary"]:active {
-  transform: scale(0.98);
-  background-color: #e2e5eb;
+  transform: scale(0.98) !important;
+  background-color: #e2e5eb !important;
 }
 .ionic-button[data-appearance="outline"][data-intent="primary"]:disabled {
-  color: #1669f1;
+  color: #1669f1 !important;
 }
 .ionic-button[data-appearance="outline"][data-intent="success"] {
-  color: #15803D;
-  border-color: #16A34A;
-  background-color: transparent;
+  color: #15803D !important;
+  border-color: #16A34A !important;
+  background-color: transparent !important;
 }
 .ionic-button[data-appearance="outline"][data-intent="success"]:hover {
-  background-color: #F0FDF4;
+  background-color: #F0FDF4 !important;
 }
 .ionic-button[data-appearance="outline"][data-intent="success"]:active {
-  transform: scale(0.98);
-  background-color: #DCFCE7;
+  transform: scale(0.98) !important;
+  background-color: #DCFCE7 !important;
 }
 .ionic-button[data-appearance="outline"][data-intent="success"]:disabled {
-  color: #15803D;
+  color: #15803D !important;
 }
 .ionic-button[data-appearance="outline"][data-intent="warning"] {
-  color: #B45309;
-  border-color: #F59E0B;
-  background-color: transparent;
+  color: #B45309 !important;
+  border-color: #F59E0B !important;
+  background-color: transparent !important;
 }
 .ionic-button[data-appearance="outline"][data-intent="warning"]:hover {
-  background-color: #FFFBEB;
+  background-color: #FFFBEB !important;
 }
 .ionic-button[data-appearance="outline"][data-intent="warning"]:active {
-  transform: scale(0.98);
-  background-color: #FEF3C7;
+  transform: scale(0.98) !important;
+  background-color: #FEF3C7 !important;
 }
 .ionic-button[data-appearance="outline"][data-intent="warning"]:disabled {
-  color: #B45309;
+  color: #B45309 !important;
 }
 .ionic-button[data-appearance="outline"][data-intent="secondary"] {
-  color: #111827;
-  border-color: #E5E7EB;
-  background-color: transparent;
+  color: #111827 !important;
+  border-color: #E5E7EB !important;
+  background-color: transparent !important;
 }
 .ionic-button[data-appearance="outline"][data-intent="secondary"]:hover {
-  background-color: #F9FAFB;
+  background-color: #F9FAFB !important;
 }
 .ionic-button[data-appearance="outline"][data-intent="secondary"]:active {
-  transform: scale(0.98);
-  background-color: #F3F4F6;
+  transform: scale(0.98) !important;
+  background-color: #F3F4F6 !important;
 }
 .ionic-button[data-appearance="outline"][data-intent="secondary"]:disabled {
-  color: #9CA3AF;
+  color: #9CA3AF !important;
 }
 .ionic-button[data-intent="info"] {
-  color: #FFFFFF;
-  border-color: #0284C7;
-  background-color: #0284C7;
+  color: #FFFFFF !important;
+  border-color: #0284C7 !important;
+  background-color: #0284C7 !important;
 }
 .ionic-button[data-intent="info"]:focus-visible {
-  outline: none;
-  box-shadow: 0 0 0 3px #BAE6FD;
+  outline: none !important;
+  box-shadow: 0 0 0 3px #BAE6FD !important;
 }
 .ionic-button[data-intent="info"]:hover {
-  background-color: #0369A1;
+  background-color: #0369A1 !important;
 }
 .ionic-button[data-intent="info"]:active {
-  transform: scale(0.98);
-  background-color: #075985;
+  transform: scale(0.98) !important;
+  background-color: #075985 !important;
 }
 .ionic-button[data-intent="info"]:disabled {
-  color: #FFFFFF;
-  cursor: not-allowed;
-  opacity: 0.5;
+  color: #FFFFFF !important;
+  cursor: not-allowed !important;
+  opacity: 0.5 !important;
 }
 .ionic-button[data-intent="danger"] {
-  color: #FFFFFF;
-  border-color: #DC2626;
-  background-color: #DC2626;
+  color: #FFFFFF !important;
+  border-color: #DC2626 !important;
+  background-color: #DC2626 !important;
 }
 .ionic-button[data-intent="danger"]:focus-visible {
-  outline: none;
-  box-shadow: 0 0 0 3px #FECACA;
+  outline: none !important;
+  box-shadow: 0 0 0 3px #FECACA !important;
 }
 .ionic-button[data-intent="danger"]:hover {
-  background-color: #B91C1C;
+  background-color: #B91C1C !important;
 }
 .ionic-button[data-intent="danger"]:active {
-  transform: scale(0.98);
-  background-color: #991B1B;
+  transform: scale(0.98) !important;
+  background-color: #991B1B !important;
 }
 .ionic-button[data-intent="danger"]:disabled {
-  color: #FFFFFF;
-  cursor: not-allowed;
-  opacity: 0.5;
+  color: #FFFFFF !important;
+  cursor: not-allowed !important;
+  opacity: 0.5 !important;
 }
 .ionic-button[data-intent="primary"] {
-  color: #FFFFFF;
-  border-color: #3B82F6;
-  background-color: #3B82F6;
+  color: #FFFFFF !important;
+  border-color: #3B82F6 !important;
+  background-color: #3B82F6 !important;
 }
 .ionic-button[data-intent="primary"]:focus-visible {
-  outline: none;
-  box-shadow: 0 0 0 3px #3B82F6;
+  outline: none !important;
+  box-shadow: 0 0 0 3px #3B82F6 !important;
 }
 .ionic-button[data-intent="primary"]:hover {
-  background-color: #1669f1;
+  background-color: #1669f1 !important;
 }
 .ionic-button[data-intent="primary"]:active {
-  transform: scale(0.98);
-  background-color: #1054c2;
+  transform: scale(0.98) !important;
+  background-color: #1054c2 !important;
 }
 .ionic-button[data-intent="primary"]:disabled {
-  color: #FFFFFF;
-  cursor: not-allowed;
-  opacity: 0.5;
+  color: #FFFFFF !important;
+  cursor: not-allowed !important;
+  opacity: 0.5 !important;
 }
 .ionic-button[data-intent="success"] {
-  color: #FFFFFF;
-  border-color: #16A34A;
-  background-color: #16A34A;
+  color: #FFFFFF !important;
+  border-color: #16A34A !important;
+  background-color: #16A34A !important;
 }
 .ionic-button[data-intent="success"]:focus-visible {
-  outline: none;
-  box-shadow: 0 0 0 3px #BBF7D0;
+  outline: none !important;
+  box-shadow: 0 0 0 3px #BBF7D0 !important;
 }
 .ionic-button[data-intent="success"]:hover {
-  background-color: #15803D;
+  background-color: #15803D !important;
 }
 .ionic-button[data-intent="success"]:active {
-  transform: scale(0.98);
-  background-color: #166534;
+  transform: scale(0.98) !important;
+  background-color: #166534 !important;
 }
 .ionic-button[data-intent="success"]:disabled {
-  color: #FFFFFF;
-  cursor: not-allowed;
-  opacity: 0.5;
+  color: #FFFFFF !important;
+  cursor: not-allowed !important;
+  opacity: 0.5 !important;
 }
 .ionic-button[data-intent="warning"] {
-  color: #78350F;
-  border-color: #F59E0B;
-  background-color: #F59E0B;
+  color: #78350F !important;
+  border-color: #F59E0B !important;
+  background-color: #F59E0B !important;
 }
 .ionic-button[data-intent="warning"]:focus-visible {
-  outline: none;
-  box-shadow: 0 0 0 3px #FDE68A;
+  outline: none !important;
+  box-shadow: 0 0 0 3px #FDE68A !important;
 }
 .ionic-button[data-intent="warning"]:hover {
-  background-color: #D97706;
+  background-color: #D97706 !important;
 }
 .ionic-button[data-intent="warning"]:active {
-  transform: scale(0.98);
-  background-color: #B45309;
+  transform: scale(0.98) !important;
+  background-color: #B45309 !important;
 }
 .ionic-button[data-intent="warning"]:disabled {
-  color: #78350F;
-  cursor: not-allowed;
-  opacity: 0.5;
+  color: #78350F !important;
+  cursor: not-allowed !important;
+  opacity: 0.5 !important;
 }
 .ionic-button[data-intent="secondary"] {
-  color: #111827;
-  border-color: #E5E7EB;
-  background-color: #F3F4F6;
+  color: #111827 !important;
+  border-color: #E5E7EB !important;
+  background-color: #F3F4F6 !important;
 }
 .ionic-button[data-intent="secondary"]:focus-visible {
-  outline: none;
-  box-shadow: 0 0 0 3px #E5E7EB;
+  outline: none !important;
+  box-shadow: 0 0 0 3px #E5E7EB !important;
 }
 .ionic-button[data-intent="secondary"]:hover {
-  background-color: #E5E7EB;
+  background-color: #E5E7EB !important;
 }
 .ionic-button[data-intent="secondary"]:active {
-  transform: scale(0.98);
-  background-color: #D1D5DB;
+  transform: scale(0.98) !important;
+  background-color: #D1D5DB !important;
 }
 .ionic-button[data-intent="secondary"]:disabled {
-  color: #9CA3AF;
-  cursor: not-allowed;
-  opacity: 0.5;
+  color: #9CA3AF !important;
+  cursor: not-allowed !important;
+  opacity: 0.5 !important;
 }
 .ionic-button[data-shape="pill"] {
-  border-radius: 9999px;
+  border-radius: 9999px !important;
 }
 .ionic-button[data-shape="sharp"] {
-  border-radius: 0;
+  border-radius: 0 !important;
 }
 .ionic-button[data-shape="rounded"] {
-  border-radius: 8px;
+  border-radius: 8px !important;
 }
 .ionic-button[data-size="lg"] {
-  gap: 16px;
-  padding: 16px 24px;
-  font-size: 18px;
-  icon-size: 24px;
-  min-height: 48px;
-  font-family: Inter;
-  font-weight: 500;
+  gap: 16px !important;
+  padding: 16px 24px !important;
+  font-size: 18px !important;
+  icon-size: 24px !important;
+  min-height: 48px !important;
+  font-family: Inter !important;
+  font-weight: 500 !important;
 }
 .ionic-button[data-size="md"] {
-  gap: 8px;
-  padding: 8px 16px;
-  font-size: 16px;
-  icon-size: 20px;
-  min-height: 40px;
-  font-family: Inter;
-  font-weight: 500;
+  gap: 8px !important;
+  padding: 8px 16px !important;
+  font-size: 16px !important;
+  icon-size: 20px !important;
+  min-height: 40px !important;
+  font-family: Inter !important;
+  font-weight: 500 !important;
 }
 .ionic-button[data-size="sm"] {
-  gap: 4px;
-  padding: 4px 8px;
-  font-size: 14px;
-  icon-size: 16px;
-  min-height: 32px;
-  font-family: Inter;
-  font-weight: 500;
+  gap: 4px !important;
+  padding: 4px 8px !important;
+  font-size: 14px !important;
+  icon-size: 16px !important;
+  min-height: 32px !important;
+  font-family: Inter !important;
+  font-weight: 500 !important;
 }
 .ionic-checkbox[data-border="none"] {
-  border-style: none;
-  border-width: 0;
-  border-radius: 0;
+  border-style: none !important;
+  border-width: 0 !important;
+  border-radius: 0 !important;
 }
 .ionic-checkbox[data-border="pill"] {
-  border-style: solid;
-  border-width: 2px;
-  border-radius: 9999px;
+  border-style: solid !important;
+  border-width: 2px !important;
+  border-radius: 9999px !important;
 }
 .ionic-checkbox[data-border="sharp"] {
-  border-style: solid;
-  border-width: 2px;
-  border-radius: 0;
+  border-style: solid !important;
+  border-width: 2px !important;
+  border-radius: 0 !important;
 }
 .ionic-checkbox[data-border="rounded"] {
-  border-style: solid;
-  border-width: 2px;
-  border-radius: 4px;
+  border-style: solid !important;
+  border-width: 2px !important;
+  border-radius: 4px !important;
 }
 .ionic-checkbox[data-color="default"] {
-  color: #FFFFFF;
-  border-color: #E5E7EB;
-  background-color: #FFFFFF;
+  color: #FFFFFF !important;
+  border-color: #E5E7EB !important;
+  background-color: #FFFFFF !important;
 }
 .ionic-checkbox[data-color="default"]:focus-visible {
-  box-shadow: 0 0 0 2px #3B82F6;
+  box-shadow: 0 0 0 2px #3B82F6 !important;
 }
 .ionic-checkbox[data-color="default"]:hover {
-  border-color: #79a3e7;
+  border-color: #79a3e7 !important;
 }
 .ionic-checkbox[data-color="default"]:checked {
-  border-color: #3B82F6;
-  background-color: #3B82F6;
+  border-color: #3B82F6 !important;
+  background-color: #3B82F6 !important;
 }
 .ionic-checkbox[data-color="default"]:disabled {
-  cursor: not-allowed;
-  opacity: 0.5;
-  background-color: #F3F4F6;
+  cursor: not-allowed !important;
+  opacity: 0.5 !important;
+  background-color: #F3F4F6 !important;
 }
 .ionic-checkbox[data-label="right"] {
-  gap: 8px;
+  gap: 8px !important;
 }
 .ionic-checkbox[data-size="lg"] {
-  width: 24px;
-  height: 24px;
-  font-family: Inter;
-  font-weight: 500;
+  width: 24px !important;
+  height: 24px !important;
+  font-family: Inter !important;
+  font-weight: 500 !important;
 }
 .ionic-checkbox[data-size="md"] {
-  width: 18px;
-  height: 18px;
-  font-family: Inter;
-  font-weight: 500;
+  width: 18px !important;
+  height: 18px !important;
+  font-family: Inter !important;
+  font-weight: 500 !important;
 }
 .ionic-checkbox[data-size="sm"] {
-  width: 14px;
-  height: 14px;
-  font-family: Inter;
-  font-weight: 500;
+  width: 14px !important;
+  height: 14px !important;
+  font-family: Inter !important;
+  font-weight: 500 !important;
 }
 .ionic-container[data-alignment="end"] {
-  align-items: flex-end;
-  justify-content: flex-end;
+  align-items: flex-end !important;
+  justify-content: flex-end !important;
 }
 .ionic-container[data-alignment="start"] {
-  align-items: flex-start;
-  justify-content: flex-start;
+  align-items: flex-start !important;
+  justify-content: flex-start !important;
 }
 .ionic-container[data-alignment="center"] {
-  align-items: center;
-  justify-content: center;
+  align-items: center !important;
+  justify-content: center !important;
 }
 .ionic-container[data-color="card"] {
-  border-color: #E5E7EB;
-  background-color: #FFFFFF;
+  border-color: #E5E7EB !important;
+  background-color: #FFFFFF !important;
 }
 .ionic-container[data-color="muted"] {
-  border-color: transparent;
-  background-color: #F3F4F6;
+  border-color: transparent !important;
+  background-color: #F3F4F6 !important;
 }
 .ionic-container[data-color="neutral"] {
-  border-color: transparent;
-  background-color: transparent;
+  border-color: transparent !important;
+  background-color: transparent !important;
 }
 .ionic-container[data-color="primary"] {
-  border-color: #3B82F6;
-  background-color: #3B82F6;
+  border-color: #3B82F6 !important;
+  background-color: #3B82F6 !important;
 }
 .ionic-container[data-color="secondary"] {
-  border-color: #E5E7EB;
-  background-color: #F3F4F6;
+  border-color: #E5E7EB !important;
+  background-color: #F3F4F6 !important;
 }
 .ionic-container[data-color="alert-info"] {
-  border-color: #BAE6FD;
-  border-style: solid;
-  border-width: 1px;
-  background-color: #F0F9FF;
+  border-color: #BAE6FD !important;
+  border-style: solid !important;
+  border-width: 1px !important;
+  background-color: #F0F9FF !important;
 }
 .ionic-container[data-color="alert-error"] {
-  border-color: #FECACA;
-  border-style: solid;
-  border-width: 1px;
-  background-color: #FEF2F2;
+  border-color: #FECACA !important;
+  border-style: solid !important;
+  border-width: 1px !important;
+  background-color: #FEF2F2 !important;
 }
 .ionic-container[data-color="alert-default"] {
-  border-color: #E5E7EB;
-  border-style: solid;
-  border-width: 1px;
-  background-color: #F3F4F6;
+  border-color: #E5E7EB !important;
+  border-style: solid !important;
+  border-width: 1px !important;
+  background-color: #F3F4F6 !important;
 }
 .ionic-container[data-color="alert-success"] {
-  border-color: #BBF7D0;
-  border-style: solid;
-  border-width: 1px;
-  background-color: #F0FDF4;
+  border-color: #BBF7D0 !important;
+  border-style: solid !important;
+  border-width: 1px !important;
+  background-color: #F0FDF4 !important;
 }
 .ionic-container[data-color="alert-warning"] {
-  border-color: #FDE68A;
-  border-style: solid;
-  border-width: 1px;
-  background-color: #FFFBEB;
+  border-color: #FDE68A !important;
+  border-style: solid !important;
+  border-width: 1px !important;
+  background-color: #FFFBEB !important;
 }
 .ionic-container[data-columns="1"] {
-  grid-template-columns: repeat(1, 1fr);
+  grid-template-columns: repeat(1, 1fr) !important;
 }
 .ionic-container[data-columns="2"] {
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr) !important;
 }
 .ionic-container[data-columns="3"] {
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr) !important;
 }
 .ionic-container[data-columns="4"] {
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, 1fr) !important;
 }
 .ionic-container[data-direction="row"] {
-  flex-direction: row;
+  flex-direction: row !important;
 }
 .ionic-container[data-direction="column"] {
-  flex-direction: column;
+  flex-direction: column !important;
 }
 .ionic-container[data-display="flex"] {
-  display: flex;
+  display: flex !important;
 }
 .ionic-container[data-display="block"] {
-  display: block;
+  display: block !important;
 }
 .ionic-container[data-elevation="lg"] {
-  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1) !important;
 }
 .ionic-container[data-elevation="md"] {
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1) !important;
 }
 .ionic-container[data-elevation="sm"] {
-  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05) !important;
 }
 .ionic-container[data-elevation="xl"] {
-  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1) !important;
 }
 .ionic-container[data-elevation="none"] {
-  box-shadow: none;
+  box-shadow: none !important;
 }
 .ionic-container[data-padding="lg"] {
-  padding: 24px;
+  padding: 24px !important;
 }
 .ionic-container[data-padding="md"] {
-  padding: 16px;
+  padding: 16px !important;
 }
 .ionic-container[data-padding="sm"] {
-  padding: 12px;
+  padding: 12px !important;
 }
 .ionic-container[data-padding="none"] {
-  padding: 0;
+  padding: 0 !important;
 }
 .ionic-container[data-shape="none"] {
-  border-radius: 0;
+  border-radius: 0 !important;
 }
 .ionic-container[data-shape="rounded"] {
-  border-radius: 8px;
+  border-radius: 8px !important;
 }
 .ionic-container[data-size="lg"] {
-  max-width: 576px;
+  max-width: 576px !important;
 }
 .ionic-container[data-size="md"] {
-  max-width: 448px;
+  max-width: 448px !important;
 }
 .ionic-container[data-size="sm"] {
-  max-width: 320px;
+  max-width: 320px !important;
 }
 .ionic-container[data-size="xl"] {
-  max-width: 768px;
+  max-width: 768px !important;
 }
 .ionic-container[data-size="auto"] {
-  width: auto;
-  height: auto;
+  width: auto !important;
+  height: auto !important;
 }
 .ionic-container[data-size="full"] {
-  width: 100%;
+  width: 100% !important;
 }
 .ionic-container[data-spacing="lg"] {
-  gap: 24px;
+  gap: 24px !important;
 }
 .ionic-container[data-spacing="md"] {
-  gap: 16px;
+  gap: 16px !important;
 }
 .ionic-container[data-spacing="sm"] {
-  gap: 4px;
+  gap: 4px !important;
 }
 .ionic-container[data-spacing="none"] {
-  gap: 0;
+  gap: 0 !important;
 }
 .ionic-container[data-wrap="wrap"] {
-  flex-wrap: wrap;
+  flex-wrap: wrap !important;
 }
 .ionic-container[data-wrap="nowrap"] {
-  flex-wrap: nowrap;
+  flex-wrap: nowrap !important;
 }
 .ionic-divider[data-color="strong"] {
-  font-family: Inter;
-  background-color: #9CA3AF;
+  font-family: Inter !important;
+  background-color: #9CA3AF !important;
 }
 .ionic-divider[data-color="subtle"] {
-  font-family: Inter;
-  background-color: #F3F4F6;
+  font-family: Inter !important;
+  background-color: #F3F4F6 !important;
 }
 .ionic-divider[data-color="default"] {
-  font-family: Inter;
-  font-weight: 400;
-  background-color: #E5E7EB;
+  font-family: Inter !important;
+  font-weight: 400 !important;
+  background-color: #E5E7EB !important;
 }
 .ionic-divider[data-orientation="vertical"] {
-  width: 1px;
-  height: 100%;
-  min-height: 1em;
+  width: 1px !important;
+  height: 100% !important;
+  min-height: 1em !important;
 }
 .ionic-divider[data-orientation="horizontal"] {
-  width: 100%;
-  height: 1px;
+  width: 100% !important;
+  height: 1px !important;
 }
 .ionic-divider[data-size="thin"] {
-  height: 1px;
-  font-family: Inter;
+  height: 1px !important;
+  font-family: Inter !important;
 }
 .ionic-divider[data-size="thick"] {
-  height: 4px;
-  font-family: Inter;
+  height: 4px !important;
+  font-family: Inter !important;
 }
 .ionic-divider[data-size="medium"] {
-  height: 2px;
-  font-family: Inter;
+  height: 2px !important;
+  font-family: Inter !important;
 }
 .ionic-icon[data-color="muted"] {
-  color: #4B5563;
+  color: #4B5563 !important;
 }
 .ionic-icon[data-color="inherit"] {
-  color: currentColor;
+  color: currentColor !important;
 }
 .ionic-icon[data-color="primary"] {
-  color: #3B82F6;
+  color: #3B82F6 !important;
 }
 .ionic-icon[data-size="lg"] {
-  width: 24px;
-  height: 24px;
-  font-family: Inter;
-  font-weight: 400;
+  width: 24px !important;
+  height: 24px !important;
+  font-family: Inter !important;
+  font-weight: 400 !important;
 }
 .ionic-icon[data-size="md"] {
-  width: 20px;
-  height: 20px;
-  font-family: Inter;
-  font-weight: 400;
+  width: 20px !important;
+  height: 20px !important;
+  font-family: Inter !important;
+  font-weight: 400 !important;
 }
 .ionic-icon[data-size="sm"] {
-  width: 16px;
-  height: 16px;
-  font-family: Inter;
-  font-weight: 400;
+  width: 16px !important;
+  height: 16px !important;
+  font-family: Inter !important;
+  font-weight: 400 !important;
 }
 .ionic-icon[data-state="hide"] {
-  display: none;
+  display: none !important;
 }
 .ionic-icon[data-state="show"] {
-  display: inline-flex;
+  display: inline-flex !important;
 }
 .ionic-image[data-aspectRatio="1/1"] {
-  aspect-ratio: 1/1;
+  aspect-ratio: 1/1 !important;
 }
 .ionic-image[data-aspectRatio="3/2"] {
-  aspect-ratio: 3/2;
+  aspect-ratio: 3/2 !important;
 }
 .ionic-image[data-aspectRatio="4/3"] {
-  aspect-ratio: 4/3;
+  aspect-ratio: 4/3 !important;
 }
 .ionic-image[data-aspectRatio="16/9"] {
-  aspect-ratio: 16/9;
+  aspect-ratio: 16/9 !important;
 }
 .ionic-image[data-aspectRatio="auto"] {
-  aspect-ratio: auto;
+  aspect-ratio: auto !important;
 }
 .ionic-image[data-fit="fill"] {
-  object-fit: fill;
+  object-fit: fill !important;
 }
 .ionic-image[data-fit="none"] {
-  object-fit: none;
+  object-fit: none !important;
 }
 .ionic-image[data-fit="cover"] {
-  object-fit: cover;
+  object-fit: cover !important;
 }
 .ionic-image[data-fit="contain"] {
-  object-fit: contain;
+  object-fit: contain !important;
 }
 .ionic-image[data-fit="scale-down"] {
-  object-fit: scale-down;
+  object-fit: scale-down !important;
 }
 .ionic-input[data-align="left"] {
-  text-align: left;
+  text-align: left !important;
 }
 .ionic-input[data-align="right"] {
-  text-align: right;
+  text-align: right !important;
 }
 .ionic-input[data-align="center"] {
-  text-align: center;
+  text-align: center !important;
 }
 .ionic-input[data-color="default"] {
-  color: #111827;
-  border-color: #E5E7EB;
-  background-color: #F9FAFB;
+  color: #111827 !important;
+  border-color: #E5E7EB !important;
+  background-color: #F9FAFB !important;
 }
 .ionic-input[data-elevation="md"] {
-  box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1) !important;
 }
 .ionic-input[data-elevation="sm"] {
-  box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05) !important;
 }
 .ionic-input[data-elevation="none"] {
-  box-shadow: none;
+  box-shadow: none !important;
 }
 .ionic-input[data-shape="pill"] {
-  border-style: solid;
-  border-width: 1px;
-  border-radius: 9999px;
+  border-style: solid !important;
+  border-width: 1px !important;
+  border-radius: 9999px !important;
 }
 .ionic-input[data-shape="square"] {
-  border-style: solid;
-  border-width: 1px;
-  border-radius: 0;
+  border-style: solid !important;
+  border-width: 1px !important;
+  border-radius: 0 !important;
 }
 .ionic-input[data-shape="rounded"] {
-  border-style: solid;
-  border-width: 1px;
-  border-radius: 8px;
+  border-style: solid !important;
+  border-width: 1px !important;
+  border-radius: 8px !important;
 }
 .ionic-input[data-size="lg"] {
-  padding: 12px 16px;
-  font-size: 16px;
+  padding: 12px 16px !important;
+  font-size: 16px !important;
 }
 .ionic-input[data-size="sm"] {
-  padding: 6px 10px;
-  font-size: 14px;
+  padding: 6px 10px !important;
+  font-size: 14px !important;
 }
 .ionic-input[data-size="default"] {
-  padding: 8px 12px;
-  font-size: 14px;
+  padding: 8px 12px !important;
+  font-size: 14px !important;
 }
 .ionic-link[data-underline="subtle"] {
-  text-decoration: none;
+  text-decoration: none !important;
 }
 .ionic-link[data-underline="default"] {
-  text-decoration: underline;
+  text-decoration: underline !important;
 }
 .ionic-link[data-color="muted"] {
-  color: #4B5563;
+  color: #4B5563 !important;
 }
 .ionic-link[data-color="default"] {
-  color: #3B82F6;
+  color: #3B82F6 !important;
 }
 .ionic-link[data-size="default"] {
-  font-size: 16px;
+  font-size: 16px !important;
 }
 .ionic-link[data-weight="medium"] {
-  font-weight: 500;
+  font-weight: 500 !important;
 }
 .ionic-link[data-weight="normal"] {
-  font-weight: 400;
+  font-weight: 400 !important;
 }
 .ionic-link[data-weight="semibold"] {
-  font-weight: 600;
+  font-weight: 600 !important;
 }
 .ionic-menuitem[data-color="danger"] {
-  color: #B91C1C;
-  background-color: transparent;
+  color: #B91C1C !important;
+  background-color: transparent !important;
 }
 .ionic-menuitem[data-color="danger"]:focus-visible {
-  outline: 2px solid #DC2626;
-  outline-offset: -2px;
-  background-color: #FEF2F2;
+  outline: 2px solid #DC2626 !important;
+  outline-offset: -2px !important;
+  background-color: #FEF2F2 !important;
 }
 .ionic-menuitem[data-color="danger"]:hover {
-  color: #991B1B;
-  background-color: #FEF2F2;
+  color: #991B1B !important;
+  background-color: #FEF2F2 !important;
 }
 .ionic-menuitem[data-color="danger"]:active {
-  color: #7F1D1D;
-  background-color: #FEE2E2;
+  color: #7F1D1D !important;
+  background-color: #FEE2E2 !important;
 }
 .ionic-menuitem[data-color="danger"]:disabled {
-  cursor: not-allowed;
-  opacity: 0.5;
-  pointer-events: none;
+  cursor: not-allowed !important;
+  opacity: 0.5 !important;
+  pointer-events: none !important;
 }
 .ionic-menuitem[data-color="default"] {
-  color: #4B5563;
-  background-color: transparent;
+  color: #4B5563 !important;
+  background-color: transparent !important;
 }
 .ionic-menuitem[data-color="default"]:focus-visible {
-  outline: 2px solid #3B82F6;
-  outline-offset: -2px;
-  background-color: #F3F4F6;
+  outline: 2px solid #3B82F6 !important;
+  outline-offset: -2px !important;
+  background-color: #F3F4F6 !important;
 }
 .ionic-menuitem[data-color="default"]:hover {
-  background-color: #F3F4F6;
+  background-color: #F3F4F6 !important;
 }
 .ionic-menuitem[data-color="default"]:active {
-  background-color: #E5E7EB;
+  background-color: #E5E7EB !important;
 }
 .ionic-menuitem[data-color="default"]:disabled {
-  cursor: not-allowed;
-  opacity: 0.5;
-  pointer-events: none;
+  cursor: not-allowed !important;
+  opacity: 0.5 !important;
+  pointer-events: none !important;
 }
 .ionic-menuitem[data-size="lg"] {
-  gap: 12px;
-  padding: 10px 16px;
-  font-size: 16px;
-  min-height: 44px;
-  font-family: Inter;
-  font-weight: 500;
+  gap: 12px !important;
+  padding: 10px 16px !important;
+  font-size: 16px !important;
+  min-height: 44px !important;
+  font-family: Inter !important;
+  font-weight: 500 !important;
 }
 .ionic-menuitem[data-size="md"] {
-  gap: 10px;
-  padding: 8px 12px;
-  font-size: 14px;
-  min-height: 36px;
-  font-family: Inter;
-  font-weight: 500;
+  gap: 10px !important;
+  padding: 8px 12px !important;
+  font-size: 14px !important;
+  min-height: 36px !important;
+  font-family: Inter !important;
+  font-weight: 500 !important;
 }
 .ionic-menuitem[data-size="sm"] {
-  gap: 8px;
-  padding: 6px 12px;
-  font-size: 12px;
-  min-height: 32px;
-  font-family: Inter;
-  font-weight: 500;
+  gap: 8px !important;
+  padding: 6px 12px !important;
+  font-size: 12px !important;
+  min-height: 32px !important;
+  font-family: Inter !important;
+  font-weight: 500 !important;
 }
 .ionic-modal[data-color="default"] {
-  color: #111827;
-  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
-  font-family: Inter;
-  font-weight: 400;
-  border-color: #F3F4F6;
-  background-color: #FFFFFF;
+  color: #111827 !important;
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1) !important;
+  font-family: Inter !important;
+  font-weight: 400 !important;
+  border-color: #F3F4F6 !important;
+  background-color: #FFFFFF !important;
 }
 .ionic-modal[data-shape="sharp"] {
-  border-radius: 0;
+  border-radius: 0 !important;
 }
 .ionic-modal[data-shape="rounded"] {
-  border-radius: 12px;
+  border-radius: 12px !important;
 }
 .ionic-modal[data-size="lg"] {
-  width: 720px;
-  padding: 48px;
-  font-family: Inter;
+  width: 720px !important;
+  padding: 48px !important;
+  font-family: Inter !important;
 }
 .ionic-modal[data-size="md"] {
-  width: 560px;
-  padding: 32px;
-  font-family: Inter;
+  width: 560px !important;
+  padding: 32px !important;
+  font-family: Inter !important;
 }
 .ionic-modal[data-size="sm"] {
-  width: 400px;
-  padding: 24px;
-  font-family: Inter;
+  width: 400px !important;
+  padding: 24px !important;
+  font-family: Inter !important;
 }
 .ionic-modal[data-size="xl"] {
-  width: 900px;
-  padding: 48px;
-  font-family: Inter;
+  width: 900px !important;
+  padding: 48px !important;
+  font-family: Inter !important;
 }
 .ionic-progress[data-color="info"] {
-  color: #0284C7;
-  background-color: #F3F4F6;
+  color: #0284C7 !important;
+  background-color: #F3F4F6 !important;
 }
 .ionic-progress[data-color="danger"] {
-  color: #DC2626;
-  background-color: #F3F4F6;
+  color: #DC2626 !important;
+  background-color: #F3F4F6 !important;
 }
 .ionic-progress[data-color="neutral"] {
-  color: #111827;
-  background-color: #F3F4F6;
+  color: #111827 !important;
+  background-color: #F3F4F6 !important;
 }
 .ionic-progress[data-color="primary"] {
-  color: #3B82F6;
-  background-color: #F3F4F6;
+  color: #3B82F6 !important;
+  background-color: #F3F4F6 !important;
 }
 .ionic-progress[data-color="success"] {
-  color: #16A34A;
-  background-color: #F3F4F6;
+  color: #16A34A !important;
+  background-color: #F3F4F6 !important;
 }
 .ionic-progress[data-color="warning"] {
-  color: #F59E0B;
-  background-color: #F3F4F6;
+  color: #F59E0B !important;
+  background-color: #F3F4F6 !important;
 }
 .ionic-progress[data-size="lg"] {
-  height: 12px;
-  font-family: Inter;
-  font-weight: 400;
+  height: 12px !important;
+  font-family: Inter !important;
+  font-weight: 400 !important;
 }
 .ionic-progress[data-size="md"] {
-  height: 8px;
-  font-family: Inter;
-  font-weight: 400;
+  height: 8px !important;
+  font-family: Inter !important;
+  font-weight: 400 !important;
 }
 .ionic-progress[data-size="sm"] {
-  height: 4px;
-  font-family: Inter;
-  font-weight: 400;
+  height: 4px !important;
+  font-family: Inter !important;
+  font-weight: 400 !important;
 }
 .ionic-radio[data-border="thin"] {
-  border-style: solid;
-  border-width: 1px;
+  border-style: solid !important;
+  border-width: 1px !important;
 }
 .ionic-radio[data-border="thick"] {
-  border-style: solid;
-  border-width: 3px;
+  border-style: solid !important;
+  border-width: 3px !important;
 }
 .ionic-radio[data-border="default"] {
-  border-style: solid;
-  border-width: 2px;
+  border-style: solid !important;
+  border-width: 2px !important;
 }
 .ionic-radio[data-color="default"] {
-  color: #3B82F6;
-  border-color: #9CA3AF;
-  background-color: #FFFFFF;
+  color: #3B82F6 !important;
+  border-color: #9CA3AF !important;
+  background-color: #FFFFFF !important;
 }
 .ionic-radio[data-color="default"]:focus-visible {
-  box-shadow: 0 0 0 3px #cad4e4;
-  border-color: #3B82F6;
+  box-shadow: 0 0 0 3px #cad4e4 !important;
+  border-color: #3B82F6 !important;
 }
 .ionic-radio[data-color="default"]:hover {
-  box-shadow: 0 0 0 2px #e2e5eb;
-  border-color: #79a3e7;
+  box-shadow: 0 0 0 2px #e2e5eb !important;
+  border-color: #79a3e7 !important;
 }
 .ionic-radio[data-color="default"]:checked {
-  border-color: #3B82F6;
-  background-color: #3B82F6;
+  border-color: #3B82F6 !important;
+  background-color: #3B82F6 !important;
 }
 .ionic-radio[data-color="default"]:disabled {
-  cursor: not-allowed;
-  opacity: 0.6;
-  border-color: #D1D5DB;
-  background-color: #F3F4F6;
+  cursor: not-allowed !important;
+  opacity: 0.6 !important;
+  border-color: #D1D5DB !important;
+  background-color: #F3F4F6 !important;
 }
 .ionic-radio[data-color="neutral"] {
-  color: #4B5563;
-  border-color: #F3F4F6;
-  background-color: #F9FAFB;
+  color: #4B5563 !important;
+  border-color: #F3F4F6 !important;
+  background-color: #F9FAFB !important;
 }
 .ionic-radio[data-color="neutral"]:focus-visible {
-  box-shadow: 0 0 0 3px #E5E7EB;
-  border-color: #4B5563;
+  box-shadow: 0 0 0 3px #E5E7EB !important;
+  border-color: #4B5563 !important;
 }
 .ionic-radio[data-color="neutral"]:hover {
-  box-shadow: 0 0 0 2px #F3F4F6;
-  border-color: #6B7280;
+  box-shadow: 0 0 0 2px #F3F4F6 !important;
+  border-color: #6B7280 !important;
 }
 .ionic-radio[data-color="neutral"]:checked {
-  border-color: #374151;
-  background-color: #374151;
+  border-color: #374151 !important;
+  background-color: #374151 !important;
 }
 .ionic-radio[data-color="neutral"]:disabled {
-  cursor: not-allowed;
-  opacity: 0.6;
-  border-color: #E5E7EB;
-  background-color: #F3F4F6;
+  cursor: not-allowed !important;
+  opacity: 0.6 !important;
+  border-color: #E5E7EB !important;
+  background-color: #F3F4F6 !important;
 }
 .ionic-radio[data-color="primary"] {
-  color: #3B82F6;
-  border-color: #3B82F6;
-  background-color: #FFFFFF;
+  color: #3B82F6 !important;
+  border-color: #3B82F6 !important;
+  background-color: #FFFFFF !important;
 }
 .ionic-radio[data-color="primary"]:focus-visible {
-  box-shadow: 0 0 0 3px #cad4e4;
-  border-color: #1054c2;
+  box-shadow: 0 0 0 3px #cad4e4 !important;
+  border-color: #1054c2 !important;
 }
 .ionic-radio[data-color="primary"]:hover {
-  box-shadow: 0 0 0 2px #e2e5eb;
-  border-color: #1669f1;
+  box-shadow: 0 0 0 2px #e2e5eb !important;
+  border-color: #1669f1 !important;
 }
 .ionic-radio[data-color="primary"]:checked {
-  border-color: #1669f1;
-  background-color: #3B82F6;
+  border-color: #1669f1 !important;
+  background-color: #3B82F6 !important;
 }
 .ionic-radio[data-color="primary"]:disabled {
-  cursor: not-allowed;
-  opacity: 0.6;
-  border-color: #a5bce2;
-  background-color: #F3F4F6;
+  cursor: not-allowed !important;
+  opacity: 0.6 !important;
+  border-color: #a5bce2 !important;
+  background-color: #F3F4F6 !important;
 }
 .ionic-radio[data-size="lg"] {
-  width: 24px;
-  height: 24px;
-  font-family: Inter;
-  font-weight: 500;
+  width: 24px !important;
+  height: 24px !important;
+  font-family: Inter !important;
+  font-weight: 500 !important;
 }
 .ionic-radio[data-size="md"] {
-  width: 20px;
-  height: 20px;
-  font-family: Inter;
-  font-weight: 500;
+  width: 20px !important;
+  height: 20px !important;
+  font-family: Inter !important;
+  font-weight: 500 !important;
 }
 .ionic-radio[data-size="sm"] {
-  width: 16px;
-  height: 16px;
-  font-family: Inter;
-  font-weight: 500;
+  width: 16px !important;
+  height: 16px !important;
+  font-family: Inter !important;
+  font-weight: 500 !important;
 }
 .ionic-select[data-appearance="ghost"] {
-  border-color: transparent;
-  border-style: none;
-  border-width: 0;
-  background-color: transparent;
+  border-color: transparent !important;
+  border-style: none !important;
+  border-width: 0 !important;
+  background-color: transparent !important;
 }
 .ionic-select[data-appearance="ghost"]:focus-visible {
-  box-shadow: 0 0 0 2px #3B82F6;
-  background-color: #F3F4F6;
+  box-shadow: 0 0 0 2px #3B82F6 !important;
+  background-color: #F3F4F6 !important;
 }
 .ionic-select[data-appearance="ghost"]:hover {
-  background-color: #F3F4F6;
+  background-color: #F3F4F6 !important;
 }
 .ionic-select[data-appearance="filled"] {
-  border-color: transparent;
-  border-style: solid;
-  border-width: 1px;
-  background-color: #F3F4F6;
+  border-color: transparent !important;
+  border-style: solid !important;
+  border-width: 1px !important;
+  background-color: #F3F4F6 !important;
 }
 .ionic-select[data-appearance="filled"]:focus-visible {
-  border-color: #3B82F6;
-  background-color: #FFFFFF;
+  border-color: #3B82F6 !important;
+  background-color: #FFFFFF !important;
 }
 .ionic-select[data-appearance="filled"]:hover {
-  background-color: #E5E7EB;
+  background-color: #E5E7EB !important;
 }
 .ionic-select[data-appearance="outline"] {
-  border-style: solid;
-  border-width: 1px;
-  background-color: transparent;
+  border-style: solid !important;
+  border-width: 1px !important;
+  background-color: transparent !important;
 }
 .ionic-select[data-color="muted"] {
-  color: #111827;
-  border-color: #F3F4F6;
-  background-color: #F9FAFB;
-  placeholder-color: #4B5563;
-  --select-field-label-color: #111827;
-  --select-field-caption-color: #4B5563;
+  color: #111827 !important;
+  border-color: #F3F4F6 !important;
+  background-color: #F9FAFB !important;
+  placeholder-color: #4B5563 !important;
+  --select-field-label-color: #111827 !important;
+  --select-field-caption-color: #4B5563 !important;
 }
 .ionic-select[data-color="muted"]:focus-visible {
-  box-shadow: 0 0 0 3px #E5E7EB;
-  border-color: #9CA3AF;
+  box-shadow: 0 0 0 3px #E5E7EB !important;
+  border-color: #9CA3AF !important;
 }
 .ionic-select[data-color="muted"]:hover {
-  border-color: #E5E7EB;
+  border-color: #E5E7EB !important;
 }
 .ionic-select[data-color="muted"]:disabled {
-  color: #9CA3AF;
-  cursor: not-allowed;
-  background-color: #F3F4F6;
+  color: #9CA3AF !important;
+  cursor: not-allowed !important;
+  background-color: #F3F4F6 !important;
 }
 .ionic-select[data-color="default"] {
-  color: #111827;
-  border-color: #E5E7EB;
-  background-color: #FFFFFF;
-  placeholder-color: #4B5563;
-  --select-field-label-color: #111827;
-  --select-field-caption-color: #4B5563;
+  color: #111827 !important;
+  border-color: #E5E7EB !important;
+  background-color: #FFFFFF !important;
+  placeholder-color: #4B5563 !important;
+  --select-field-label-color: #111827 !important;
+  --select-field-caption-color: #4B5563 !important;
 }
 .ionic-select[data-color="default"]:focus-visible {
-  box-shadow: 0 0 0 3px #3B82F6;
-  border-color: #3B82F6;
+  box-shadow: 0 0 0 3px #3B82F6 !important;
+  border-color: #3B82F6 !important;
 }
 .ionic-select[data-color="default"]:hover {
-  border-color: #9CA3AF;
+  border-color: #9CA3AF !important;
 }
 .ionic-select[data-color="default"]:disabled {
-  color: #9CA3AF;
-  cursor: not-allowed;
-  background-color: #F3F4F6;
+  color: #9CA3AF !important;
+  cursor: not-allowed !important;
+  background-color: #F3F4F6 !important;
 }
 .ionic-select[data-color="primary"] {
-  color: #111827;
-  border-color: #3B82F6;
-  background-color: #FFFFFF;
-  placeholder-color: #4B5563;
-  --select-field-label-color: #111827;
-  --select-field-caption-color: #4B5563;
+  color: #111827 !important;
+  border-color: #3B82F6 !important;
+  background-color: #FFFFFF !important;
+  placeholder-color: #4B5563 !important;
+  --select-field-label-color: #111827 !important;
+  --select-field-caption-color: #4B5563 !important;
 }
 .ionic-select[data-color="primary"]:focus-visible {
-  box-shadow: 0 0 0 4px #3B82F6;
-  border-color: #1669f1;
+  box-shadow: 0 0 0 4px #3B82F6 !important;
+  border-color: #1669f1 !important;
 }
 .ionic-select[data-color="primary"]:hover {
-  border-color: #1669f1;
+  border-color: #1669f1 !important;
 }
 .ionic-select[data-color="primary"]:disabled {
-  color: #9CA3AF;
-  cursor: not-allowed;
-  border-color: #E5E7EB;
-  background-color: #F3F4F6;
+  color: #9CA3AF !important;
+  cursor: not-allowed !important;
+  border-color: #E5E7EB !important;
+  background-color: #F3F4F6 !important;
 }
 .ionic-select[data-shape="pill"] {
-  border-radius: 9999px;
+  border-radius: 9999px !important;
 }
 .ionic-select[data-shape="sharp"] {
-  border-radius: 0;
+  border-radius: 0 !important;
 }
 .ionic-select[data-shape="rounded"] {
-  border-radius: 8px;
+  border-radius: 8px !important;
 }
 .ionic-select[data-size="lg"] {
-  height: 48px;
-  font-size: 16px;
-  font-family: Inter;
-  font-weight: 500;
-  line-height: 1.5;
-  padding-top: 12px;
-  padding-left: 16px;
-  padding-right: 36px;
-  padding-bottom: 12px;
+  height: 48px !important;
+  font-size: 16px !important;
+  font-family: Inter !important;
+  font-weight: 500 !important;
+  line-height: 1.5 !important;
+  padding-top: 12px !important;
+  padding-left: 16px !important;
+  padding-right: 36px !important;
+  padding-bottom: 12px !important;
 }
 .ionic-select[data-size="md"] {
-  height: 40px;
-  font-size: 14px;
-  font-family: Inter;
-  font-weight: 500;
-  line-height: 1.5;
-  padding-top: 8px;
-  padding-left: 12px;
-  padding-right: 32px;
-  padding-bottom: 8px;
+  height: 40px !important;
+  font-size: 14px !important;
+  font-family: Inter !important;
+  font-weight: 500 !important;
+  line-height: 1.5 !important;
+  padding-top: 8px !important;
+  padding-left: 12px !important;
+  padding-right: 32px !important;
+  padding-bottom: 8px !important;
 }
 .ionic-select[data-size="sm"] {
-  height: 32px;
-  font-size: 14px;
-  font-family: Inter;
-  font-weight: 500;
-  line-height: 1.4;
-  padding-top: 6px;
-  padding-left: 10px;
-  padding-right: 28px;
-  padding-bottom: 6px;
+  height: 32px !important;
+  font-size: 14px !important;
+  font-family: Inter !important;
+  font-weight: 500 !important;
+  line-height: 1.4 !important;
+  padding-top: 6px !important;
+  padding-left: 10px !important;
+  padding-right: 28px !important;
+  padding-bottom: 6px !important;
 }
 .ionic-select[data-state="invalid"] {
-  color: #111827;
-  border-color: #DC2626;
-  border-style: solid;
-  border-width: 1px;
-  --select-field-caption-color: #DC2626;
+  color: #111827 !important;
+  border-color: #DC2626 !important;
+  border-style: solid !important;
+  border-width: 1px !important;
+  --select-field-caption-color: #DC2626 !important;
 }
 .ionic-select[data-state="invalid"]:focus-visible {
-  box-shadow: 0 0 0 3px #FECACA;
-  border-color: #DC2626;
+  box-shadow: 0 0 0 3px #FECACA !important;
+  border-color: #DC2626 !important;
 }
 .ionic-select[data-state="invalid"]:hover {
-  border-color: #DC2626;
+  border-color: #DC2626 !important;
 }
 .ionic-select[data-state="required"] {
-  --select-required-indicator-color: #DC2626;
+  --select-required-indicator-color: #DC2626 !important;
 }
 .ionic-skeleton[data-color="dark"] {
-  background-color: #9CA3AF;
+  background-color: #9CA3AF !important;
 }
 .ionic-skeleton[data-color="light"] {
-  background-color: #E5E7EB;
+  background-color: #E5E7EB !important;
 }
 .ionic-skeleton[data-color="medium"] {
-  background-color: #D1D5DB;
+  background-color: #D1D5DB !important;
 }
 .ionic-skeleton[data-size="lg"] {
-  height: 32px;
-  font-family: Inter;
-  font-weight: 400;
+  height: 32px !important;
+  font-family: Inter !important;
+  font-weight: 400 !important;
 }
 .ionic-skeleton[data-size="md"] {
-  height: 24px;
-  font-family: Inter;
-  font-weight: 400;
+  height: 24px !important;
+  font-family: Inter !important;
+  font-weight: 400 !important;
 }
 .ionic-skeleton[data-size="sm"] {
-  height: 16px;
-  font-family: Inter;
-  font-weight: 400;
+  height: 16px !important;
+  font-family: Inter !important;
+  font-weight: 400 !important;
 }
 .ionic-skeleton[data-size="xl"] {
-  height: 48px;
-  font-family: Inter;
-  font-weight: 400;
+  height: 48px !important;
+  font-family: Inter !important;
+  font-weight: 400 !important;
 }
 .ionic-skeleton[data-size="xs"] {
-  height: 12px;
-  font-family: Inter;
-  font-weight: 400;
+  height: 12px !important;
+  font-family: Inter !important;
+  font-weight: 400 !important;
 }
 .ionic-skeleton[data-shape="text"] {
-  border-radius: 4px;
+  border-radius: 4px !important;
 }
 .ionic-skeleton[data-shape="circle"] {
-  border-radius: 50%;
+  border-radius: 50% !important;
 }
 .ionic-skeleton[data-shape="rectangle"] {
-  border-radius: 8px;
+  border-radius: 8px !important;
 }
 .ionic-slider[data-color="info"] {
-  color: #0284C7;
-  border-color: #0284C7;
-  background-color: #F3F4F6;
+  color: #0284C7 !important;
+  border-color: #0284C7 !important;
+  background-color: #F3F4F6 !important;
 }
 .ionic-slider[data-color="danger"] {
-  color: #DC2626;
-  border-color: #DC2626;
-  background-color: #F3F4F6;
+  color: #DC2626 !important;
+  border-color: #DC2626 !important;
+  background-color: #F3F4F6 !important;
 }
 .ionic-slider[data-color="neutral"] {
-  color: #4B5563;
-  border-color: #4B5563;
-  background-color: #F3F4F6;
+  color: #4B5563 !important;
+  border-color: #4B5563 !important;
+  background-color: #F3F4F6 !important;
 }
 .ionic-slider[data-color="primary"] {
-  color: #3B82F6;
-  border-color: #3B82F6;
-  background-color: #F3F4F6;
+  color: #3B82F6 !important;
+  border-color: #3B82F6 !important;
+  background-color: #F3F4F6 !important;
 }
 .ionic-slider[data-color="success"] {
-  color: #16A34A;
-  border-color: #16A34A;
-  background-color: #F3F4F6;
+  color: #16A34A !important;
+  border-color: #16A34A !important;
+  background-color: #F3F4F6 !important;
 }
 .ionic-slider[data-color="warning"] {
-  color: #F59E0B;
-  border-color: #F59E0B;
-  background-color: #F3F4F6;
+  color: #F59E0B !important;
+  border-color: #F59E0B !important;
+  background-color: #F3F4F6 !important;
 }
 .ionic-slider[data-orientation="vertical"] {
-  flex-direction: column;
+  flex-direction: column !important;
 }
 .ionic-slider[data-orientation="horizontal"] {
-  flex-direction: row;
+  flex-direction: row !important;
 }
 .ionic-slider[data-size="lg"] {
-  width: 280px;
-  height: 8px;
-  font-family: Inter;
-  font-weight: 500;
+  width: 280px !important;
+  height: 8px !important;
+  font-family: Inter !important;
+  font-weight: 500 !important;
 }
 .ionic-slider[data-size="md"] {
-  width: 200px;
-  height: 6px;
-  font-family: Inter;
-  font-weight: 500;
+  width: 200px !important;
+  height: 6px !important;
+  font-family: Inter !important;
+  font-weight: 500 !important;
 }
 .ionic-slider[data-size="sm"] {
-  width: 150px;
-  height: 4px;
-  font-family: Inter;
-  font-weight: 500;
+  width: 150px !important;
+  height: 4px !important;
+  font-family: Inter !important;
+  font-weight: 500 !important;
 }
 .ionic-spinner[data-color="info"] {
-  color: #0284C7;
-  background-color: #F3F4F6;
+  color: #0284C7 !important;
+  background-color: #F3F4F6 !important;
 }
 .ionic-spinner[data-color="white"] {
-  color: #FFFFFF;
-  background-color: rgba(255,255,255,0.3);
+  color: #FFFFFF !important;
+  background-color: rgba(255,255,255,0.3) !important;
 }
 .ionic-spinner[data-color="danger"] {
-  color: #DC2626;
-  background-color: #F3F4F6;
+  color: #DC2626 !important;
+  background-color: #F3F4F6 !important;
 }
 .ionic-spinner[data-color="neutral"] {
-  color: #4B5563;
-  background-color: #F3F4F6;
+  color: #4B5563 !important;
+  background-color: #F3F4F6 !important;
 }
 .ionic-spinner[data-color="primary"] {
-  color: #3B82F6;
-  background-color: #F3F4F6;
+  color: #3B82F6 !important;
+  background-color: #F3F4F6 !important;
 }
 .ionic-spinner[data-color="success"] {
-  color: #16A34A;
-  background-color: #F3F4F6;
+  color: #16A34A !important;
+  background-color: #F3F4F6 !important;
 }
 .ionic-spinner[data-color="warning"] {
-  color: #F59E0B;
-  background-color: #F3F4F6;
+  color: #F59E0B !important;
+  background-color: #F3F4F6 !important;
 }
 .ionic-spinner[data-color="secondary"] {
-  color: #4B5563;
-  background-color: #F3F4F6;
+  color: #4B5563 !important;
+  background-color: #F3F4F6 !important;
 }
 .ionic-spinner[data-size="lg"] {
-  width: 32px;
-  height: 32px;
-  font-family: Inter;
-  font-weight: 400;
+  width: 32px !important;
+  height: 32px !important;
+  font-family: Inter !important;
+  font-weight: 400 !important;
 }
 .ionic-spinner[data-size="md"] {
-  width: 24px;
-  height: 24px;
-  font-family: Inter;
-  font-weight: 400;
+  width: 24px !important;
+  height: 24px !important;
+  font-family: Inter !important;
+  font-weight: 400 !important;
 }
 .ionic-spinner[data-size="sm"] {
-  width: 16px;
-  height: 16px;
-  font-family: Inter;
-  font-weight: 400;
+  width: 16px !important;
+  height: 16px !important;
+  font-family: Inter !important;
+  font-weight: 400 !important;
 }
 .ionic-switch[data-color="info"] {
-  color: #FFFFFF;
-  background-color: #D1D5DB;
+  color: #FFFFFF !important;
+  background-color: #D1D5DB !important;
 }
 .ionic-switch[data-color="info"]:focus-visible {
-  box-shadow: 0 0 0 3px #BAE6FD;
+  box-shadow: 0 0 0 3px #BAE6FD !important;
 }
 .ionic-switch[data-color="info"]:hover {
-  background-color: #9CA3AF;
+  background-color: #9CA3AF !important;
 }
 .ionic-switch[data-color="info"]:checked {
-  background-color: #0284C7;
+  background-color: #0284C7 !important;
 }
 .ionic-switch[data-color="info"]:disabled {
-  cursor: not-allowed;
-  opacity: 0.6;
-  background-color: #F3F4F6;
+  cursor: not-allowed !important;
+  opacity: 0.6 !important;
+  background-color: #F3F4F6 !important;
 }
 .ionic-switch[data-color="danger"] {
-  color: #FFFFFF;
-  background-color: #D1D5DB;
+  color: #FFFFFF !important;
+  background-color: #D1D5DB !important;
 }
 .ionic-switch[data-color="danger"]:focus-visible {
-  box-shadow: 0 0 0 3px #FECACA;
+  box-shadow: 0 0 0 3px #FECACA !important;
 }
 .ionic-switch[data-color="danger"]:hover {
-  background-color: #9CA3AF;
+  background-color: #9CA3AF !important;
 }
 .ionic-switch[data-color="danger"]:checked {
-  background-color: #DC2626;
+  background-color: #DC2626 !important;
 }
 .ionic-switch[data-color="danger"]:disabled {
-  cursor: not-allowed;
-  opacity: 0.6;
-  background-color: #F3F4F6;
+  cursor: not-allowed !important;
+  opacity: 0.6 !important;
+  background-color: #F3F4F6 !important;
 }
 .ionic-switch[data-color="neutral"] {
-  color: #FFFFFF;
-  background-color: #D1D5DB;
+  color: #FFFFFF !important;
+  background-color: #D1D5DB !important;
 }
 .ionic-switch[data-color="neutral"]:focus-visible {
-  box-shadow: 0 0 0 3px #E5E7EB;
+  box-shadow: 0 0 0 3px #E5E7EB !important;
 }
 .ionic-switch[data-color="neutral"]:hover {
-  background-color: #9CA3AF;
+  background-color: #9CA3AF !important;
 }
 .ionic-switch[data-color="neutral"]:checked {
-  background-color: #374151;
+  background-color: #374151 !important;
 }
 .ionic-switch[data-color="neutral"]:disabled {
-  cursor: not-allowed;
-  opacity: 0.6;
-  background-color: #F3F4F6;
+  cursor: not-allowed !important;
+  opacity: 0.6 !important;
+  background-color: #F3F4F6 !important;
 }
 .ionic-switch[data-color="primary"] {
-  color: #FFFFFF;
-  background-color: #D1D5DB;
+  color: #FFFFFF !important;
+  background-color: #D1D5DB !important;
 }
 .ionic-switch[data-color="primary"]:focus-visible {
-  box-shadow: 0 0 0 3px #3B82F6;
+  box-shadow: 0 0 0 3px #3B82F6 !important;
 }
 .ionic-switch[data-color="primary"]:hover {
-  background-color: #9CA3AF;
+  background-color: #9CA3AF !important;
 }
 .ionic-switch[data-color="primary"]:checked {
-  background-color: #3B82F6;
+  background-color: #3B82F6 !important;
 }
 .ionic-switch[data-color="primary"]:disabled {
-  cursor: not-allowed;
-  opacity: 0.6;
-  background-color: #F3F4F6;
+  cursor: not-allowed !important;
+  opacity: 0.6 !important;
+  background-color: #F3F4F6 !important;
 }
 .ionic-switch[data-color="success"] {
-  color: #FFFFFF;
-  background-color: #D1D5DB;
+  color: #FFFFFF !important;
+  background-color: #D1D5DB !important;
 }
 .ionic-switch[data-color="success"]:focus-visible {
-  box-shadow: 0 0 0 3px #BBF7D0;
+  box-shadow: 0 0 0 3px #BBF7D0 !important;
 }
 .ionic-switch[data-color="success"]:hover {
-  background-color: #9CA3AF;
+  background-color: #9CA3AF !important;
 }
 .ionic-switch[data-color="success"]:checked {
-  background-color: #16A34A;
+  background-color: #16A34A !important;
 }
 .ionic-switch[data-color="success"]:disabled {
-  cursor: not-allowed;
-  opacity: 0.6;
-  background-color: #F3F4F6;
+  cursor: not-allowed !important;
+  opacity: 0.6 !important;
+  background-color: #F3F4F6 !important;
 }
 .ionic-switch[data-color="warning"] {
-  color: #FFFFFF;
-  background-color: #D1D5DB;
+  color: #FFFFFF !important;
+  background-color: #D1D5DB !important;
 }
 .ionic-switch[data-color="warning"]:focus-visible {
-  box-shadow: 0 0 0 3px #FDE68A;
+  box-shadow: 0 0 0 3px #FDE68A !important;
 }
 .ionic-switch[data-color="warning"]:hover {
-  background-color: #9CA3AF;
+  background-color: #9CA3AF !important;
 }
 .ionic-switch[data-color="warning"]:checked {
-  background-color: #F59E0B;
+  background-color: #F59E0B !important;
 }
 .ionic-switch[data-color="warning"]:disabled {
-  cursor: not-allowed;
-  opacity: 0.6;
-  background-color: #F3F4F6;
+  cursor: not-allowed !important;
+  opacity: 0.6 !important;
+  background-color: #F3F4F6 !important;
 }
 .ionic-switch[data-size="lg"] {
-  width: 52px;
-  height: 28px;
-  font-family: Inter;
-  font-weight: 500;
+  width: 52px !important;
+  height: 28px !important;
+  font-family: Inter !important;
+  font-weight: 500 !important;
 }
 .ionic-switch[data-size="md"] {
-  width: 44px;
-  height: 24px;
-  font-family: Inter;
-  font-weight: 500;
+  width: 44px !important;
+  height: 24px !important;
+  font-family: Inter !important;
+  font-weight: 500 !important;
 }
 .ionic-switch[data-size="sm"] {
-  width: 36px;
-  height: 20px;
-  font-family: Inter;
-  font-weight: 500;
+  width: 36px !important;
+  height: 20px !important;
+  font-family: Inter !important;
+  font-weight: 500 !important;
 }
 .ionic-tab[data-appearance="line"] {
-  font-family: Inter;
-  font-weight: 400;
-  border-radius: 0;
-  padding-bottom: 4px;
-  background-color: transparent;
-  border-bottom-color: #4B5563;
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
+  font-family: Inter !important;
+  font-weight: 400 !important;
+  border-radius: 0 !important;
+  padding-bottom: 4px !important;
+  background-color: transparent !important;
+  border-bottom-color: #4B5563 !important;
+  border-bottom-style: solid !important;
+  border-bottom-width: 2px !important;
 }
 .ionic-tab[data-appearance="line"]:focus-visible {
-  outline: 2px solid #3B82F6;
-  outline-offset: -2px;
+  outline: 2px solid #3B82F6 !important;
+  outline-offset: -2px !important;
 }
 .ionic-tab[data-appearance="line"]:hover {
-  border-bottom-color: #9CA3AF;
+  border-bottom-color: #9CA3AF !important;
 }
 .ionic-tab[data-appearance="line"]:disabled {
-  cursor: not-allowed;
-  opacity: 0.5;
-  pointer-events: none;
+  cursor: not-allowed !important;
+  opacity: 0.5 !important;
+  pointer-events: none !important;
 }
 .ionic-tab[data-appearance="line"]:selected {
-  color: #1054c2;
-  font-weight: 500;
-  border-bottom-color: #1669f1;
+  color: #1054c2 !important;
+  font-weight: 500 !important;
+  border-bottom-color: #1669f1 !important;
 }
 .ionic-tab[data-appearance="pills"] {
-  font-family: Inter;
-  font-weight: 400;
-  border-radius: 9999px;
-  background-color: transparent;
+  font-family: Inter !important;
+  font-weight: 400 !important;
+  border-radius: 9999px !important;
+  background-color: transparent !important;
 }
 .ionic-tab[data-appearance="pills"]:focus-visible {
-  outline: 2px solid #3B82F6;
-  outline-offset: 2px;
+  outline: 2px solid #3B82F6 !important;
+  outline-offset: 2px !important;
 }
 .ionic-tab[data-appearance="pills"]:hover {
-  background-color: #F3F4F6;
+  background-color: #F3F4F6 !important;
 }
 .ionic-tab[data-appearance="pills"]:disabled {
-  cursor: not-allowed;
-  opacity: 0.5;
-  pointer-events: none;
+  cursor: not-allowed !important;
+  opacity: 0.5 !important;
+  pointer-events: none !important;
 }
 .ionic-tab[data-appearance="pills"]:selected {
-  color: #1054c2;
-  font-weight: 500;
-  background-color: #e2e5eb;
+  color: #1054c2 !important;
+  font-weight: 500 !important;
+  background-color: #e2e5eb !important;
 }
 .ionic-tab[data-appearance="contained"] {
-  font-family: Inter;
-  font-weight: 400;
-  border-radius: 8px;
-  background-color: transparent;
+  font-family: Inter !important;
+  font-weight: 400 !important;
+  border-radius: 8px !important;
+  background-color: transparent !important;
 }
 .ionic-tab[data-appearance="contained"]:focus-visible {
-  outline: 2px solid #3B82F6;
-  outline-offset: 2px;
+  outline: 2px solid #3B82F6 !important;
+  outline-offset: 2px !important;
 }
 .ionic-tab[data-appearance="contained"]:hover {
-  background-color: #E5E7EB;
+  background-color: #E5E7EB !important;
 }
 .ionic-tab[data-appearance="contained"]:disabled {
-  cursor: not-allowed;
-  opacity: 0.5;
-  pointer-events: none;
+  cursor: not-allowed !important;
+  opacity: 0.5 !important;
+  pointer-events: none !important;
 }
 .ionic-tab[data-appearance="contained"]:selected {
-  color: #111827;
-  box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
-  font-weight: 500;
-  border-radius: 8px;
-  background-color: #FFFFFF;
+  color: #111827 !important;
+  box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05) !important;
+  font-weight: 500 !important;
+  border-radius: 8px !important;
+  background-color: #FFFFFF !important;
 }
 .ionic-tab[data-color="default"] {
-  color: #4B5563;
-  font-family: Inter;
-  font-weight: 400;
+  color: #4B5563 !important;
+  font-family: Inter !important;
+  font-weight: 400 !important;
 }
 .ionic-tab[data-color="default"]:hover {
-  color: #111827;
+  color: #111827 !important;
 }
 .ionic-tab[data-color="default"]:disabled {
-  color: #9CA3AF;
-  opacity: 0.5;
+  color: #9CA3AF !important;
+  opacity: 0.5 !important;
 }
 .ionic-tab[data-color="default"]:selected {
-  color: #111827;
-  font-weight: 500;
+  color: #111827 !important;
+  font-weight: 500 !important;
 }
 .ionic-tab[data-color="neutral"] {
-  color: #6B7280;
-  font-family: Inter;
-  font-weight: 400;
+  color: #6B7280 !important;
+  font-family: Inter !important;
+  font-weight: 400 !important;
 }
 .ionic-tab[data-color="neutral"]:hover {
-  color: #4B5563;
+  color: #4B5563 !important;
 }
 .ionic-tab[data-color="neutral"]:disabled {
-  opacity: 0.5;
+  opacity: 0.5 !important;
 }
 .ionic-tab[data-color="neutral"]:selected {
-  color: #111827;
-  font-weight: 500;
+  color: #111827 !important;
+  font-weight: 500 !important;
 }
 .ionic-tab[data-color="primary"] {
-  color: #1669f1;
-  font-family: Inter;
-  font-weight: 400;
+  color: #1669f1 !important;
+  font-family: Inter !important;
+  font-weight: 400 !important;
 }
 .ionic-tab[data-color="primary"]:hover {
-  color: #1054c2;
+  color: #1054c2 !important;
 }
 .ionic-tab[data-color="primary"]:disabled {
-  opacity: 0.5;
+  opacity: 0.5 !important;
 }
 .ionic-tab[data-color="primary"]:selected {
-  color: #1054c2;
-  font-weight: 500;
+  color: #1054c2 !important;
+  font-weight: 500 !important;
 }
 .ionic-tab[data-icon="leading"] {
-  gap: 4px;
+  gap: 4px !important;
 }
 .ionic-tab[data-orientation="vertical"] {
-  border-left-color: transparent;
-  border-left-style: solid;
-  border-left-width: 1px;
-  border-bottom-style: none;
-  border-bottom-width: 0;
+  border-left-color: transparent !important;
+  border-left-style: solid !important;
+  border-left-width: 1px !important;
+  border-bottom-style: none !important;
+  border-bottom-width: 0 !important;
 }
 .ionic-tab[data-size="lg"] {
-  padding: 10px 20px;
-  font-size: 16px;
-  font-family: Inter;
-  line-height: 1.5;
+  padding: 10px 20px !important;
+  font-size: 16px !important;
+  font-family: Inter !important;
+  line-height: 1.5 !important;
 }
 .ionic-tab[data-size="md"] {
-  padding: 8px 16px;
-  font-size: 14px;
-  font-family: Inter;
-  line-height: 1.5;
+  padding: 8px 16px !important;
+  font-size: 14px !important;
+  font-family: Inter !important;
+  line-height: 1.5 !important;
 }
 .ionic-tab[data-size="sm"] {
-  padding: 6px 12px;
-  font-size: 12px;
-  font-family: Inter;
-  line-height: 1.4;
+  padding: 6px 12px !important;
+  font-size: 12px !important;
+  font-family: Inter !important;
+  line-height: 1.4 !important;
 }
 .ionic-text[data-align="left"] {
-  text-align: left;
+  text-align: left !important;
 }
 .ionic-text[data-align="right"] {
-  text-align: right;
+  text-align: right !important;
 }
 .ionic-text[data-align="center"] {
-  text-align: center;
+  text-align: center !important;
 }
 .ionic-text[data-color="muted"] {
-  color: #4B5563;
+  color: #4B5563 !important;
 }
 .ionic-text[data-color="default"] {
-  color: #111827;
+  color: #111827 !important;
 }
 .ionic-text[data-color="primary"] {
-  color: #3B82F6;
+  color: #3B82F6 !important;
 }
 .ionic-text[data-color="success"] {
-  color: #16A34A;
+  color: #16A34A !important;
 }
 .ionic-text[data-color="destructive"] {
-  color: #DC2626;
+  color: #DC2626 !important;
 }
 .ionic-text[data-size="lg"] {
-  font-size: 18px;
-  line-height: 1.75;
+  font-size: 18px !important;
+  line-height: 1.75 !important;
 }
 .ionic-text[data-size="sm"] {
-  font-size: 14px;
-  line-height: 1.375;
+  font-size: 14px !important;
+  line-height: 1.375 !important;
 }
 .ionic-text[data-size="xl"] {
-  font-size: 20px;
-  line-height: 1.6;
+  font-size: 20px !important;
+  line-height: 1.6 !important;
 }
 .ionic-text[data-size="xs"] {
-  font-size: 12px;
-  line-height: 1.25;
+  font-size: 12px !important;
+  line-height: 1.25 !important;
 }
 .ionic-text[data-size="2xl"] {
-  font-size: 24px;
-  line-height: 1.6;
+  font-size: 24px !important;
+  line-height: 1.6 !important;
 }
 .ionic-text[data-size="base"] {
-  font-size: 16px;
-  line-height: 1.5;
+  font-size: 16px !important;
+  line-height: 1.5 !important;
 }
 .ionic-text[data-weight="bold"] {
-  font-weight: 700;
+  font-weight: 700 !important;
 }
 .ionic-text[data-weight="medium"] {
-  font-weight: 500;
+  font-weight: 500 !important;
 }
 .ionic-text[data-weight="normal"] {
-  font-weight: 400;
+  font-weight: 400 !important;
 }
 .ionic-text[data-weight="semibold"] {
-  font-weight: 600;
+  font-weight: 600 !important;
 }
 .ionic-textarea[data-color="muted"] {
-  color: #4B5563;
-  border-color: #F3F4F6;
-  background-color: #F9FAFB;
-  placeholder-color: #6B7280;
+  color: #4B5563 !important;
+  border-color: #F3F4F6 !important;
+  background-color: #F9FAFB !important;
+  placeholder-color: #6B7280 !important;
 }
 .ionic-textarea[data-color="muted"]:focus-visible {
-  box-shadow: 0 0 0 3px #E5E7EB;
-  border-color: #9CA3AF;
+  box-shadow: 0 0 0 3px #E5E7EB !important;
+  border-color: #9CA3AF !important;
 }
 .ionic-textarea[data-color="muted"]:hover {
-  border-color: #E5E7EB;
+  border-color: #E5E7EB !important;
 }
 .ionic-textarea[data-color="muted"]:disabled {
-  color: #9CA3AF;
-  cursor: not-allowed;
-  background-color: #F3F4F6;
+  color: #9CA3AF !important;
+  cursor: not-allowed !important;
+  background-color: #F3F4F6 !important;
 }
 .ionic-textarea[data-color="default"] {
-  color: #111827;
-  border-color: #E5E7EB;
-  background-color: #FFFFFF;
-  placeholder-color: #6B7280;
+  color: #111827 !important;
+  border-color: #E5E7EB !important;
+  background-color: #FFFFFF !important;
+  placeholder-color: #6B7280 !important;
 }
 .ionic-textarea[data-color="default"]:focus-visible {
-  box-shadow: 0 0 0 2px #3B82F6;
-  border-color: #3B82F6;
+  box-shadow: 0 0 0 2px #3B82F6 !important;
+  border-color: #3B82F6 !important;
 }
 .ionic-textarea[data-color="default"]:hover {
-  border-color: #9CA3AF;
+  border-color: #9CA3AF !important;
 }
 .ionic-textarea[data-color="default"]:disabled {
-  color: #9CA3AF;
-  cursor: not-allowed;
-  background-color: #F3F4F6;
+  color: #9CA3AF !important;
+  cursor: not-allowed !important;
+  background-color: #F3F4F6 !important;
 }
 .ionic-textarea[data-color="primary"] {
-  color: #111827;
-  border-color: #3B82F6;
-  background-color: #FFFFFF;
-  placeholder-color: #6B7280;
+  color: #111827 !important;
+  border-color: #3B82F6 !important;
+  background-color: #FFFFFF !important;
+  placeholder-color: #6B7280 !important;
 }
 .ionic-textarea[data-color="primary"]:focus-visible {
-  box-shadow: 0 0 0 2px #3B82F6;
-  border-color: #1669f1;
+  box-shadow: 0 0 0 2px #3B82F6 !important;
+  border-color: #1669f1 !important;
 }
 .ionic-textarea[data-color="primary"]:hover {
-  border-color: #1669f1;
+  border-color: #1669f1 !important;
 }
 .ionic-textarea[data-color="primary"]:disabled {
-  color: #9CA3AF;
-  cursor: not-allowed;
-  background-color: #F3F4F6;
+  color: #9CA3AF !important;
+  cursor: not-allowed !important;
+  background-color: #F3F4F6 !important;
 }
 .ionic-textarea[data-shape="pill"] {
-  border-style: solid;
-  border-width: 1px;
-  border-radius: 9999px;
+  border-style: solid !important;
+  border-width: 1px !important;
+  border-radius: 9999px !important;
 }
 .ionic-textarea[data-shape="sharp"] {
-  border-style: solid;
-  border-width: 1px;
-  border-radius: 0;
+  border-style: solid !important;
+  border-width: 1px !important;
+  border-radius: 0 !important;
 }
 .ionic-textarea[data-shape="rounded"] {
-  border-style: solid;
-  border-width: 1px;
-  border-radius: 8px;
+  border-style: solid !important;
+  border-width: 1px !important;
+  border-radius: 8px !important;
 }
 .ionic-textarea[data-size="lg"] {
-  padding: 16px 24px;
-  font-size: 18px;
-  min-height: 120px;
-  font-family: Inter;
-  font-weight: 400;
-  line-height: 1.6;
+  padding: 16px 24px !important;
+  font-size: 18px !important;
+  min-height: 120px !important;
+  font-family: Inter !important;
+  font-weight: 400 !important;
+  line-height: 1.6 !important;
 }
 .ionic-textarea[data-size="md"] {
-  padding: 8px 16px;
-  font-size: 16px;
-  min-height: 80px;
-  font-family: Inter;
-  font-weight: 400;
-  line-height: 1.5;
+  padding: 8px 16px !important;
+  font-size: 16px !important;
+  min-height: 80px !important;
+  font-family: Inter !important;
+  font-weight: 400 !important;
+  line-height: 1.5 !important;
 }
 .ionic-textarea[data-size="sm"] {
-  padding: 4px 8px;
-  font-size: 14px;
-  min-height: 60px;
-  font-family: Inter;
-  font-weight: 400;
-  line-height: 1.4;
+  padding: 4px 8px !important;
+  font-size: 14px !important;
+  min-height: 60px !important;
+  font-family: Inter !important;
+  font-weight: 400 !important;
+  line-height: 1.4 !important;
 }
 .ionic-toast[data-position="top-left"] {
-  top: 16px;
-  left: 16px;
-  right: auto;
-  bottom: auto;
+  top: 16px !important;
+  left: 16px !important;
+  right: auto !important;
+  bottom: auto !important;
 }
 .ionic-toast[data-position="top-right"] {
-  top: 16px;
-  left: auto;
-  right: 16px;
-  bottom: auto;
+  top: 16px !important;
+  left: auto !important;
+  right: 16px !important;
+  bottom: auto !important;
 }
 .ionic-toast[data-position="top-center"] {
-  top: 16px;
-  left: 50%;
-  right: auto;
-  bottom: auto;
-  transform: translateX(-50%);
+  top: 16px !important;
+  left: 50% !important;
+  right: auto !important;
+  bottom: auto !important;
+  transform: translateX(-50%) !important;
 }
 .ionic-toast[data-position="bottom-left"] {
-  top: auto;
-  left: 16px;
-  right: auto;
-  bottom: 16px;
+  top: auto !important;
+  left: 16px !important;
+  right: auto !important;
+  bottom: 16px !important;
 }
 .ionic-toast[data-position="bottom-right"] {
-  top: auto;
-  left: auto;
-  right: 16px;
-  bottom: 16px;
+  top: auto !important;
+  left: auto !important;
+  right: 16px !important;
+  bottom: 16px !important;
 }
 .ionic-toast[data-position="bottom-center"] {
-  top: auto;
-  left: 50%;
-  right: auto;
-  bottom: 16px;
-  transform: translateX(-50%);
+  top: auto !important;
+  left: 50% !important;
+  right: auto !important;
+  bottom: 16px !important;
+  transform: translateX(-50%) !important;
 }
 .ionic-toast[data-size="lg"] {
-  padding: 20px 24px;
-  max-width: 480px;
-  min-width: 380px;
+  padding: 20px 24px !important;
+  max-width: 480px !important;
+  min-width: 380px !important;
 }
 .ionic-toast[data-size="md"] {
-  padding: 16px 20px;
-  max-width: 400px;
-  min-width: 320px;
+  padding: 16px 20px !important;
+  max-width: 400px !important;
+  min-width: 320px !important;
 }
 .ionic-toast[data-size="sm"] {
-  padding: 12px 16px;
-  max-width: 320px;
-  min-width: 280px;
+  padding: 12px 16px !important;
+  max-width: 320px !important;
+  min-width: 280px !important;
 }
 .ionic-toast[data-variant="info"] {
-  color: #e2e5eb;
-  font-family: Inter;
-  font-weight: 400;
-  border-color: #3B82F6;
-  background-color: #0c2a5c;
+  color: #e2e5eb !important;
+  font-family: Inter !important;
+  font-weight: 400 !important;
+  border-color: #3B82F6 !important;
+  background-color: #0c2a5c !important;
 }
 .ionic-toast[data-variant="error"] {
-  color: #FEE2E2;
-  font-family: Inter;
-  font-weight: 400;
-  border-color: #DC2626;
-  background-color: #450A0A;
+  color: #FEE2E2 !important;
+  font-family: Inter !important;
+  font-weight: 400 !important;
+  border-color: #DC2626 !important;
+  background-color: #450A0A !important;
 }
 .ionic-toast[data-variant="default"] {
-  color: #F9FAFB;
-  font-family: Inter;
-  font-weight: 400;
-  border-color: #4B5563;
-  background-color: #1F2937;
+  color: #F9FAFB !important;
+  font-family: Inter !important;
+  font-weight: 400 !important;
+  border-color: #4B5563 !important;
+  background-color: #1F2937 !important;
 }
 .ionic-toast[data-variant="success"] {
-  color: #DCFCE7;
-  font-family: Inter;
-  font-weight: 400;
-  border-color: #15803D;
-  background-color: #14532D;
+  color: #DCFCE7 !important;
+  font-family: Inter !important;
+  font-weight: 400 !important;
+  border-color: #15803D !important;
+  background-color: #14532D !important;
 }
 .ionic-toast[data-variant="warning"] {
-  color: #FEF3C7;
-  font-family: Inter;
-  font-weight: 400;
-  border-color: #D97706;
-  background-color: #92400E;
+  color: #FEF3C7 !important;
+  font-family: Inter !important;
+  font-weight: 400 !important;
+  border-color: #D97706 !important;
+  background-color: #92400E !important;
 }
 .ionic-togglebutton[data-appearance="ghost"] {
-  border-color: transparent;
-  border-style: none;
-  border-width: 0;
-  border-radius: 8px;
-  background-color: transparent;
+  border-color: transparent !important;
+  border-style: none !important;
+  border-width: 0 !important;
+  border-radius: 8px !important;
+  background-color: transparent !important;
 }
 .ionic-togglebutton[data-appearance="ghost"]:focus-visible {
-  outline: 2px solid #3B82F6;
-  outline-offset: 2px;
+  outline: 2px solid #3B82F6 !important;
+  outline-offset: 2px !important;
 }
 .ionic-togglebutton[data-appearance="ghost"]:hover {
-  background-color: #F3F4F6;
+  background-color: #F3F4F6 !important;
 }
 .ionic-togglebutton[data-appearance="ghost"]:active {
-  color: #1054c2;
-  background-color: #e2e5eb;
+  color: #1054c2 !important;
+  background-color: #e2e5eb !important;
 }
 .ionic-togglebutton[data-appearance="ghost"]:disabled {
-  cursor: not-allowed;
-  opacity: 0.5;
-  pointer-events: none;
+  cursor: not-allowed !important;
+  opacity: 0.5 !important;
+  pointer-events: none !important;
 }
 .ionic-togglebutton[data-appearance="filled"] {
-  border-color: transparent;
-  border-style: none;
-  border-width: 0;
-  border-radius: 8px;
-  background-color: #F3F4F6;
+  border-color: transparent !important;
+  border-style: none !important;
+  border-width: 0 !important;
+  border-radius: 8px !important;
+  background-color: #F3F4F6 !important;
 }
 .ionic-togglebutton[data-appearance="filled"]:focus-visible {
-  outline: 2px solid #3B82F6;
-  outline-offset: 2px;
+  outline: 2px solid #3B82F6 !important;
+  outline-offset: 2px !important;
 }
 .ionic-togglebutton[data-appearance="filled"]:hover {
-  background-color: #E5E7EB;
+  background-color: #E5E7EB !important;
 }
 .ionic-togglebutton[data-appearance="filled"]:active {
-  color: #FFFFFF;
-  background-color: #3B82F6;
+  color: #FFFFFF !important;
+  background-color: #3B82F6 !important;
 }
 .ionic-togglebutton[data-appearance="filled"]:disabled {
-  cursor: not-allowed;
-  opacity: 0.5;
-  pointer-events: none;
+  cursor: not-allowed !important;
+  opacity: 0.5 !important;
+  pointer-events: none !important;
 }
 .ionic-togglebutton[data-appearance="outline"] {
-  border-color: #E5E7EB;
-  border-style: solid;
-  border-width: 1px;
-  border-radius: 8px;
-  background-color: transparent;
+  border-color: #E5E7EB !important;
+  border-style: solid !important;
+  border-width: 1px !important;
+  border-radius: 8px !important;
+  background-color: transparent !important;
 }
 .ionic-togglebutton[data-appearance="outline"]:focus-visible {
-  outline: 2px solid #3B82F6;
-  outline-offset: 2px;
+  outline: 2px solid #3B82F6 !important;
+  outline-offset: 2px !important;
 }
 .ionic-togglebutton[data-appearance="outline"]:hover {
-  border-color: #9CA3AF;
-  background-color: #F3F4F6;
+  border-color: #9CA3AF !important;
+  background-color: #F3F4F6 !important;
 }
 .ionic-togglebutton[data-appearance="outline"]:active {
-  color: #1054c2;
-  border-color: #3B82F6;
-  background-color: #e2e5eb;
+  color: #1054c2 !important;
+  border-color: #3B82F6 !important;
+  background-color: #e2e5eb !important;
 }
 .ionic-togglebutton[data-appearance="outline"]:disabled {
-  cursor: not-allowed;
-  opacity: 0.5;
-  pointer-events: none;
+  cursor: not-allowed !important;
+  opacity: 0.5 !important;
+  pointer-events: none !important;
 }
 .ionic-togglebutton[data-color="danger"] {
-  color: #DC2626;
-  background-color: transparent;
+  color: #DC2626 !important;
+  background-color: transparent !important;
 }
 .ionic-togglebutton[data-color="danger"]:hover {
-  color: #B91C1C;
+  color: #B91C1C !important;
 }
 .ionic-togglebutton[data-color="danger"]:active {
-  color: #991B1B;
-  background-color: #FEE2E2;
+  color: #991B1B !important;
+  background-color: #FEE2E2 !important;
 }
 .ionic-togglebutton[data-color="default"] {
-  color: #4B5563;
-  background-color: transparent;
+  color: #4B5563 !important;
+  background-color: transparent !important;
 }
 .ionic-togglebutton[data-color="default"]:hover {
-  color: #111827;
+  color: #111827 !important;
 }
 .ionic-togglebutton[data-color="default"]:active {
-  color: #1054c2;
+  color: #1054c2 !important;
 }
 .ionic-togglebutton[data-color="primary"] {
-  color: #1669f1;
-  background-color: transparent;
+  color: #1669f1 !important;
+  background-color: transparent !important;
 }
 .ionic-togglebutton[data-color="primary"]:hover {
-  color: #1054c2;
+  color: #1054c2 !important;
 }
 .ionic-togglebutton[data-color="primary"]:active {
-  color: #0f3f8e;
-  background-color: #e2e5eb;
+  color: #0f3f8e !important;
+  background-color: #e2e5eb !important;
 }
 .ionic-togglebutton[data-color="success"] {
-  color: #15803D;
-  background-color: transparent;
+  color: #15803D !important;
+  background-color: transparent !important;
 }
 .ionic-togglebutton[data-color="success"]:hover {
-  color: #166534;
+  color: #166534 !important;
 }
 .ionic-togglebutton[data-color="success"]:active {
-  color: #14532D;
-  background-color: #DCFCE7;
+  color: #14532D !important;
+  background-color: #DCFCE7 !important;
 }
 .ionic-togglebutton[data-color="warning"] {
-  color: #D97706;
-  background-color: transparent;
+  color: #D97706 !important;
+  background-color: transparent !important;
 }
 .ionic-togglebutton[data-color="warning"]:hover {
-  color: #B45309;
+  color: #B45309 !important;
 }
 .ionic-togglebutton[data-color="warning"]:active {
-  color: #92400E;
-  background-color: #FEF3C7;
+  color: #92400E !important;
+  background-color: #FEF3C7 !important;
 }
 .ionic-togglebutton[data-size="lg"] {
-  gap: 10px;
-  padding: 10px 20px;
-  font-size: 16px;
-  font-family: Inter;
-  font-weight: 500;
-  line-height: 1.5;
+  gap: 10px !important;
+  padding: 10px 20px !important;
+  font-size: 16px !important;
+  font-family: Inter !important;
+  font-weight: 500 !important;
+  line-height: 1.5 !important;
 }
 .ionic-togglebutton[data-size="md"] {
-  gap: 8px;
-  padding: 8px 16px;
-  font-size: 14px;
-  font-family: Inter;
-  font-weight: 500;
-  line-height: 1.5;
+  gap: 8px !important;
+  padding: 8px 16px !important;
+  font-size: 14px !important;
+  font-family: Inter !important;
+  font-weight: 500 !important;
+  line-height: 1.5 !important;
 }
 .ionic-togglebutton[data-size="sm"] {
-  gap: 6px;
-  padding: 6px 12px;
-  font-size: 12px;
-  font-family: Inter;
-  font-weight: 500;
-  line-height: 1.4;
+  gap: 6px !important;
+  padding: 6px 12px !important;
+  font-size: 12px !important;
+  font-family: Inter !important;
+  font-weight: 500 !important;
+  line-height: 1.4 !important;
 }
 .ionic-tooltip[data-color="dark"] {
-  color: #FFFFFF;
-  font-size: 12px;
-  max-width: 240px;
-  padding-x: 8px;
-  padding-y: 4px;
-  font-family: Inter;
-  font-weight: 400;
-  background-color: #111827;
+  color: #FFFFFF !important;
+  font-size: 12px !important;
+  max-width: 240px !important;
+  padding-x: 8px !important;
+  padding-y: 4px !important;
+  font-family: Inter !important;
+  font-weight: 400 !important;
+  background-color: #111827 !important;
 }
 .ionic-tooltip[data-color="light"] {
-  color: #111827;
-  font-size: 12px;
-  max-width: 240px;
-  padding-x: 8px;
-  padding-y: 4px;
-  font-family: Inter;
-  font-weight: 400;
-  border-color: #E5E7EB;
-  border-style: solid;
-  border-width: 1px;
-  background-color: #FFFFFF;
+  color: #111827 !important;
+  font-size: 12px !important;
+  max-width: 240px !important;
+  padding-x: 8px !important;
+  padding-y: 4px !important;
+  font-family: Inter !important;
+  font-weight: 400 !important;
+  border-color: #E5E7EB !important;
+  border-style: solid !important;
+  border-width: 1px !important;
+  background-color: #FFFFFF !important;
 }
 .ionic-tooltip[data-color="danger"] {
-  color: #FFFFFF;
-  font-size: 12px;
-  max-width: 240px;
-  padding-x: 8px;
-  padding-y: 4px;
-  font-family: Inter;
-  font-weight: 400;
-  background-color: #DC2626;
+  color: #FFFFFF !important;
+  font-size: 12px !important;
+  max-width: 240px !important;
+  padding-x: 8px !important;
+  padding-y: 4px !important;
+  font-family: Inter !important;
+  font-weight: 400 !important;
+  background-color: #DC2626 !important;
 }
 .ionic-tooltip[data-color="primary"] {
-  color: #FFFFFF;
-  font-size: 12px;
-  max-width: 240px;
-  padding-x: 8px;
-  padding-y: 4px;
-  font-family: Inter;
-  font-weight: 400;
-  background-color: #3B82F6;
+  color: #FFFFFF !important;
+  font-size: 12px !important;
+  max-width: 240px !important;
+  padding-x: 8px !important;
+  padding-y: 4px !important;
+  font-family: Inter !important;
+  font-weight: 400 !important;
+  background-color: #3B82F6 !important;
 }
 .ionic-tooltip[data-shape="sharp"] {
-  border-radius: 0;
+  border-radius: 0 !important;
 }
 .ionic-tooltip[data-shape="rounded"] {
-  border-radius: 4px;
+  border-radius: 4px !important;
 }
 .ionic-tooltip[data-size="lg"] {
-  font-size: 14px;
-  max-width: 240px;
-  padding-x: 12px;
-  padding-y: 8px;
-  font-family: Inter;
-  font-weight: 400;
+  font-size: 14px !important;
+  max-width: 240px !important;
+  padding-x: 12px !important;
+  padding-y: 8px !important;
+  font-family: Inter !important;
+  font-weight: 400 !important;
 }
 .ionic-tooltip[data-size="md"] {
-  font-size: 12px;
-  max-width: 240px;
-  padding-x: 8px;
-  padding-y: 4px;
-  font-family: Inter;
-  font-weight: 400;
+  font-size: 12px !important;
+  max-width: 240px !important;
+  padding-x: 8px !important;
+  padding-y: 4px !important;
+  font-family: Inter !important;
+  font-weight: 400 !important;
 }
 .ionic-tooltip[data-size="sm"] {
-  font-size: 12px;
-  max-width: 240px;
-  padding-x: 8px;
-  padding-y: 4px;
-  font-family: Inter;
-  font-weight: 400;
+  font-size: 12px !important;
+  max-width: 240px !important;
+  padding-x: 8px !important;
+  padding-y: 4px !important;
+  font-family: Inter !important;
+  font-weight: 400 !important;
 }
 
 /* ========================= */
