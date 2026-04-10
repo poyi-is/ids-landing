@@ -151,7 +151,43 @@ Container `spacing` and `padding` props accept these values:
 
 > **Do NOT use `"xs"`, `"xl"`, `"2xl"` etc. as spacing/padding prop values** — they are CSS variables only, not valid component props. For finer control, use inline `style={{ gap: '4px' }}`.
 
-### 5.2 Common Layout Patterns
+### 5.2 Spacing & Alignment Rules
+
+**Every Container MUST have explicit `spacing` and `padding`:**
+- A Container with children should ALWAYS specify `spacing`. Default to `"md"` (16px) when unsure.
+- A Container that is a section/card/panel should ALWAYS specify `padding`. Default to `"md"` or `"lg"`.
+- Never leave spacing/padding unset — it defaults to 0, which looks broken.
+
+**Alignment defaults:**
+- Vertical lists (direction="column"): items stretch to full width by default. Use `alignment="start"` to left-align narrow content.
+- Horizontal rows (direction="row"): use `alignment="center"` to vertically center items of different heights.
+- Action bars (button rows): use `alignment="end"` to right-align, or `alignment="center"` to center.
+
+**Spacing hierarchy:**
+- Between major page sections: `spacing="lg"` (24px)
+- Between cards in a grid: `spacing="md"` (16px)
+- Between form fields: `spacing="md"` (16px)
+- Between items in a tight group (buttons, badges, inline elements): `spacing="sm"` (8px)
+- Inside a card/panel: `padding="lg"` (24px) for generous feel, `padding="md"` (16px) for compact
+
+**Nesting rule:** Outer containers use larger spacing, inner containers use smaller:
+```tsx
+{/* Outer: lg spacing between sections */}
+<Container spacing="lg" padding="lg">
+  {/* Inner: md spacing between fields */}
+  <Container spacing="md">
+    <Label text="Name" />
+    <Input placeholder="..." />
+  </Container>
+  {/* Inner: sm spacing between buttons */}
+  <Container direction="row" spacing="sm" alignment="end">
+    <Button label="Cancel" appearance="ghost" />
+    <Button label="Save" intent="primary" />
+  </Container>
+</Container>
+```
+
+### 5.3 Common Layout Patterns
 
 **Page layout:**
 ```tsx
@@ -521,11 +557,16 @@ import { Table, TableHeader, TableBody, TableRow, TableHead, TableCell,
 - DON'T place multiple `appearance="solid" intent="primary"` buttons side by side
 - DON'T use `intent="success"` for submit buttons -- use `intent="primary"`
 
-### Spacing
-- DO use the `spacing` and `padding` props on Container rather than custom CSS
+### Spacing & Layout
+- DO set `spacing` and `padding` on EVERY Container — never leave them unset (0 gap looks broken)
+- DO default to `spacing="md"` and `padding="md"` when unsure
+- DO use `spacing="lg"` between major sections, `spacing="md"` between fields, `spacing="sm"` between buttons
+- DO set `alignment="center"` on horizontal rows with mixed-height children (e.g., avatar + text + badge)
+- DO set `alignment="end"` on action bars (button rows) to right-align
 - DO keep spacing consistent within a section (don't mix `sm` and `lg` between siblings)
-- DO use `spacing="md"` (16px) as the default gap between form fields
+- DON'T leave Container without spacing/padding — the default is 0, which collapses content
 - DON'T use pixel values in inline styles when a spacing token exists
+- DON'T forget `direction="row"` when placing items horizontally — Container defaults to column
 
 ### Typography
 - DO use Text component with `tag` prop for semantic HTML (h1-h6, p, span)
@@ -613,7 +654,7 @@ import { Table, TableHeader, TableBody, TableRow, TableHead, TableCell,
 
 ### Quick-start prompt
 
-> Build a [page type] using the Ionic Design System. Import all components from `ionic-design-system`. Use Container for layout with flex/grid display. Use Text with appropriate tag/size/weight for headings. Use the intent color system: primary for CTAs, danger for destructive actions, success for confirmations, neutral for secondary actions. Default button is `intent="primary" appearance="solid" size="md"`. Default card is `Container color="card" padding="lg" elevation="sm" shape="rounded"`.
+> Build a [page type] using the Ionic Design System. Import all components from `ionic-design-system`. Use Container for layout with flex/grid display. ALWAYS set spacing and padding on every Container — use spacing="lg" between sections, spacing="md" between fields, spacing="sm" between buttons. Use alignment="center" on horizontal rows, alignment="end" on action bars. Use Text with appropriate tag/size/weight for headings. Use the intent color system: primary for CTAs, danger for destructive actions, success for confirmations, neutral for secondary actions. Default button is `intent="primary" appearance="solid" size="md"`. Default card is `Container color="card" padding="lg" elevation="sm" shape="rounded"`.
 
 ### Pattern prompts
 
@@ -634,6 +675,9 @@ import { Table, TableHeader, TableBody, TableRow, TableHead, TableCell,
 5. Use Container for all layout -- never raw `<div>` with flexbox
 6. Use Text for all typography -- never raw `<p>` or `<h1>`
 7. Prefer compositions (TooltipRoot, DialogRoot) over InteractionProvider
+8. **ALWAYS set `spacing` and `padding` on every Container** -- default to `"md"` when unsure
+9. Use `alignment="center"` on horizontal rows, `alignment="end"` on action bars
+10. Outer containers: `spacing="lg"` · inner groups: `spacing="md"` · button rows: `spacing="sm"`
 
 ---
 
