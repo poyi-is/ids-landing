@@ -1,4 +1,4 @@
-# DESIGN.md -- Ionic Design System
+# CONTEXT.md -- Ionic Design System
 
 > AI-readable design system context for generating consistent, well-designed UI.
 > Import components from `ionic-design-system`. Link the stylesheet in your app entry.
@@ -102,7 +102,8 @@ Each intent has a full scale (50--950). Use 500 for solid fills, 50--100 for sof
 | `xl` | 20px | Section headings |
 | `2xl` | 24px | Page section titles |
 | `3xl` | 30px | Page titles, hero text |
-| `4xl` | 36px | Display headings (rare) |
+
+> Text `size` prop accepts: `"xs"`, `"sm"`, `"base"`, `"lg"`, `"xl"`, `"2xl"`, `"3xl"`
 
 ### 4.2 Font Weights
 
@@ -139,16 +140,18 @@ Each intent has a full scale (50--950). Use 500 for solid fills, 50--100 for sof
 
 ### 5.1 Spacing Scale (8px base grid)
 
+Base tokens (available as CSS variables):
+
 | Token | Value | Use for |
 |-------|-------|---------|
 | `xs` | 4px | Tight gaps (icon-to-label, badge padding) |
 | `sm` | 8px | Compact spacing (within form fields, small gaps) |
-| `md-sm` | 12px | Between related items in a group |
 | `md` | 16px | Standard spacing (between form fields, card padding) |
 | `lg` | 24px | Between sections, generous card padding |
-| `xl` | 32px | Major section separation |
-| `2xl` | 48px | Page-level section breaks |
-| `3xl` | 64px | Hero sections, major vertical rhythm |
+
+> **Container `spacing` prop accepts:** `"none"` | `"sm"` | `"md"` | `"lg"`
+> **Container `padding` prop accepts:** `"none"` | `"sm"` | `"md"` | `"lg"`
+> For larger spacing, use inline `style={{ gap: '32px' }}` or `style={{ padding: '48px' }}`
 
 ### 5.2 Common Layout Patterns
 
@@ -260,12 +263,19 @@ Page background (neutral-50) -- no shadow
 | **Slider** | Range value selector | `value`, `min`, `max`, `onChange`, `mode` | `mode="single" size="md"` |
 | **Label** | Form field label | `text`, `htmlFor`, `required` | -- |
 
+**Valid prop values (form):**
+- Button `intent`: `"primary"` `"danger"` `"success"` `"warning"` `"info"` `"neutral"` `"secondary"`
+- Button `appearance`: `"solid"` `"soft"` `"outline"` `"ghost"`
+- Button `size`: `"sm"` `"md"` `"lg"` · Button `shape`: `"rounded"` `"pill"` `"sharp"`
+- Input/Textarea `size`: `"sm"` `"default"` `"lg"` · `shape`: `"rounded"` `"pill"` `"square"`
+- Switch `color`: `"primary"` `"success"` `"danger"` `"warning"` `"info"` `"neutral"`
+
 ### Content Components
 
 | Component | Description | Key props | Default |
 |-----------|-------------|-----------|---------|
 | **Text** | Typography element | `text`, `tag`, `size`, `weight`, `color` | `tag="span" size="base"` |
-| **Badge** | Status/count label | `label`, `color`, `variant`, `shape` | `variant="soft" shape="rounded"` |
+| **Badge** | Status/count label | `label`, `color`, `variant`, `size`, `shape` | `color="default" shape="rounded"` |
 | **Icon** | Lucide SVG icon | `name`, `size`, `color` | `size="md" color="inherit"` |
 | **Image** | Responsive image | `src`, `alt`, `fit`, `aspectRatio` | `fit="cover"` |
 | **Avatar** | User profile image | `src`, `initials`, `size`, `shape` | `size="md" shape="circle"` |
@@ -279,8 +289,18 @@ Page background (neutral-50) -- no shadow
 | **Toast** | Popup notification | `title`, `variant`, `position`, `duration` | `position="bottom-right" duration={3000}` |
 | **Spinner** | Loading indicator | `size`, `color`, `variant` | `variant="circular" color="primary"` |
 | **Progress** | Progress bar | `value`, `max`, `color`, `indeterminate` | `max={100}` |
-| **Skeleton** | Loading placeholder | `shape`, `animation`, `width`, `height` | `animation="pulse"` |
+| **Skeleton** | Loading placeholder | `shape`, `animation`, `width`, `height` | `shape="rectangle" animation="pulse"` |
 | **Tooltip** | Hover hint (primitive) | `content`, `color` | Use `TooltipRoot` composition instead |
+
+**Valid prop values (content/feedback):**
+- Text `size`: `"xs"` `"sm"` `"base"` `"lg"` `"xl"` `"2xl"` `"3xl"` · `color`: `"default"` `"muted"` `"primary"` `"success"` `"destructive"`
+- Text `weight`: `"normal"` `"medium"` `"semibold"` `"bold"` · `tag`: `"span"` `"p"` `"h1"`..`"h6"` `"label"`
+- Badge `color`: `"default"` `"primary"` `"success"` `"warning"` `"danger"` `"info"` `"muted"`
+- Badge `variant`: `"solid"` `"soft"` `"outline"` · `shape`: `"rounded"` `"pill"` `"sharp"` · `size`: `"sm"` `"md"` `"lg"`
+- Skeleton `shape`: `"rectangle"` `"circle"` `"text"` · `animation`: `"pulse"` `"wave"` `"none"`
+- Toast `variant`: `"default"` `"success"` `"error"` `"warning"` `"info"` · `position`: `"top-right"` `"bottom-right"` `"top-left"` `"bottom-left"` `"top-center"` `"bottom-center"`
+- Alert `intent`: `"info"` `"danger"` `"success"` `"warning"` `"neutral"`
+- Avatar `size`: `"xs"` `"sm"` `"md"` `"lg"` `"xl"` · `shape`: `"circle"` `"square"`
 
 ### Layout Components
 
@@ -290,6 +310,13 @@ Page background (neutral-50) -- no shadow
 | **Divider** | Line separator | `orientation`, `color`, `size` | `orientation="horizontal"` |
 | **Tab** | Tab selector | `label`, `selected`, `appearance` | `appearance="line"` |
 | **Table** | Data table | Sub-components: `TableHeader`, `TableBody`, `TableRow`, `TableHead`, `TableCell` | -- |
+
+**Valid prop values (layout):**
+- Container `display`: `"flex"` `"grid"` `"block"` · `direction`: `"row"` `"column"` `"row-reverse"` `"column-reverse"`
+- Container `spacing`: `"none"` `"sm"` `"md"` `"lg"` · `padding`: `"none"` `"sm"` `"md"` `"lg"`
+- Container `color`: `"neutral"` `"card"` `"muted"` `"primary"` `"secondary"` · `elevation`: `"none"` `"sm"` `"md"` `"lg"`
+- Container `shape`: `"none"` `"rounded"` `"pill"` · `wrap`: `"wrap"` `"nowrap"`
+- Divider `orientation`: `"horizontal"` `"vertical"`
 
 ### Interactive Components
 
