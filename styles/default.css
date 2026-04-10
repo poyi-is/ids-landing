@@ -1,5 +1,5 @@
 /* Ionic Design System — Default DS (Clean) */
-/* Generated 2026-04-09T20:32:14.320Z */
+/* Generated 2026-04-10T20:38:06.361Z */
 /* Usage: <link rel="stylesheet" href="https://ionic-design-system.github.io/ids-landing/styles/default.css"> */
 
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
@@ -3085,6 +3085,47 @@
   padding-bottom: 4px !important;
   font-family: Inter !important;
   font-weight: 400 !important;
+}
+
+/* ========================= */
+/* Container Layout Fixes    */
+/* ========================= */
+.ionic-container[data-columns] {
+  display: grid !important;
+}
+.ionic-container[data-direction="row"] {
+  display: flex !important;
+  flex-direction: row !important;
+}
+.ionic-container[data-direction="column"] {
+  display: flex !important;
+  flex-direction: column !important;
+}
+.ionic-container[data-direction="row-reverse"] {
+  display: flex !important;
+  flex-direction: row-reverse !important;
+}
+.ionic-container[data-direction="column-reverse"] {
+  display: flex !important;
+  flex-direction: column-reverse !important;
+}
+.ionic-container[data-spacing="sm"] {
+  gap: 8px !important;
+}
+.ionic-container[data-spacing="md"] {
+  gap: 16px !important;
+}
+.ionic-container[data-spacing="lg"] {
+  gap: 24px !important;
+}
+.ionic-container[data-spacing="none"] {
+  gap: 0 !important;
+}
+.ionic-container[data-wrap="wrap"] {
+  flex-wrap: wrap !important;
+}
+.ionic-container[data-wrap="nowrap"] {
+  flex-wrap: nowrap !important;
 }
 
 /* ========================= */
