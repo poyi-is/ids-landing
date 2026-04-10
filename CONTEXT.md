@@ -140,18 +140,16 @@ Each intent has a full scale (50--950). Use 500 for solid fills, 50--100 for sof
 
 ### 5.1 Spacing Scale (8px base grid)
 
-Base tokens (available as CSS variables):
+Container `spacing` and `padding` props accept these values:
 
-| Token | Value | Use for |
-|-------|-------|---------|
-| `xs` | 4px | Tight gaps (icon-to-label, badge padding) |
-| `sm` | 8px | Compact spacing (within form fields, small gaps) |
-| `md` | 16px | Standard spacing (between form fields, card padding) |
-| `lg` | 24px | Between sections, generous card padding |
+| Prop value | Pixels | Use for |
+|------------|--------|---------|
+| `"none"` | 0 | No spacing |
+| `"sm"` | 8px | Compact spacing (within form fields, small gaps) |
+| `"md"` | 16px | Standard spacing (between form fields, card padding) |
+| `"lg"` | 24px | Between sections, generous card padding |
 
-> **Container `spacing` prop accepts:** `"none"` | `"sm"` | `"md"` | `"lg"`
-> **Container `padding` prop accepts:** `"none"` | `"sm"` | `"md"` | `"lg"`
-> For larger spacing, use inline `style={{ gap: '32px' }}` or `style={{ padding: '48px' }}`
+> **Do NOT use `"xs"`, `"xl"`, `"2xl"` etc. as spacing/padding prop values** — they are CSS variables only, not valid component props. For finer control, use inline `style={{ gap: '4px' }}`.
 
 ### 5.2 Common Layout Patterns
 
@@ -267,8 +265,16 @@ Page background (neutral-50) -- no shadow
 - Button `intent`: `"primary"` `"danger"` `"success"` `"warning"` `"info"` `"neutral"` `"secondary"`
 - Button `appearance`: `"solid"` `"soft"` `"outline"` `"ghost"`
 - Button `size`: `"sm"` `"md"` `"lg"` · Button `shape`: `"rounded"` `"pill"` `"sharp"`
+- Button/Tab `icon`: **string name** from Lucide icon registry (e.g., `"Plus"`, `"Settings"`, `"Trash"`). Do NOT pass JSX elements — pass the icon name as a string.
 - Input/Textarea `size`: `"sm"` `"default"` `"lg"` · `shape`: `"rounded"` `"pill"` `"square"`
 - Switch `color`: `"primary"` `"success"` `"danger"` `"warning"` `"info"` `"neutral"`
+- Select `options`: array of `{ value: string, label: string }` objects:
+  ```tsx
+  <Select placeholder="Choose..." options={[
+    { value: 'light', label: 'Light' },
+    { value: 'dark', label: 'Dark' },
+  ]} />
+  ```
 
 ### Content Components
 
