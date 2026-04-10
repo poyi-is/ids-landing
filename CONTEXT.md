@@ -307,6 +307,9 @@ Page background (neutral-50) -- no shadow
 - Toast `variant`: `"default"` `"success"` `"error"` `"warning"` `"info"` · `position`: `"top-right"` `"bottom-right"` `"top-left"` `"bottom-left"` `"top-center"` `"bottom-center"`
 - Alert `intent`: `"info"` `"danger"` `"success"` `"warning"` `"neutral"`
 - Avatar `size`: `"xs"` `"sm"` `"md"` `"lg"` `"xl"` · `shape`: `"circle"` `"square"`
+- Progress `color`: `"default"` `"success"` `"warning"` `"danger"` (no `"primary"`) · `size`: `"sm"` `"default"` `"lg"`
+- Spinner `color`: `"primary"` `"secondary"` `"success"` `"warning"` `"danger"` `"info"` `"neutral"` `"white"`
+- Icon `color`: `"inherit"` `"primary"` `"muted"` (no semantic colors like success/danger)
 
 ### Layout Components
 
