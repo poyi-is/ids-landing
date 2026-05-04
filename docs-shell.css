@@ -1,0 +1,587 @@
+/* ── Ionic DS landing tokens (aligned with bundled template) ── */
+    :root {
+      --lp-accent: #B4FF3A;
+      --lp-accent-dim: #7DB827;
+      --lp-accent-glow: rgba(180, 255, 58, 0.15);
+      --lp-primary: #3B82F6;
+      --lp-primary-dim: #1669f1;
+      --lp-bg: #FFFFFF;
+      --lp-bg-muted: #F9FAFB;
+      --lp-bg-elev: #FFFFFF;
+      --lp-bg-inset: #F3F4F6;
+      --lp-border: #E5E7EB;
+      --lp-border-strong: #D1D5DB;
+      --lp-fg: #111827;
+      --lp-fg-muted: #4B5563;
+      --lp-fg-subtle: #6B7280;
+      --lp-grid: rgba(17, 24, 39, 0.04);
+      --lp-grid-strong: rgba(17, 24, 39, 0.08);
+      --lp-code-bg: #0A0A0A;
+      --lp-code-fg: #E5E7EB;
+    }
+
+    :root[data-theme="dark"] {
+      --lp-bg: #06080C;
+      --lp-bg-muted: #0A0D13;
+      --lp-bg-elev: #0F131B;
+      --lp-bg-inset: #131823;
+      --lp-border: #1E2533;
+      --lp-border-strong: #2A3245;
+      --lp-fg: #F5F7FA;
+      --lp-fg-muted: #9CA6B8;
+      --lp-fg-subtle: #6B7589;
+      --lp-grid: rgba(255, 255, 255, 0.035);
+      --lp-grid-strong: rgba(255, 255, 255, 0.07);
+      --lp-code-bg: #0A0D13;
+      --lp-code-fg: #E5E7EB;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html, body {
+      background: var(--lp-bg);
+      color: var(--lp-fg);
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      font-size: 14px;
+      line-height: 1.55;
+      min-height: 100vh;
+      -webkit-font-smoothing: antialiased;
+      background-image:
+        linear-gradient(to right, var(--lp-grid) 1px, transparent 1px),
+        linear-gradient(to bottom, var(--lp-grid) 1px, transparent 1px);
+      background-size: 48px 48px;
+    }
+
+    .mono { font-family: 'Geist Mono', ui-monospace, monospace; }
+    .display { font-family: 'Geist Sans', -apple-system, BlinkMacSystemFont, sans-serif; letter-spacing: -0.03em; }
+
+    @keyframes lp-pulse {
+      0%, 100% { box-shadow: 0 0 0 0 rgba(180, 255, 58, 0.4); }
+      50% { box-shadow: 0 0 0 8px rgba(180, 255, 58, 0); }
+    }
+
+    .pulse {
+      background: var(--lp-accent);
+      border-radius: 50%;
+      box-shadow: 0 0 0 0 var(--lp-accent-glow);
+      animation: lp-pulse 2s cubic-bezier(.4,0,.2,1) infinite;
+    }
+
+    [data-motion="off"] *, [data-motion="off"] *::before, [data-motion="off"] *::after {
+      animation-duration: 0s !important;
+    }
+
+    /* Landing shell: top nav */
+    .site-topbar {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      display: flex;
+      align-items: center;
+      gap: 40px;
+      padding: 14px 48px;
+      background: color-mix(in srgb, var(--lp-bg) 88%, transparent);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--lp-border);
+    }
+
+    .topbar-brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+      color: inherit;
+      flex-shrink: 0;
+    }
+
+    .topbar-logo {
+      width: 24px;
+      height: 24px;
+      background: var(--lp-primary);
+      border-radius: 5px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-family: 'Geist Sans', sans-serif;
+      font-weight: 700;
+      font-size: 13px;
+      position: relative;
+    }
+
+    .topbar-logo-dot {
+      position: absolute;
+      top: -2px;
+      right: -2px;
+      width: 6px;
+      height: 6px;
+    }
+
+    .topbar-lockup-title {
+      font-weight: 600;
+      font-size: 15px;
+    }
+
+    .topbar-version {
+      font-size: 10px;
+      color: var(--lp-fg-subtle);
+      letter-spacing: 0.1em;
+      padding: 2px 6px;
+      background: var(--lp-bg-inset);
+      border-radius: 4px;
+      margin-left: 4px;
+    }
+
+    .topbar-nav {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 24px;
+      flex: 1;
+      min-width: 0;
+    }
+
+    .topbar-link {
+      font-size: 13px;
+      color: var(--lp-fg-muted);
+      text-decoration: none;
+      white-space: nowrap;
+    }
+
+    .topbar-link:hover {
+      color: var(--lp-fg);
+    }
+
+    .topbar-link[aria-current="page"] {
+      color: var(--lp-fg);
+      font-weight: 500;
+    }
+
+    .topbar-actions {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-shrink: 0;
+    }
+
+    .lp-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      font-family: 'Inter', sans-serif;
+      font-weight: 500;
+      font-size: 14px;
+      padding: 10px 18px;
+      border: 1px solid transparent;
+      border-radius: 8px;
+      cursor: pointer;
+      text-decoration: none;
+      color: inherit;
+      background: transparent;
+      transition: background-color .15s, transform .1s, box-shadow .15s, border-color .15s;
+    }
+
+    .lp-btn:active { transform: scale(.98); }
+
+    .lp-btn[data-variant="ghost"] {
+      color: var(--lp-fg);
+      border-color: var(--lp-border);
+      background: var(--lp-bg-elev);
+    }
+
+    .lp-btn[data-variant="ghost"]:hover {
+      border-color: var(--lp-border-strong);
+    }
+
+    .lp-btn[data-variant="accent"] {
+      background: var(--lp-accent);
+      color: #0A0D13;
+      border-color: var(--lp-accent);
+      box-shadow: 0 0 0 0 var(--lp-accent-glow);
+    }
+
+    .lp-btn[data-variant="accent"]:hover {
+      box-shadow: 0 0 24px var(--lp-accent-glow);
+    }
+
+    .lp-btn-sm { padding: 6px 12px; font-size: 13px; }
+    .lp-btn-sm-accent { padding: 6px 14px; font-size: 13px; }
+
+    main.doc-shell {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 88px 48px 112px;
+    }
+
+    .doc-lead.display {
+      font-size: clamp(30px, 3.8vw, 38px);
+      font-weight: 600;
+      line-height: 1.12;
+      letter-spacing: -0.032em;
+      margin-bottom: 12px;
+    }
+
+    .doc-sub {
+      font-size: 16px;
+      color: var(--lp-fg-muted);
+      margin-bottom: 64px;
+      max-width: 58ch;
+    }
+
+    section.doc-section {
+      margin-bottom: 64px;
+    }
+
+    section.doc-section:last-of-type {
+      margin-bottom: 0;
+    }
+
+    h2.doc-heading {
+      font-family: 'Geist Sans', sans-serif;
+      font-weight: 600;
+      font-size: clamp(20px, 2.5vw, 24px);
+      letter-spacing: -0.024em;
+      line-height: 1.22;
+      margin-bottom: 20px;
+    }
+
+    h3.doc-h3 {
+      font-family: 'Geist Mono', monospace;
+      font-size: 11px;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--lp-fg-muted);
+      margin-top: 28px;
+      margin-bottom: 10px;
+    }
+
+    h3.doc-h3:first-of-type {
+      margin-top: 4px;
+    }
+
+    .doc-body {
+      color: var(--lp-fg);
+      margin-bottom: 14px;
+    }
+
+    .doc-muted {
+      color: var(--lp-fg-muted);
+      font-size: 14px;
+      margin-bottom: 14px;
+    }
+
+    .doc-muted:last-child { margin-bottom: 0; }
+
+    /* Panels (landing-inspired surfaces) */
+    .doc-panel {
+      background: var(--lp-bg-elev);
+      border: 1px solid var(--lp-border);
+      border-radius: 12px;
+      padding: 24px;
+      box-shadow:
+        0 0 0 1px rgba(0, 0, 0, 0.08),
+        0 28px 64px rgba(0, 0, 0, 0.32),
+        0 0 48px rgba(180, 255, 58, 0.04);
+    }
+
+    #install,
+    #components {
+      scroll-margin-top: 96px;
+    }
+
+    .code-shell {
+      margin-bottom: 16px;
+    }
+
+    .code-shell:last-child { margin-bottom: 0; }
+
+    .code-label {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-family: 'Geist Mono', monospace;
+      font-size: 10px;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--lp-fg-subtle);
+      margin-bottom: 8px;
+    }
+
+    .code-label::before {
+      content: '';
+      width: 5px;
+      height: 5px;
+      background: var(--lp-accent);
+      border-radius: 50%;
+      box-shadow: 0 0 8px var(--lp-accent-glow);
+    }
+
+    pre.code-pre {
+      background: var(--lp-code-bg);
+      color: var(--lp-code-fg);
+      border: 1px solid var(--lp-border);
+      border-radius: 8px;
+      padding: 14px 16px;
+      overflow-x: auto;
+      font-family: 'Geist Mono', ui-monospace, monospace;
+      font-size: 12.5px;
+      line-height: 1.6;
+      box-shadow:
+        inset 0 1px 0 rgba(180, 255, 58, 0.04),
+        0 0 0 1px rgba(59, 130, 246, 0.06);
+    }
+
+    pre.code-pre code {
+      font-family: inherit;
+    }
+
+    p code,
+    li code {
+      font-family: 'Geist Mono', ui-monospace, monospace;
+      font-size: 12px;
+      background: var(--lp-bg-inset);
+      border: 1px solid var(--lp-border);
+      padding: 2px 6px;
+      border-radius: 4px;
+    }
+
+    .resource-stack {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .resource-card {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 16px;
+      padding: 18px 20px;
+      background: var(--lp-bg-elev);
+      border: 1px solid var(--lp-border);
+      border-radius: 12px;
+      color: inherit;
+      text-decoration: none;
+      box-shadow:
+        0 0 0 1px rgba(0, 0, 0, 0.06),
+        0 12px 32px rgba(0, 0, 0, 0.2);
+      transition: border-color .15s, box-shadow .15s;
+    }
+
+    .resource-card:hover {
+      border-color: var(--lp-border-strong);
+      box-shadow:
+        0 0 0 1px rgba(59, 130, 246, 0.12),
+        0 14px 40px rgba(0, 0, 0, 0.26);
+    }
+
+    .resource-card .arrow {
+      color: var(--lp-accent);
+      opacity: 0.65;
+      flex-shrink: 0;
+      padding-top: 3px;
+    }
+
+    .link-label {
+      font-weight: 600;
+      font-size: 14px;
+      color: var(--lp-fg);
+      margin-bottom: 4px;
+    }
+
+    .link-desc {
+      font-size: 13px;
+      color: var(--lp-fg-muted);
+      line-height: 1.52;
+    }
+
+    .badge {
+      display: inline-block;
+      margin-left: 8px;
+      font-family: 'Geist Mono', monospace;
+      font-size: 10px;
+      font-weight: 500;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 3px 7px;
+      border-radius: 4px;
+      background: rgba(59, 130, 246, 0.15);
+      color: var(--lp-primary);
+      vertical-align: middle;
+    }
+
+    .btn-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 4px;
+    }
+
+    .lp-btn[data-variant="primary"] {
+      background: var(--lp-primary);
+      color: #fff;
+      border-color: var(--lp-primary);
+      padding: 10px 16px;
+    }
+
+    .lp-btn[data-variant="primary"]:hover {
+      background: var(--lp-primary-dim);
+    }
+
+    .doc-footer {
+      margin-top: 72px;
+      padding-top: 28px;
+      border-top: 1px solid var(--lp-border);
+      font-size: 13px;
+      color: var(--lp-fg-subtle);
+      font-family: 'Geist Mono', monospace;
+    }
+
+    @media (max-width: 900px) {
+      .site-topbar {
+        flex-wrap: wrap;
+        gap: 16px;
+        padding: 14px 24px;
+      }
+      main.doc-shell {
+        padding: 64px 24px 88px;
+      }
+      .topbar-nav {
+        order: 3;
+        width: 100%;
+        flex-wrap: wrap;
+        gap: 16px;
+      }
+      .topbar-actions {
+        margin-left: auto;
+      }
+    }
+
+/* —— Theme toggle (topbar) —— */
+.ids-theme-toggle {
+      min-width: 36px;
+      padding: 6px 10px !important;
+      border-color: var(--lp-border) !important;
+      background: var(--lp-bg-elev) !important;
+      color: var(--lp-fg) !important;
+    }
+
+.ids-theme-toggle:hover {
+      border-color: var(--lp-border-strong) !important;
+    }
+
+.ids-theme-toggle-inner {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+.ids-theme-toggle svg {
+      display: block;
+    }
+
+/* —— IDS previews: icon SVG sizing —— */
+.docs-preview .ionic-icon svg {
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+
+/* —— Progress indicator (exported IDS CSS lacks bar fill rules) —— */
+.docs-preview .ionic-progress {
+      border-radius: var(--borderRadius-full, 9999px);
+      overflow: hidden;
+      width: min(100%, 280px);
+    }
+
+.docs-preview .ionic-progress > .ionic-progress-fill {
+      display: block;
+      height: 100%;
+      width: var(--ids-progress-pct, 40%);
+      background-color: currentColor;
+      border-radius: inherit;
+      transition: width 0.2s ease;
+    }
+
+@keyframes docs-ids-spin {
+      to {
+        transform: rotate(360deg);
+      }
+    }
+
+.docs-preview .ionic-spinner {
+      position: relative;
+      flex-shrink: 0;
+      box-sizing: border-box;
+    }
+
+.docs-preview .ionic-spinner::after {
+      content: "";
+      position: absolute;
+      inset: 2px;
+      border-radius: 50%;
+      border: 2px solid currentColor;
+      border-right-color: transparent;
+      border-bottom-color: transparent;
+      animation: docs-ids-spin 0.7s linear infinite;
+      box-sizing: border-box;
+    }
+
+/* —— Skeleton pulse —— */
+@keyframes docs-skeleton-pulse {
+      50% {
+        opacity: 0.55;
+      }
+    }
+
+.docs-preview .ionic-skeleton[data-animation="pulse"] {
+      animation: docs-skeleton-pulse 1.4s ease-in-out infinite;
+    }
+
+/* —— IDS semantics inside preview panels track docs shell theme —— */
+html[data-theme="dark"] .docs-preview .preview-panel {
+      --semantic-card: #131823;
+      --semantic-background: #0f131b;
+      --semantic-foreground: #eaeef5;
+      --semantic-foreground-secondary: #9ca6b8;
+      --semantic-border: #2a3345;
+      --semantic-border-subtle: #1a2230;
+      --semantic-muted: #171c28;
+      --semantic-muted-foreground: #8892a8;
+      --semantic-inverse-foreground: #f5f7fa;
+    }
+
+html[data-theme="light"] .docs-preview .preview-panel {
+      --semantic-card: #ffffff;
+      --semantic-background: #f9fafb;
+      --semantic-foreground: #111827;
+      --semantic-foreground-secondary: #4b5563;
+      --semantic-border: #e5e7eb;
+      --semantic-border-subtle: #f3f4f6;
+      --semantic-muted: #f3f4f6;
+      --semantic-muted-foreground: #6b7280;
+      --semantic-inverse-foreground: #ffffff;
+    }
+
+.docs-preview .ionic-select,
+.docs-preview .ionic-textarea,
+.docs-preview .ionic-input {
+      max-width: min(100%, 360px);
+    }
+
+.docs-preview .ionic-toast {
+      box-sizing: border-box;
+      width: 100%;
+      max-width: 320px;
+    }
+
+.docs-preview button.ionic-button.docs-btn-icon-only {
+      aspect-ratio: 1;
+      min-width: var(--size-minHeight-controlMd, 40px);
+      padding-left: var(--spacing-sm, 8px);
+      padding-right: var(--spacing-sm, 8px);
+    }

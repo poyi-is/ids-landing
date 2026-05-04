@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en" data-motion="on">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="./theme-toggle.js"></script>
+  <title>Ionic DS — Documentation</title>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/inter@5.2.5/index.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/inter@5.2.5/500.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/inter@5.2.5/600.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/inter@5.2.5/700.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/geist-sans@5.2.5/index.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/geist-sans@5.2.5/600.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/geist-mono@5.2.5/index.css">
+  <link rel="stylesheet" href="./docs-shell.css">
+  
+</head>
+<body>
+  <header class="site-topbar">
+    <a href="./index.html" class="topbar-brand" aria-label="Ionic DS — Home">
+      <div class="topbar-logo">
+        I
+        <span class="topbar-logo-dot pulse" aria-hidden="true"></span>
+      </div>
+      <span class="display topbar-lockup-title">Ionic DS</span>
+      <span class="mono topbar-version">v1.4</span>
+    </a>
+    <nav class="topbar-nav" aria-label="Primary">
+      <a class="topbar-link" href="./docs.html" aria-current="page">Docs</a>
+      <a class="topbar-link" href="./components/alert.html">Components</a>
+      <a class="topbar-link" data-nav-doc="skill" href="#" hidden>SKILL.md</a>
+      <a class="topbar-link" data-nav-doc="changelog" href="#" hidden>Changelog</a>
+    </nav>
+    <div class="topbar-actions">
+      <a class="lp-btn lp-btn-sm" data-variant="ghost" href="https://github.com/poyi-is/ids">GitHub</a>
+      <a class="lp-btn lp-btn-sm-accent" data-variant="accent" href="./docs.html#install">Install</a>
+    </div>
+  </header>
+
+  <main class="doc-shell">
+    <h1 class="doc-lead display">Ionic Design System</h1>
+    <p class="doc-sub">Component library and design tokens for React — install, wire the stylesheet, and ship on-brand UI.</p>
+
+    <section id="install" class="doc-section doc-section-install" aria-labelledby="install-heading">
+      <h2 id="install-heading" class="doc-heading display">Install</h2>
+      <div class="doc-panel">
+        <p class="doc-muted doc-body">Add the package from npm.</p>
+        <div class="code-shell">
+          <div class="code-label">Command</div>
+          <pre class="code-pre"><code>npm install ionic-design-system</code></pre>
+        </div>
+      </div>
+    </section>
+
+    <section id="components" class="doc-section" aria-labelledby="quickstart-heading">
+      <h2 id="quickstart-heading" class="doc-heading display">Quick start</h2>
+
+      <div class="doc-panel doc-panel-quick">
+        <h3 class="doc-h3">Link the stylesheet</h3>
+        <p class="doc-muted">Import the design system CSS for full theming.</p>
+        <div class="code-shell">
+          <div class="code-label">Module</div>
+          <pre class="code-pre"><code>import 'https://ionic-design-system.github.io/ids-landing/styles/default.css';
+import { Button, Badge } from 'ionic-design-system';</code></pre>
+        </div>
+        <p class="doc-muted">Or add a stylesheet link:</p>
+        <div class="code-shell">
+          <div class="code-label">HTML</div>
+          <pre class="code-pre"><code>&lt;link rel="stylesheet" href="https://ionic-design-system.github.io/ids-landing/styles/default.css"&gt;</code></pre>
+        </div>
+
+        <h3 class="doc-h3">Example app</h3>
+        <div class="code-shell">
+          <div class="code-label">App</div>
+          <pre class="code-pre"><code>import 'https://ionic-design-system.github.io/ids-landing/styles/default.css';
+import { Button, Badge, Input, Container } from 'ionic-design-system';
+
+function App() {
+  return (
+    &lt;Container&gt;
+      &lt;Button label="Save" color="primary" size="md" /&gt;
+      &lt;Badge label="New" color="success" /&gt;
+      &lt;Input placeholder="Enter your name" /&gt;
+    &lt;/Container&gt;
+  );
+}</code></pre>
+        </div>
+
+        <h3 class="doc-h3">For AI coding agents</h3>
+        <p class="doc-muted">Point your AI tool at these URLs for design system context.</p>
+        <div class="code-shell">
+          <div class="code-label">URLs</div>
+          <pre class="code-pre"><code># Complete design system (recommended — single file)
+https://ionic-design-system.github.io/ids-landing/CONTEXT.md
+
+# Or split files:
+# Component API reference
+https://ionic-design-system.github.io/ids-landing/ai/llms.txt
+# Token values
+https://ionic-design-system.github.io/ids-landing/ai/context.md</code></pre>
+        </div>
+      </div>
+    </section>
+
+    <section class="doc-section" aria-labelledby="resources-heading">
+      <h2 id="resources-heading" class="doc-heading display">Resources</h2>
+      <div class="doc-panel" style="margin-bottom:16px;">
+        <p class="doc-muted" style="margin-bottom:14px;">Package registry and repository.</p>
+        <div class="btn-row">
+          <a class="lp-btn" data-variant="primary" href="https://www.npmjs.com/package/ionic-design-system">View on npm</a>
+          <a class="lp-btn" data-variant="primary" href="https://github.com/poyi-is/ids">View on GitHub</a>
+        </div>
+      </div>
+      <p class="doc-muted" style="margin-bottom:14px;">Local files and AI context.</p>
+      <div class="resource-stack">
+        <a class="resource-card" href="./styles/default.css">
+          <div>
+            <div class="link-label">Stylesheet (CSS)</div>
+            <div class="link-desc">Default design system theme for local use.</div>
+          </div>
+          <span class="arrow" aria-hidden="true">&rarr;</span>
+        </a>
+        <a class="resource-card" href="./CONTEXT.md">
+          <div>
+            <div class="link-label">CONTEXT.md <span class="badge">AI</span></div>
+            <div class="link-desc">Colors, typography, patterns, and do&apos;s &amp; don&apos;ts.</div>
+          </div>
+          <span class="arrow" aria-hidden="true">&rarr;</span>
+        </a>
+        <a class="resource-card" href="./ai/llms.txt">
+          <div>
+            <div class="link-label">llms.txt <span class="badge">AI</span></div>
+            <div class="link-desc">Component API reference for AI coding agents.</div>
+          </div>
+          <span class="arrow" aria-hidden="true">&rarr;</span>
+        </a>
+        <a class="resource-card" href="./ai/context.md">
+          <div>
+            <div class="link-label">Design system context <span class="badge">AI</span></div>
+            <div class="link-desc">Semantic tokens and variant options.</div>
+          </div>
+          <span class="arrow" aria-hidden="true">&rarr;</span>
+        </a>
+      </div>
+    </section>
+
+    <p class="doc-footer">MIT License &middot; Ionic Design System</p>
+  </main>
+  <script src="./docs-shell-nav.js" defer></script>
+</body>
+</html>

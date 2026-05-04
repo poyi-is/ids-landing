@@ -1,0 +1,334 @@
+# ionic-design-system
+
+> Typed, accessible React component library with design system theming via CSS stylesheets.
+
+## Installation
+
+```bash
+npm install ionic-design-system
+```
+
+Peer dependencies: react (>=18), react-dom (>=18), lucide-react (optional, for Icon component).
+
+## Stylesheet Setup
+
+Link the design system CSS in your app entry point. The CSS file is exported from
+the design editor and provides all token values and component variant styles.
+
+```tsx
+import './your-design-system.css'; // exported from the Ionic Design System editor
+import { Button, Text, Container } from 'ionic-design-system';
+```
+
+Without a stylesheet, components render with built-in fallback styles.
+
+## Variant System
+
+Most components accept flat variant props AND/OR a `dimensionValues` object.
+Flat props are sugar -- both are equivalent:
+
+```tsx
+<Button size="md" color="primary" />
+<Button dimensionValues={{ size: 'md', color: 'primary' }} />
+```
+
+Variant values map to `data-*` attributes on the DOM node, which the CSS
+stylesheet targets. Invalid variant values are silently ignored.
+
+---
+
+## Components
+
+### Button
+Interactive button with optional icon. Extends `<button>` HTML attributes.
+Props: label (string), icon (string, registry name e.g. "Plus"), iconPosition ("left"|"right"), iconOnly (boolean), interactions (Interaction[]), size ("sm"|"md"|"lg"), intent ("primary"|"secondary"|"danger"|"success"|"warning"|"info"|"neutral"), appearance ("solid"|"soft"|"outline"|"ghost"), shape ("rounded"|"pill"|"sharp")
+Note: Use `intent` for color selection (not `color`). Appearance + intent combine: e.g., appearance="solid" intent="primary" gives a blue filled button.
+Usage: `<Button label="Save" intent="primary" appearance="solid" size="md" />`
+
+### Text
+Text element with semantic tag control. Extends `<span>` HTML attributes.
+Props: text (string), tag ("span"|"p"|"h1".."h6"|"label", default "span"), italic (boolean), underline (boolean), strikethrough (boolean), truncate (boolean), transform ("none"|"uppercase"|"lowercase"|"capitalize"), size ("xs"|"sm"|"base"|"lg"|"xl"|"2xl"|"3xl"), color ("default"|"muted"|"primary"|"success"|"destructive"), weight ("normal"|"medium"|"semibold"|"bold"), align ("left"|"center"|"right"|"justify")
+Usage: `<Text text="Hello" tag="h1" size="2xl" weight="bold" />`
+
+### Container
+Layout wrapper supporting flex, grid, and block. Extends `<div>` HTML attributes.
+Props: interactions (Interaction[]), color ("neutral"|"card"|"muted"|"primary"|"secondary"), padding ("none"|"sm"|"md"|"lg"), display ("flex"|"grid"|"block"), direction ("row"|"column"|"row-reverse"|"column-reverse"), alignment ("start"|"center"|"end"|"stretch"|"space-between"), spacing ("none"|"sm"|"md"|"lg"), wrap ("wrap"|"nowrap"), columns ("1"|"2"|"3"|"4"), elevation ("none"|"sm"|"md"|"lg"), shape ("none"|"rounded"|"pill")
+Usage: `<Container display="flex" direction="column" spacing="md" padding="lg">{children}</Container>`
+
+### Input
+Atomic `<input>` wrapper. Extends HTML input attributes (minus `size`/`color`).
+Props: placeholder (string), value (string), onChange (handler), type (string, default "text"), disabled (boolean), size ("sm"|"default"|"lg"), color ("default"), align ("left"|"center"|"right"), elevation ("none"|"sm"|"md"), shape ("rounded"|"square"|"pill")
+Usage: `<Input type="email" placeholder="you@example.com" size="default" />`
+
+### Textarea
+Multi-line text input. Extends HTML textarea attributes (minus `color`).
+Props: placeholder (string), rows (number, default 3), resize ("none"|"both"|"horizontal"|"vertical", default "both"), disabled (boolean), readOnly (boolean), name (string), size ("sm"|"default"|"lg"), color ("default")
+Usage: `<Textarea placeholder="Write a message..." rows={4} />`
+
+### Select
+Native `<select>` wrapper with optional label/caption. Extends HTML select attributes (minus `size`).
+Props: placeholder (string), label (string), caption (string), options (Array<{value,label}> | string[] | comma-separated string), size ("sm"|"md"|"lg"), color ("default"|"primary"|"muted"), appearance ("outline"|"filled"|"ghost"), shape ("rounded"|"sharp"|"pill"), state ("default"|"invalid"|"required")
+Usage: `<Select label="Country" options={["US","UK","CA"]} size="md" />`
+
+### Checkbox
+Checkbox with visual indicator. Extends HTML input attributes (minus `size`/`color`).
+Props: checked (boolean), defaultChecked (boolean), onChange (handler), disabled (boolean), size ("sm"|"md"|"lg"), color ("default"), border ("none"|"pill"|"sharp"|"rounded"), label ("none"|"right")
+Usage: `<Checkbox checked={agreed} onChange={handler} size="md" />`
+
+### Radio
+Radio button (visual circle + hidden input). Extends HTML input attributes (minus `size`/`type`/`color`).
+Props: checked (boolean), onChange (handler), disabled (boolean), name (string, for grouping), size ("sm"|"md"|"lg"), color ("default"|"primary"|"neutral")
+Usage: `<Radio name="plan" value="pro" checked={plan === 'pro'} onChange={handler} />`
+
+### Switch
+Toggle switch (role="switch"). Extends HTML input attributes (minus `size`/`type`/`color`).
+Props: checked (boolean), defaultChecked (boolean), onChange (handler), disabled (boolean), size ("sm"|"md"|"lg"), color ("primary"|"success"|"danger"|"warning"|"info"|"neutral")
+Usage: `<Switch checked={darkMode} onChange={handler} color="primary" />`
+
+### Slider
+Range slider supporting single and range modes. Extends `<div>` attributes.
+Props: value (number | [number,number]), defaultValue (number | [number,number]), min (number), max (number), step (number), disabled (boolean), onChange ((value) => void), mode ("single"|"range"), size ("sm"|"md"|"lg"), color ("primary"|"success"|"warning"|"danger"|"info"|"neutral"), orientation ("horizontal"|"vertical")
+Usage: `<Slider value={50} min={0} max={100} onChange={setVal} />`
+
+### Badge
+Small label for status/counts. Extends `<span>` HTML attributes.
+Props: label (string), interactions (Interaction[]), color ("default"|"primary"|"success"|"warning"|"danger"|"info"|"muted"), variant ("solid"|"soft"|"outline"), size ("sm"|"md"|"lg"), shape ("rounded"|"pill"|"sharp")
+Variant + color combine: variant="solid" gives filled background, variant="soft" gives tinted background, variant="outline" gives bordered.
+Usage: `<Badge label="New" color="success" variant="soft" size="sm" shape="pill" />`
+
+### Alert
+Notification banner with title, description, icon, and dismiss.
+Props: title (string), description (string), icon (string), dismissible (boolean, default false), intent ("info"|...), appearance ("soft"|...), shape ("rounded"|...)
+Usage: `<Alert title="Success" description="Your changes were saved." intent="info" />`
+
+### Avatar
+User avatar with image, initials, or status badge.
+Props: src (string), alt (string), initials (string), size ("sm"|"md"|"lg"|"xl"), color ("default"|"primary"|"neutral"), shape ("circle"|"rounded"|"sharp"), content ("initials"|"image"), badge ("none"|"online"|"offline"|"busy"), group ("none"|"group"|"count")
+Usage: `<Avatar src="/photo.jpg" alt="Jane" size="lg" shape="circle" />`
+
+### Label
+Form label with optional required indicator.
+Props: text (string), required (boolean, default false), htmlFor (string), size (string)
+Usage: `<Label text="Email" htmlFor="email-input" required />`
+
+### Link
+Anchor element with text styling. Extends `<a>` HTML attributes (minus `color`).
+Props: text (string), label (string), href (string, required), underline (boolean), italic (boolean), transform ("none"|"uppercase"|"lowercase"|"capitalize"), interactions (Interaction[]), size ("sm"|"default"|"lg"), color ("default"|"muted"|"foreground"), weight ("normal"|"medium"|"semibold"|"bold")
+Usage: `<Link href="/docs" text="Documentation" color="default" />`
+
+### Icon
+SVG icon from built-in Lucide registry.
+Props: name (string, default "Circle"), size ("sm"|"md"|"lg"), color ("inherit"|"primary"|"muted"), state ("show"|"hide")
+Usage: `<Icon name="Settings" size="md" color="primary" />`
+
+### Image
+`<img>` wrapper with fit/aspect-ratio variants. Extends HTML img attributes.
+Props: src (string), alt (string), fit ("cover"|"contain"|"fill"|"none"|"scale-down"), aspectRatio ("auto"|"1/1"|"3/2"|"4/3"|"16/9"|"9/16"|"2/1")
+Usage: `<Image src="/hero.jpg" alt="Hero" fit="cover" aspectRatio="16/9" />`
+
+### Divider
+Horizontal or vertical separator. Extends `<hr>` HTML attributes.
+Props: orientation ("horizontal"|"vertical", default "horizontal"), size ("thin"|"medium"|"thick"), color ("default"|"muted"|"primary")
+Usage: `<Divider orientation="horizontal" color="muted" />`
+
+### Spinner
+Loading indicator with CSS animation.
+Props: variant ("circular"|"dots"|"bars", default "circular"), label (string, default "Loading"), size ("sm"|"md"|"lg"), color ("primary"|"secondary"|"success"|"warning"|"danger"|"info"|"neutral"|"white")
+Usage: `<Spinner size="md" color="primary" />`
+
+### Progress
+Progress bar (determinate or indeterminate). ARIA role="progressbar".
+Props: value (number, 0-100), max (number, default 100), indeterminate (boolean, default false), size ("sm"|"default"|"lg"), color ("default"|"success"|"warning"|"danger")
+Usage: `<Progress value={65} color="success" />`
+
+### Skeleton
+Loading placeholder with animation.
+Props: shape ("rectangle"|"circle"|"text"), animation ("pulse"|"wave"|"none"), width (string), height (string)
+Usage: `<Skeleton shape="text" animation="pulse" width="200px" height="16px" />`
+
+### Toast
+Notification popup with auto-dismiss. Position is viewport-fixed.
+Props: title (string), description (string), duration (number, ms; 0 = no auto-dismiss), dismissible (boolean), onClose (() => void), variant ("default"|"success"|"error"|"warning"|"info"), position ("top-right"|"top-left"|"bottom-right"|"bottom-left"|"top-center"|"bottom-center")
+Usage: `<Toast title="Saved" variant="success" position="bottom-right" duration={3000} />`
+
+### Tooltip (primitive)
+Contextual hint, shown/hidden via interaction system.
+Props: content (string), arrow (boolean), interactions (Interaction[]), color ("dark"|"light"), size ("sm"|"md"|"lg")
+Usage: See Compositions > TooltipRoot for the recommended compound API.
+
+### Tab
+Tab button with selected/unselected states.
+Props: label (string), icon (string), selected (boolean), size ("sm"|"md"|"lg"), appearance ("contained"|"pills"|"line"), color ("default"|"primary"|"neutral"), orientation ("horizontal"|"vertical")
+Usage: `<Tab label="Overview" selected={activeTab === 0} onClick={() => setTab(0)} />`
+
+### ToggleButton
+Button with pressed/unpressed toggle state.
+Props: pressed (boolean), onPressedChange ((pressed: boolean) => void), label (string), icon (string), iconPosition ("left"|"right"), iconOnly (boolean), size ("sm"|"md"|"lg"), appearance ("outline"|"ghost")
+Usage: `<ToggleButton label="Bold" icon="Bold" pressed={isBold} onPressedChange={setIsBold} />`
+
+### MenuItem
+Menu item row with icon, label, shortcut, and disabled state.
+Props: label (string), icon (string), shortcut (string), disabled (boolean), size ("sm"|"md"), color ("default"|"danger")
+Usage: `<MenuItem label="Delete" icon="Trash2" shortcut="Del" color="danger" />`
+
+### Table
+HTML table with sub-components: TableHeader, TableBody, TableFooter, TableRow, TableHead, TableCell, TableCaption.
+Props (Table): variant (string), size (string). Sub-components are thin forwardRef wrappers.
+Usage:
+```tsx
+<Table>
+  <TableHeader><TableRow><TableHead>Name</TableHead></TableRow></TableHeader>
+  <TableBody><TableRow><TableCell>Alice</TableCell></TableRow></TableBody>
+</Table>
+```
+
+---
+
+## Compositions (Compound Components)
+
+All compositions follow the Root/Trigger/Content pattern. Trigger uses `asChild`
+by default (renders your child element directly, no extra wrapper).
+
+### TooltipRoot / TooltipTrigger / TooltipContent
+Hover-triggered positioned tooltip. No InteractionProvider needed.
+Props (Root): open, defaultOpen, onOpenChange, showDelay (number, default 0), hideDelay (number, default 0)
+Props (Content): placement (Placement), offset (number), children
+```tsx
+<TooltipRoot>
+  <TooltipTrigger><Button label="Hover me" /></TooltipTrigger>
+  <TooltipContent placement="top" offset={8}>Helpful tip</TooltipContent>
+</TooltipRoot>
+```
+
+### PopoverRoot / PopoverTrigger / PopoverContent
+Click-triggered positioned content. Dismisses on click-outside and Escape.
+Props (Root): open, defaultOpen, onOpenChange, dismissOnClickOutside (default true), dismissOnEscape (default true)
+Props (Content): placement (Placement), offset (number), children
+```tsx
+<PopoverRoot>
+  <PopoverTrigger><Button label="Options" /></PopoverTrigger>
+  <PopoverContent placement="bottom-start"><MenuItem label="Edit" /></PopoverContent>
+</PopoverRoot>
+```
+
+### DialogRoot / DialogTrigger / DialogOverlay / DialogContent / DialogClose
+Modal dialog with overlay, focus trap, and focus restore.
+Props (Root): open, defaultOpen, onOpenChange, dismissOnEscape (default true)
+```tsx
+<DialogRoot>
+  <DialogTrigger><Button label="Open" /></DialogTrigger>
+  <DialogOverlay />
+  <DialogContent>
+    <Text tag="h2" text="Confirm" />
+    <DialogClose><Button label="Close" /></DialogClose>
+  </DialogContent>
+</DialogRoot>
+```
+
+### DisclosureRoot / DisclosureTrigger / DisclosureContent
+Click-to-toggle inline collapsible. No positioning or portal.
+Props (Root): open, defaultOpen, onOpenChange
+```tsx
+<DisclosureRoot>
+  <DisclosureTrigger><Button label="Show Details" /></DisclosureTrigger>
+  <DisclosureContent><Text text="Expanded content" /></DisclosureContent>
+</DisclosureRoot>
+```
+
+### AccordionRoot / AccordionItem / AccordionTrigger / AccordionContent
+Expandable sections. Supports single or multiple open items.
+Props (Root): type ("single"|"multiple"), value, defaultValue, onValueChange
+Props (Item): value (string, required), disabled (boolean)
+```tsx
+<AccordionRoot type="single" defaultValue="item-1">
+  <AccordionItem value="item-1">
+    <AccordionTrigger>Section 1</AccordionTrigger>
+    <AccordionContent>Content 1</AccordionContent>
+  </AccordionItem>
+</AccordionRoot>
+```
+
+### DropdownMenuRoot / DropdownMenuTrigger / DropdownMenuContent / DropdownMenuItem / DropdownMenuSeparator
+Click-triggered dropdown with keyboard navigation (arrow keys, Home, End).
+Props (Root): open, defaultOpen, onOpenChange
+Props (Content): placement (Placement), offset (number)
+Props (Item): onSelect (() => void), disabled (boolean)
+```tsx
+<DropdownMenuRoot>
+  <DropdownMenuTrigger><Button label="Actions" /></DropdownMenuTrigger>
+  <DropdownMenuContent>
+    <DropdownMenuItem onSelect={() => edit()}>Edit</DropdownMenuItem>
+    <DropdownMenuSeparator />
+    <DropdownMenuItem onSelect={() => del()} disabled>Delete</DropdownMenuItem>
+  </DropdownMenuContent>
+</DropdownMenuRoot>
+```
+
+---
+
+## Interaction System
+
+For imperative show/hide/toggle between any components, wrap them in
+InteractionProvider and use `id` + `interactions` props:
+
+```tsx
+import { InteractionProvider, Button, Tooltip } from 'ionic-design-system';
+
+<InteractionProvider>
+  <Button
+    id="btn-1"
+    label="Hover me"
+    interactions={[{ on: 'hover', action: 'show', target: 'tip-1' }]}
+  />
+  <Tooltip id="tip-1" hidden content="Extra info" />
+</InteractionProvider>
+```
+
+Interaction objects: `{ on: 'click'|'hover'|'focus', action: 'show'|'hide'|'toggle', target: string }`
+Components that support `interactions` prop: Button, Container, Badge, Tooltip, Link.
+Target components use `id` + `hidden` to start invisible.
+
+For most use cases, prefer Compositions (TooltipRoot, PopoverRoot, etc.) over
+the imperative InteractionProvider pattern.
+
+---
+
+## Common Patterns
+
+### Form layout
+```tsx
+<Container display="flex" direction="column" spacing="md" padding="lg">
+  <Label text="Email" htmlFor="email" required />
+  <Input id="email" type="email" placeholder="you@example.com" />
+  <Label text="Message" htmlFor="msg" />
+  <Textarea id="msg" rows={4} />
+  <Button label="Submit" color="primary" />
+</Container>
+```
+
+### Card
+```tsx
+<Container color="card" padding="lg" elevation="md" shape="rounded">
+  <Text tag="h3" text="Card Title" size="lg" weight="semibold" />
+  <Text text="Card body text" color="muted" />
+</Container>
+```
+
+### Navigation tabs
+```tsx
+<Container display="flex" direction="row" spacing="none">
+  {tabs.map((t, i) => (
+    <Tab key={i} label={t} selected={active === i} onClick={() => setActive(i)} appearance="line" />
+  ))}
+</Container>
+```
+
+---
+
+## Do NOT
+
+- Do NOT pass editor-only props: nodeId, canvasId, resolvedProps, stateStyles, previewState, enableInteractiveStates. These are internal to the design editor.
+- Do NOT use `content` prop on Text (deprecated). Use `text` or children.
+- Do NOT forget `name` on Radio groups -- radios without a shared `name` won't be mutually exclusive.
+- Do NOT use the primitive Tooltip component for hover tooltips. Use the TooltipRoot composition instead.
+- Do NOT set variant values that don't exist in the type union -- they will be silently ignored and produce no styling.

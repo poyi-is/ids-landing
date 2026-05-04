@@ -1,0 +1,359 @@
+/* Ionic DS — components documentation layout (shadcn-style rail) */
+
+.comp-wrap {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 48px 40px 120px;
+  display: grid;
+  grid-template-columns: 220px minmax(0, 1fr);
+  gap: 48px;
+  align-items: start;
+}
+
+.side-rail {
+  position: sticky;
+  top: 56px;
+  max-height: calc(100vh - 72px);
+  overflow-y: auto;
+  padding-right: 8px;
+  scrollbar-width: thin;
+}
+
+.side-rail-title {
+  font-family: 'Geist Mono', ui-monospace, monospace;
+  font-size: 10px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--lp-fg-subtle);
+  margin-bottom: 14px;
+}
+
+.side-rail-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  border-left: 1px solid var(--lp-border);
+  padding-left: 12px;
+}
+
+.side-rail-nav a {
+  font-size: 13px;
+  color: var(--lp-fg-muted);
+  text-decoration: none;
+  padding: 5px 0;
+  line-height: 1.35;
+  border-radius: 4px;
+  margin-left: -12px;
+  padding-left: 12px;
+  border-left: 2px solid transparent;
+}
+
+.side-rail-nav a:hover {
+  color: var(--lp-accent);
+}
+
+.side-rail-nav a.is-active {
+  color: var(--lp-fg);
+  border-left-color: var(--lp-accent);
+  box-shadow: inset 0 0 24px rgba(180, 255, 58, 0.06);
+}
+
+.comp-main {
+  min-width: 0;
+}
+
+.comp-page-title {
+  font-family: 'Geist Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: clamp(32px, 4vw, 40px);
+  font-weight: 600;
+  letter-spacing: -0.034em;
+  line-height: 1.1;
+  margin-bottom: 12px;
+}
+
+.comp-page-desc {
+  font-size: 16px;
+  color: var(--lp-fg-muted);
+  max-width: 62ch;
+  margin-bottom: 48px;
+}
+
+.comp-source-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 10px 16px;
+  font-size: 11px;
+  letter-spacing: 0.06em;
+  margin: 0 0 16px;
+  max-width: 72ch;
+  line-height: 1.5;
+}
+
+.comp-sync-badge-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 8px 10px;
+  margin: -4px 0 14px;
+  font-size: 11px;
+  letter-spacing: 0.04em;
+  line-height: 1.45;
+  max-width: min(72ch, 100%);
+}
+
+.comp-sync-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 2px 8px;
+  border-radius: 6px;
+  font-family: 'Geist Mono', ui-monospace, monospace;
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  border: 1px solid var(--lp-border);
+  flex-shrink: 0;
+}
+
+.comp-sync-github {
+  border-color: color-mix(in srgb, var(--lp-accent) 45%, var(--lp-border));
+  background: color-mix(in srgb, var(--lp-accent) 12%, var(--lp-bg-inset));
+  color: var(--lp-fg);
+}
+
+.comp-sync-repo {
+  border-color: color-mix(in srgb, var(--lp-primary) 40%, var(--lp-border));
+  background: color-mix(in srgb, var(--lp-primary) 14%, var(--lp-bg-inset));
+  color: var(--lp-fg);
+}
+
+.comp-sync-local {
+  border-color: var(--lp-border-strong);
+  background: var(--lp-bg-inset);
+  color: var(--lp-fg-muted);
+}
+
+.comp-sync-unknown {
+  opacity: 0.95;
+}
+
+.comp-sync-path-value {
+  word-break: break-word;
+}
+
+.comp-sync-url-link {
+  color: var(--lp-accent);
+  text-decoration: none;
+  letter-spacing: 0;
+}
+
+.comp-sync-url-link:hover {
+  text-decoration: underline;
+}
+
+.comp-source-meta a {
+  color: var(--lp-accent);
+  text-decoration: none;
+}
+
+.comp-source-meta a:hover {
+  text-decoration: underline;
+}
+
+.side-rail-count {
+  font-size: 11px;
+  letter-spacing: 0.06em;
+  margin: -6px 0 14px;
+  line-height: 1.4;
+}
+
+.global-import-note {
+  margin-bottom: 48px;
+}
+
+.comp-section {
+  scroll-margin-top: 88px;
+  margin-bottom: 72px;
+}
+
+.comp-anchor {
+  scroll-margin-top: 88px;
+}
+
+.comp-name {
+  font-family: 'Geist Sans', sans-serif;
+  font-size: clamp(22px, 2.8vw, 28px);
+  font-weight: 600;
+  letter-spacing: -0.028em;
+  margin-bottom: 10px;
+}
+
+.comp-desc {
+  color: var(--lp-fg-muted);
+  font-size: 14px;
+  max-width: 72ch;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.preview-panel {
+  background: var(--lp-bg-elev);
+  border: 1px solid var(--lp-border);
+  border-radius: 12px;
+  padding: 28px 24px;
+  margin-bottom: 16px;
+  box-shadow:
+    0 0 0 1px rgba(0, 0, 0, 0.06),
+    0 28px 64px rgba(0, 0, 0, 0.28),
+    0 0 56px rgba(180, 255, 58, 0.04);
+}
+
+.preview-inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.preview-stack {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 14px;
+  width: 100%;
+  max-width: 440px;
+  margin: 0 auto;
+}
+
+.preview-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  justify-content: center;
+}
+
+.preview-label {
+  font-family: 'Geist Mono', monospace;
+  font-size: 10px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--lp-fg-subtle);
+  width: 100%;
+  margin-bottom: 4px;
+}
+
+.code-panel {
+  position: relative;
+  margin-bottom: 12px;
+}
+
+.code-panel pre.code-pre {
+  padding-top: 40px;
+}
+
+.copy-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 2;
+  font-family: 'Geist Mono', monospace;
+  font-size: 11px;
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: 1px solid var(--lp-border);
+  background: var(--lp-bg-inset);
+  color: var(--lp-fg-muted);
+  cursor: pointer;
+}
+
+.copy-btn:hover {
+  color: var(--lp-accent);
+  border-color: color-mix(in srgb, var(--lp-accent) 40%, var(--lp-border));
+}
+
+.props-box {
+  background: var(--lp-bg-muted);
+  border: 1px solid var(--lp-border);
+  border-radius: 10px;
+  padding: 16px 18px;
+  font-size: 13px;
+  color: var(--lp-fg-muted);
+}
+
+.props-box ul {
+  margin: 8px 0 0 1.1rem;
+  line-height: 1.65;
+}
+
+.props-box code {
+  font-size: 12px;
+  color: var(--lp-code-fg);
+}
+
+/* Static CSS export omits spinner motion — docs-only shimmer */
+.docs-preview .ionic-spinner {
+  border-radius: 9999px;
+  border: 2px solid color-mix(in srgb, currentColor 35%, transparent);
+  border-top-color: currentColor;
+  animation: docs-spin 0.85s linear infinite;
+}
+
+@keyframes docs-spin {
+  to { transform: rotate(360deg); }
+}
+
+.comp-foot {
+  margin-top: 56px;
+  padding-top: 28px;
+  border-top: 1px solid var(--lp-border);
+  font-size: 13px;
+  color: var(--lp-fg-subtle);
+  font-family: 'Geist Mono', monospace;
+}
+
+@media (max-width: 900px) {
+  .comp-wrap {
+    grid-template-columns: 1fr;
+    padding: 32px 20px 80px;
+    gap: 28px;
+  }
+
+  .side-rail {
+    position: static;
+    max-height: none;
+    overflow: visible;
+    border-bottom: 1px solid var(--lp-border);
+    padding-bottom: 16px;
+  }
+
+  .side-rail-nav {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 8px;
+    border-left: none;
+    padding-left: 0;
+    padding-bottom: 4px;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .side-rail-nav a {
+    flex: 0 0 auto;
+    margin-left: 0;
+    padding: 8px 12px;
+    border: 1px solid var(--lp-border);
+    border-radius: 999px;
+    background: var(--lp-bg-elev);
+    border-left: 1px solid var(--lp-border);
+  }
+
+  .side-rail-nav a.is-active {
+    border-color: var(--lp-accent);
+    color: var(--lp-accent);
+    box-shadow: 0 0 20px rgba(180, 255, 58, 0.12);
+  }
+}

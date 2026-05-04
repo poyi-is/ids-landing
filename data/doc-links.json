@@ -1,0 +1,13 @@
+{
+  "skillPath": null,
+  "changelogPath": "CHANGELOG.md",
+  "canonicalPath": "LOCAL_REPO:ids-canonical.json @../ids",
+  "canonicalUrl": null,
+  "stylesheetPath": "LOCAL_REPO:gh-pages/styles/default.css",
+  "stylesheetUrlGithub": null,
+  "ghRef": "main",
+  "localIdsRoot": "../ids",
+  "usedGithubToken": false,
+  "repo": "https://github.com/poyi-is/ids",
+  "probedAt": "2026-05-04T02:57:01.611Z"
+}

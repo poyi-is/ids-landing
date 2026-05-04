@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en" data-motion="on">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="../theme-toggle.js"></script>
+  <title>Ionic DS — Slider</title>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/inter@5.2.5/index.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/inter@5.2.5/500.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/inter@5.2.5/600.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/inter@5.2.5/700.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/geist-sans@5.2.5/index.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/geist-sans@5.2.5/600.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/geist-mono@5.2.5/index.css">
+  <link rel="stylesheet" href="../docs-shell.css">
+  <link rel="stylesheet" href="../components-layout.css">
+  <link rel="stylesheet" href="../styles/default.css">
+</head>
+<body class="docs-preview">
+  <header class="site-topbar">
+    <a href="../index.html" class="topbar-brand" aria-label="Ionic DS — Home">
+      <div class="topbar-logo">I<span class="topbar-logo-dot pulse" aria-hidden="true"></span></div>
+      <span class="display topbar-lockup-title">Ionic DS</span>
+      <span class="mono topbar-version">v1.4</span>
+    </a>
+    <nav class="topbar-nav" aria-label="Primary">
+      <a class="topbar-link" href="../docs.html">Docs</a>
+      <a class="topbar-link" href="./alert.html">Components</a>
+      <a class="topbar-link" data-nav-doc="skill" href="#" hidden>SKILL.md</a>
+      <a class="topbar-link" data-nav-doc="changelog" href="#" hidden>Changelog</a>
+    </nav>
+    <div class="topbar-actions">
+      <a class="lp-btn lp-btn-sm" data-variant="ghost" href="https://github.com/poyi-is/ids">GitHub</a>
+      <a class="lp-btn lp-btn-sm-accent" data-variant="accent" href="../docs.html#install">Install</a>
+    </div>
+  </header>
+  <div class="comp-wrap">
+    <aside class="side-rail" aria-label="Component index">
+      <p class="side-rail-title">Components</p>
+      <p class="side-rail-count mono doc-muted" aria-live="polite">28 components</p>
+      <nav class="side-rail-nav">
+      <a class="side-rail-link" href="./alert.html">Alert</a>
+      <a class="side-rail-link" href="./avatar.html">Avatar</a>
+      <a class="side-rail-link" href="./badge.html">Badge</a>
+      <a class="side-rail-link" href="./button.html">Button</a>
+      <a class="side-rail-link" href="./checkbox.html">Checkbox</a>
+      <a class="side-rail-link" href="./container.html">Container</a>
+      <a class="side-rail-link" href="./divider.html">Divider</a>
+      <a class="side-rail-link" href="./icon.html">Icon</a>
+      <a class="side-rail-link" href="./image.html">Image</a>
+      <a class="side-rail-link" href="./input.html">Input</a>
+      <a class="side-rail-link" href="./label.html">Label</a>
+      <a class="side-rail-link" href="./link.html">Link</a>
+      <a class="side-rail-link" href="./menuitem.html">MenuItem</a>
+      <a class="side-rail-link" href="./progress.html">Progress</a>
+      <a class="side-rail-link" href="./radio.html">Radio</a>
+      <a class="side-rail-link" href="./select.html">Select</a>
+      <a class="side-rail-link" href="./skeleton.html">Skeleton</a>
+      <a class="side-rail-link is-active" href="./slider.html" aria-current="page">Slider</a>
+      <a class="side-rail-link" href="./spinner.html">Spinner</a>
+      <a class="side-rail-link" href="./switch.html">Switch</a>
+      <a class="side-rail-link" href="./tab.html">Tab</a>
+      <a class="side-rail-link" href="./table.html">Table</a>
+      <a class="side-rail-link" href="./text.html">Text</a>
+      <a class="side-rail-link" href="./textarea.html">Textarea</a>
+      <a class="side-rail-link" href="./toast.html">Toast</a>
+      <a class="side-rail-link" href="./togglebutton.html">ToggleButton</a>
+      <a class="side-rail-link" href="./modal.html">Modal</a>
+      <a class="side-rail-link" href="./tooltip.html">Tooltip</a>
+      </nav>
+    </aside>
+    <div class="comp-main">
+      <h1 class="comp-page-title display" id="comp-page-h1">Slider</h1>
+      <div class="comp-sync-badge-row mono" aria-label="IDS canonical sync provenance">
+        <span class="comp-sync-badge comp-sync-repo">Source: Local IDS repo</span>
+        <span class="comp-sync-path-label doc-muted">Canonical path:</span>
+        <span class="comp-sync-path-value doc-muted">LOCAL_REPO:ids-canonical.json @../ids</span>
+      </div>
+      <div id="comp-meta-host" class="comp-source-meta mono doc-muted" aria-live="polite">
+        <span>Source:
+          <a href="https://github.com/poyi-is/ids">poyi-is/ids</a></span>
+        <span id="comp-meta-generated">Generated: 2026-05-04T01:34:43.057Z</span>
+        <span id="comp-meta-commit" title="b0ae19d3fcece957b1308940be7e9c01b4945b2f">Commit: b0ae19d</span>
+      </div>
+    <div class="global-import-note doc-panel" style="padding:22px;margin-bottom:28px;">
+      <p class="doc-muted" style="margin-bottom:12px;font-size:13px">Typical imports for this preview:</p>
+      <div class="code-panel">
+        <button type="button" class="copy-btn" data-copy-btn>Copy</button>
+        <pre class="code-pre"><code>import { Slider } from 'ionic-design-system';
+import '../styles/default.css';</code></pre>
+      </div>
+    </div>
+      <section class="comp-section comp-single docs-preview" aria-labelledby="comp-page-h1">
+    <p class="comp-desc">Range slider supporting single and dual-thumb modes.</p>
+    <div class="preview-panel"><div class="preview-row">
+      <div class="ionic-slider" data-orientation="horizontal" data-size="md" data-color="primary">
+        <input type="range" min="0" max="100" value="54" aria-label="Level" /></div>
+    </div></div>
+    <div class="code-panel">
+      <button type="button" class="copy-btn" data-copy-btn>Copy</button>
+      <pre class="code-pre"><code>&lt;Slider value={gain} color=&quot;primary&quot; onChange /&gt;</code></pre>
+    </div>
+    <div class="props-box">
+      <strong style="color:var(--lp-fg)">Props / variants</strong>
+      <ul><li><code>color</code> · <code>defaultValue</code> · <code>disabled</code> · <code>max</code> · <code>min</code> · <code>mode</code> · <code>onChange</code> · <code>orientation</code> · <code>size</code> · <code>step</code> · <code>value</code> <span style="opacity:.65">· from ids-canonical</span></li></ul>
+    </div>
+      </section>
+    </div>
+  </div>
+  <p class="comp-foot">Registry: synced <code>data/ids-canonical.json</code> · <code>poyi-is/ids</code>. Stylesheet: <code>styles/default.css</code>.</p>
+  <script src="../docs-shell-nav.js" defer></script>
+  <script src="../components-page.js" defer></script>
+</body>
+</html>
