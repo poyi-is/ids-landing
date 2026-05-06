@@ -141,6 +141,7 @@ def render_header_title(*, asset_prefix: str, page_title_full: str, extra_head: 
   <link rel="stylesheet" href="{asset_prefix}docs-shell.css">
   <link rel="stylesheet" href="{asset_prefix}components-layout.css">
   <link rel="stylesheet" href="{asset_prefix}styles/default.css">
+  <link rel="stylesheet" href="{asset_prefix}styles/landing-ids-accent.css">
 </head>
 <body class="docs-preview">
 """
@@ -485,7 +486,7 @@ def fb_image(desc: dict[str, str], meta: dict | None) -> str:
     src = (
         "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='640' height='360' "
         "%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' x2='1' y1='0' y2='1'%3E"
-        "%3Cstop stop-color='%233B82F6'/%3E%3Cstop offset='1' stop-color='%23B4FF3A'/%3E%3C/linearGradient%3E"
+        "%3Cstop stop-color='%23B4FF3A'/%3E%3Cstop offset='1' stop-color='%237DB827'/%3E%3C/linearGradient%3E"
         "%3C/defs%3E%3Crect rx='14' fill='url(%23g)' width='640' height='360'/%3E%3C/svg%3E"
     )
     pb = merged_props(meta, ["<code>src</code> · <code>alt</code> · <code>fit</code> · <code>aspectRatio</code>"])

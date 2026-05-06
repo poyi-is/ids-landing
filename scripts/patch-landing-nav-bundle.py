@@ -62,7 +62,7 @@ SITE_TOPBAR_FN = """function SiteTopbar() {
       padding: '14px 48px', display: 'flex', alignItems: 'center', gap: 40,
     }}>
       <a href="./index.html" aria-label="Ionic DS — Home" style={{ display: 'flex', alignItems: 'center', gap: 10, color: 'inherit', textDecoration: 'none' }}>
-        <div style={{ width: 24, height: 24, background: 'var(--lp-primary)', borderRadius: 5, display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#fff', fontFamily: 'Geist, sans-serif', fontWeight: 700, fontSize: 13, position: 'relative' }}>
+        <div style={{ width: 24, height: 24, background: 'var(--lp-accent)', borderRadius: 5, display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#0A0D13', fontFamily: 'Geist, sans-serif', fontWeight: 700, fontSize: 13, position: 'relative' }}>
           I
           <span className="pulse" style={{ position: 'absolute', top: -2, right: -2, width: 6, height: 6 }}/>
         </div>

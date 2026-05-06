@@ -2,9 +2,14 @@
     :root {
       --lp-accent: #B4FF3A;
       --lp-accent-dim: #7DB827;
+      --lp-accent-hover: #C9FF6B;
+      --lp-accent-muted: rgba(180, 255, 58, 0.42);
+      --lp-accent-surface: color-mix(in srgb, var(--lp-accent) 14%, var(--lp-bg-inset));
+      --lp-accent-ring: rgba(180, 255, 58, 0.45);
       --lp-accent-glow: rgba(180, 255, 58, 0.15);
-      --lp-primary: #3B82F6;
-      --lp-primary-dim: #1669f1;
+      /* Legacy name: site chrome + any older references — use accent, not product blue */
+      --lp-primary: var(--lp-accent);
+      --lp-primary-dim: var(--lp-accent-dim);
       --lp-bg: #FFFFFF;
       --lp-bg-muted: #F9FAFB;
       --lp-bg-elev: #FFFFFF;
@@ -35,6 +40,7 @@
       --lp-grid-strong: rgba(255, 255, 255, 0.07);
       --lp-code-bg: #0A0D13;
       --lp-code-fg: #E5E7EB;
+      --lp-accent-surface: color-mix(in srgb, var(--lp-accent) 10%, var(--lp-bg-inset));
     }
 
     html[data-theme="light"],
@@ -111,12 +117,12 @@
     .topbar-logo {
       width: 24px;
       height: 24px;
-      background: var(--lp-primary);
+      background: var(--lp-accent);
       border-radius: 5px;
       display: flex;
       align-items: center;
       justify-content: center;
-      color: #fff;
+      color: #0A0D13;
       font-family: 'Geist Sans', sans-serif;
       font-weight: 700;
       font-size: 13px;
@@ -163,12 +169,19 @@
     }
 
     .topbar-link:hover {
-      color: var(--lp-fg);
+      color: var(--lp-accent);
     }
 
     .topbar-link[aria-current="page"] {
       color: var(--lp-fg);
       font-weight: 500;
+    }
+
+    .topbar-link:focus-visible,
+    .topbar-brand:focus-visible {
+      outline: 2px solid var(--lp-accent-ring);
+      outline-offset: 3px;
+      border-radius: 4px;
     }
 
     .topbar-actions {
@@ -198,6 +211,11 @@
 
     .lp-btn:active { transform: scale(.98); }
 
+    .lp-btn:focus-visible {
+      outline: none;
+      box-shadow: 0 0 0 3px var(--lp-accent-ring);
+    }
+
     .lp-btn[data-variant="ghost"] {
       color: var(--lp-fg);
       border-color: var(--lp-border);
@@ -216,6 +234,8 @@
     }
 
     .lp-btn[data-variant="accent"]:hover {
+      background: var(--lp-accent-hover);
+      border-color: var(--lp-accent-hover);
       box-shadow: 0 0 24px var(--lp-accent-glow);
     }
 
@@ -342,8 +362,8 @@
       font-size: 12.5px;
       line-height: 1.6;
       box-shadow:
-        inset 0 1px 0 rgba(180, 255, 58, 0.04),
-        0 0 0 1px rgba(59, 130, 246, 0.06);
+        inset 0 1px 0 rgba(180, 255, 58, 0.06),
+        0 0 0 1px rgba(180, 255, 58, 0.08);
     }
 
     pre.code-pre code {
@@ -416,10 +436,11 @@
     }
 
     .resource-card:hover {
-      border-color: var(--lp-border-strong);
+      border-color: color-mix(in srgb, var(--lp-accent) 35%, var(--lp-border-strong));
       box-shadow:
-        0 0 0 1px rgba(59, 130, 246, 0.12),
-        0 14px 40px rgba(0, 0, 0, 0.26);
+        0 0 0 1px rgba(180, 255, 58, 0.14),
+        0 14px 40px rgba(0, 0, 0, 0.26),
+        0 0 40px rgba(180, 255, 58, 0.06);
     }
 
     .resource-card .arrow {
@@ -452,8 +473,9 @@
       text-transform: uppercase;
       padding: 3px 7px;
       border-radius: 4px;
-      background: rgba(59, 130, 246, 0.15);
-      color: var(--lp-primary);
+      border: 1px solid color-mix(in srgb, var(--lp-accent) 40%, var(--lp-border));
+      background: var(--lp-accent-surface);
+      color: var(--lp-accent);
       vertical-align: middle;
     }
 
@@ -465,14 +487,27 @@
     }
 
     .lp-btn[data-variant="primary"] {
-      background: var(--lp-primary);
-      color: #fff;
-      border-color: var(--lp-primary);
+      background: var(--lp-accent);
+      color: #0A0D13;
+      border-color: var(--lp-accent);
       padding: 10px 16px;
+      box-shadow: 0 0 0 0 var(--lp-accent-glow);
     }
 
     .lp-btn[data-variant="primary"]:hover {
-      background: var(--lp-primary-dim);
+      background: var(--lp-accent-hover);
+      border-color: var(--lp-accent-hover);
+      box-shadow: 0 0 24px var(--lp-accent-glow);
+    }
+
+    /* Docs / SKILL: inline links in prose (not topbar or cards) */
+    main.doc-shell a:not(.lp-btn):not(.resource-card):not(.topbar-brand):not(.topbar-link) {
+      color: var(--lp-accent);
+      text-decoration-color: color-mix(in srgb, var(--lp-accent) 55%, transparent);
+    }
+
+    main.doc-shell a:not(.lp-btn):not(.resource-card):not(.topbar-brand):not(.topbar-link):hover {
+      color: var(--lp-accent-hover);
     }
 
     .doc-footer {
@@ -515,6 +550,11 @@
 
 .ids-theme-toggle:hover {
       border-color: var(--lp-border-strong) !important;
+    }
+
+.ids-theme-toggle:focus-visible {
+      outline: none !important;
+      box-shadow: 0 0 0 3px var(--lp-accent-ring) !important;
     }
 
 .ids-theme-toggle-inner {

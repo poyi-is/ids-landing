@@ -123,8 +123,8 @@
 }
 
 .comp-sync-repo {
-  border-color: color-mix(in srgb, var(--lp-primary) 40%, var(--lp-border));
-  background: color-mix(in srgb, var(--lp-primary) 14%, var(--lp-bg-inset));
+  border-color: color-mix(in srgb, var(--lp-accent) 45%, var(--lp-border));
+  background: color-mix(in srgb, var(--lp-accent) 12%, var(--lp-bg-inset));
   color: var(--lp-fg);
 }
 
@@ -273,6 +273,11 @@
 .copy-btn:hover {
   color: var(--lp-accent);
   border-color: color-mix(in srgb, var(--lp-accent) 40%, var(--lp-border));
+}
+
+.copy-btn:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 3px var(--lp-accent-ring);
 }
 
 .props-box {

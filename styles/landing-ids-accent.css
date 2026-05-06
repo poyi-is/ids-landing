@@ -1,0 +1,396 @@
+/**
+ * Landing site only: remap IDS exported "primary" / default chrome blues to LP neon accent.
+ * Load after styles/default.css on pages with body.docs-preview.
+ * Semantic tokens live in docs-shell.css (--lp-accent*, --lp-primary aliases).
+ */
+
+body.docs-preview {
+  --lp-ids-ink: #0a0d13;
+  --lp-ids-fill: var(--lp-accent);
+  --lp-ids-fill-hover: var(--lp-accent-hover);
+  --lp-ids-fill-active: var(--lp-accent-dim);
+  --lp-ids-fill-soft-bg: color-mix(in srgb, var(--lp-accent) 16%, var(--lp-bg-inset));
+  --lp-ids-fill-soft-hover: color-mix(in srgb, var(--lp-accent) 24%, var(--lp-bg-inset));
+  --lp-ids-ring: var(--lp-accent-ring);
+}
+
+/* —— Avatar / badge / container —— */
+body.docs-preview .ionic-avatar[data-color="primary"] {
+  color: var(--lp-ids-ink) !important;
+  background-color: var(--lp-ids-fill-soft-bg) !important;
+}
+
+body.docs-preview .ionic-badge[data-variant="soft"][data-color="primary"] {
+  color: var(--lp-ids-ink) !important;
+  border-color: color-mix(in srgb, var(--lp-accent) 40%, var(--lp-border)) !important;
+  background-color: var(--lp-ids-fill-soft-bg) !important;
+}
+
+body.docs-preview .ionic-badge[data-variant="solid"][data-color="primary"] {
+  color: var(--lp-ids-ink) !important;
+  border-color: var(--lp-ids-fill) !important;
+  background-color: var(--lp-ids-fill) !important;
+}
+
+body.docs-preview .ionic-badge[data-variant="outline"][data-color="primary"] {
+  color: var(--lp-accent) !important;
+  border-color: var(--lp-accent) !important;
+  background-color: transparent !important;
+}
+
+body.docs-preview .ionic-badge[data-color="primary"] {
+  color: var(--lp-ids-ink) !important;
+  border-color: color-mix(in srgb, var(--lp-accent) 40%, var(--lp-border)) !important;
+  background-color: var(--lp-ids-fill-soft-bg) !important;
+}
+
+body.docs-preview .ionic-container[data-color="primary"] {
+  border-color: var(--lp-ids-fill) !important;
+  background-color: var(--lp-ids-fill) !important;
+}
+
+/* —— Buttons (intent + static preview data-color) —— */
+body.docs-preview .ionic-button[data-appearance="soft"][data-intent="primary"],
+body.docs-preview .ionic-button[data-appearance="soft"][data-color="primary"] {
+  color: var(--lp-ids-ink) !important;
+  border-color: transparent !important;
+  background-color: var(--lp-ids-fill-soft-bg) !important;
+}
+
+body.docs-preview .ionic-button[data-appearance="soft"][data-intent="primary"]:hover,
+body.docs-preview .ionic-button[data-appearance="soft"][data-color="primary"]:hover {
+  background-color: var(--lp-ids-fill-soft-hover) !important;
+}
+
+body.docs-preview .ionic-button[data-appearance="soft"][data-intent="primary"]:active,
+body.docs-preview .ionic-button[data-appearance="soft"][data-color="primary"]:active {
+  transform: scale(0.98) !important;
+  background-color: color-mix(in srgb, var(--lp-accent) 32%, var(--lp-bg-inset)) !important;
+}
+
+body.docs-preview .ionic-button[data-appearance="soft"][data-intent="primary"]:disabled,
+body.docs-preview .ionic-button[data-appearance="soft"][data-color="primary"]:disabled {
+  color: var(--lp-ids-ink) !important;
+}
+
+body.docs-preview .ionic-button[data-appearance="ghost"][data-intent="primary"],
+body.docs-preview .ionic-button[data-appearance="ghost"][data-color="primary"] {
+  color: var(--lp-accent) !important;
+  border-color: transparent !important;
+}
+
+body.docs-preview .ionic-button[data-appearance="ghost"][data-intent="primary"]:hover,
+body.docs-preview .ionic-button[data-appearance="ghost"][data-color="primary"]:hover {
+  background-color: color-mix(in srgb, var(--lp-accent) 10%, transparent) !important;
+}
+
+body.docs-preview .ionic-button[data-appearance="ghost"][data-intent="primary"]:active,
+body.docs-preview .ionic-button[data-appearance="ghost"][data-color="primary"]:active {
+  transform: scale(0.98) !important;
+  background-color: color-mix(in srgb, var(--lp-accent) 16%, transparent) !important;
+}
+
+body.docs-preview .ionic-button[data-appearance="ghost"][data-intent="primary"]:disabled,
+body.docs-preview .ionic-button[data-appearance="ghost"][data-color="primary"]:disabled {
+  color: var(--lp-accent-muted) !important;
+}
+
+body.docs-preview .ionic-button[data-appearance="solid"][data-intent="primary"],
+body.docs-preview .ionic-button[data-appearance="solid"][data-color="primary"],
+body.docs-preview .ionic-button[data-intent="primary"]:not([data-appearance]),
+body.docs-preview .ionic-button[data-color="primary"]:not([data-appearance]) {
+  color: var(--lp-ids-ink) !important;
+  border-color: var(--lp-ids-fill) !important;
+  background-color: var(--lp-ids-fill) !important;
+}
+
+body.docs-preview .ionic-button[data-appearance="solid"][data-intent="primary"]:focus-visible,
+body.docs-preview .ionic-button[data-appearance="solid"][data-color="primary"]:focus-visible,
+body.docs-preview .ionic-button[data-intent="primary"]:not([data-appearance]):focus-visible,
+body.docs-preview .ionic-button[data-color="primary"]:not([data-appearance]):focus-visible {
+  outline: none !important;
+  box-shadow: 0 0 0 3px var(--lp-ids-ring) !important;
+}
+
+body.docs-preview .ionic-button[data-appearance="solid"][data-intent="primary"]:hover,
+body.docs-preview .ionic-button[data-appearance="solid"][data-color="primary"]:hover,
+body.docs-preview .ionic-button[data-intent="primary"]:not([data-appearance]):hover,
+body.docs-preview .ionic-button[data-color="primary"]:not([data-appearance]):hover {
+  background-color: var(--lp-ids-fill-hover) !important;
+  border-color: var(--lp-ids-fill-hover) !important;
+}
+
+body.docs-preview .ionic-button[data-appearance="solid"][data-intent="primary"]:active,
+body.docs-preview .ionic-button[data-appearance="solid"][data-color="primary"]:active,
+body.docs-preview .ionic-button[data-intent="primary"]:not([data-appearance]):active,
+body.docs-preview .ionic-button[data-color="primary"]:not([data-appearance]):active {
+  transform: scale(0.98) !important;
+  background-color: var(--lp-ids-fill-active) !important;
+  border-color: var(--lp-ids-fill-active) !important;
+}
+
+body.docs-preview .ionic-button[data-appearance="solid"][data-intent="primary"]:disabled,
+body.docs-preview .ionic-button[data-appearance="solid"][data-color="primary"]:disabled,
+body.docs-preview .ionic-button[data-intent="primary"]:not([data-appearance]):disabled,
+body.docs-preview .ionic-button[data-color="primary"]:not([data-appearance]):disabled {
+  color: var(--lp-ids-ink) !important;
+}
+
+body.docs-preview .ionic-button[data-appearance="outline"][data-intent="primary"],
+body.docs-preview .ionic-button[data-appearance="outline"][data-color="primary"] {
+  color: var(--lp-accent) !important;
+  border-color: var(--lp-accent) !important;
+  background-color: transparent !important;
+}
+
+body.docs-preview .ionic-button[data-appearance="outline"][data-intent="primary"]:hover,
+body.docs-preview .ionic-button[data-appearance="outline"][data-color="primary"]:hover {
+  background-color: var(--lp-accent-surface) !important;
+}
+
+body.docs-preview .ionic-button[data-appearance="outline"][data-intent="primary"]:active,
+body.docs-preview .ionic-button[data-appearance="outline"][data-color="primary"]:active {
+  transform: scale(0.98) !important;
+  background-color: color-mix(in srgb, var(--lp-accent) 18%, var(--lp-bg-inset)) !important;
+}
+
+body.docs-preview .ionic-button[data-appearance="outline"][data-intent="primary"]:disabled,
+body.docs-preview .ionic-button[data-appearance="outline"][data-color="primary"]:disabled {
+  color: var(--lp-accent-muted) !important;
+}
+
+body.docs-preview .ionic-button[data-intent="primary"]:focus-visible,
+body.docs-preview .ionic-button[data-color="primary"]:not([data-appearance]):focus-visible {
+  outline: none !important;
+  box-shadow: 0 0 0 3px var(--lp-ids-ring) !important;
+}
+
+/* Duplicate hover/active for bare [data-intent=primary] already covered by solid block */
+
+/* —— Checkbox / radio (default + primary) —— */
+body.docs-preview .ionic-checkbox[data-color="default"]:focus-visible {
+  box-shadow: 0 0 0 2px var(--lp-ids-ring) !important;
+}
+
+body.docs-preview .ionic-checkbox[data-color="default"]:hover {
+  border-color: color-mix(in srgb, var(--lp-accent) 45%, var(--lp-border-strong)) !important;
+}
+
+body.docs-preview .ionic-checkbox[data-color="default"][aria-checked="true"],
+body.docs-preview .ionic-checkbox[data-color="default"]:checked {
+  border-color: var(--lp-ids-fill) !important;
+  background-color: var(--lp-ids-fill) !important;
+}
+
+body.docs-preview .ionic-radio[data-color="default"],
+body.docs-preview .ionic-radio[data-color="primary"] {
+  color: var(--lp-accent) !important;
+}
+
+body.docs-preview .ionic-radio[data-color="default"]:focus-visible {
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--lp-accent) 25%, transparent) !important;
+  border-color: var(--lp-accent) !important;
+}
+
+body.docs-preview .ionic-radio[data-color="default"]:hover {
+  box-shadow: 0 0 0 2px var(--lp-accent-surface) !important;
+  border-color: var(--lp-accent) !important;
+}
+
+body.docs-preview .ionic-radio[data-color="default"][aria-checked="true"],
+body.docs-preview .ionic-radio[data-color="default"]:checked {
+  border-color: var(--lp-ids-fill-active) !important;
+  background-color: var(--lp-ids-fill) !important;
+}
+
+body.docs-preview .ionic-radio[data-color="primary"] {
+  color: var(--lp-accent) !important;
+  border-color: var(--lp-accent) !important;
+  background-color: var(--lp-bg-elev) !important;
+}
+
+body.docs-preview .ionic-radio[data-color="primary"]:focus-visible {
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--lp-accent) 28%, transparent) !important;
+  border-color: var(--lp-ids-fill-active) !important;
+}
+
+body.docs-preview .ionic-radio[data-color="primary"]:hover {
+  box-shadow: 0 0 0 2px var(--lp-accent-surface) !important;
+  border-color: var(--lp-ids-fill-hover) !important;
+}
+
+body.docs-preview .ionic-radio[data-color="primary"][aria-checked="true"],
+body.docs-preview .ionic-radio[data-color="primary"]:checked {
+  border-color: var(--lp-ids-fill-active) !important;
+  background-color: var(--lp-ids-fill) !important;
+}
+
+body.docs-preview .ionic-radio[data-color="primary"]:disabled {
+  border-color: color-mix(in srgb, var(--lp-accent) 35%, var(--lp-border)) !important;
+}
+
+/* —— Links / text —— */
+body.docs-preview .ionic-link[data-color="default"] {
+  color: var(--lp-accent) !important;
+}
+
+body.docs-preview .ionic-text[data-color="primary"] {
+  color: var(--lp-accent) !important;
+}
+
+/* —— Menu item / tab focus —— */
+body.docs-preview .ionic-menuitem[data-color="default"]:focus-visible {
+  outline: 2px solid var(--lp-accent) !important;
+}
+
+body.docs-preview .ionic-tab[data-appearance="line"]:focus-visible {
+  outline: 2px solid var(--lp-accent) !important;
+}
+
+body.docs-preview .ionic-tab[data-appearance="line"]:selected {
+  color: var(--lp-accent-hover) !important;
+  font-weight: 500 !important;
+  border-bottom-color: var(--lp-accent) !important;
+}
+
+body.docs-preview .ionic-tab[data-appearance="pills"]:focus-visible,
+body.docs-preview .ionic-tab[data-appearance="contained"]:focus-visible {
+  outline: 2px solid var(--lp-accent) !important;
+  outline-offset: 2px !important;
+}
+
+body.docs-preview .ionic-tab[data-appearance="pills"]:selected {
+  color: var(--lp-ids-ink) !important;
+  font-weight: 500 !important;
+  background-color: var(--lp-accent-surface) !important;
+}
+
+body.docs-preview .ionic-tab[data-color="primary"] {
+  color: var(--lp-accent) !important;
+}
+
+body.docs-preview .ionic-tab[data-color="primary"]:hover {
+  color: var(--lp-accent-hover) !important;
+}
+
+body.docs-preview .ionic-tab[data-color="primary"]:selected {
+  color: var(--lp-accent-hover) !important;
+  font-weight: 500 !important;
+}
+
+/* —— Select / textarea —— */
+body.docs-preview .ionic-select[data-appearance="ghost"]:focus-visible {
+  box-shadow: 0 0 0 2px var(--lp-ids-ring) !important;
+}
+
+body.docs-preview .ionic-select[data-appearance="filled"]:focus-visible {
+  border-color: var(--lp-accent) !important;
+}
+
+body.docs-preview .ionic-select[data-color="default"]:focus-visible {
+  box-shadow: 0 0 0 3px var(--lp-ids-ring) !important;
+  border-color: var(--lp-accent) !important;
+}
+
+body.docs-preview .ionic-select[data-color="primary"] {
+  border-color: var(--lp-accent) !important;
+}
+
+body.docs-preview .ionic-select[data-color="primary"]:focus-visible {
+  box-shadow: 0 0 0 4px var(--lp-ids-ring) !important;
+  border-color: var(--lp-ids-fill-active) !important;
+}
+
+body.docs-preview .ionic-select[data-color="primary"]:hover {
+  border-color: var(--lp-accent-hover) !important;
+}
+
+body.docs-preview .ionic-textarea[data-color="default"]:focus-visible {
+  box-shadow: 0 0 0 2px var(--lp-ids-ring) !important;
+  border-color: var(--lp-accent) !important;
+}
+
+body.docs-preview .ionic-textarea[data-color="primary"] {
+  border-color: var(--lp-accent) !important;
+}
+
+body.docs-preview .ionic-textarea[data-color="primary"]:focus-visible {
+  box-shadow: 0 0 0 2px var(--lp-ids-ring) !important;
+  border-color: var(--lp-ids-fill-active) !important;
+}
+
+body.docs-preview .ionic-textarea[data-color="primary"]:hover {
+  border-color: var(--lp-accent-hover) !important;
+}
+
+/* —— Slider / spinner / switch —— */
+body.docs-preview .ionic-slider[data-color="primary"] {
+  color: var(--lp-accent) !important;
+  border-color: var(--lp-accent) !important;
+}
+
+body.docs-preview .ionic-spinner[data-color="primary"] {
+  color: var(--lp-accent) !important;
+}
+
+body.docs-preview .ionic-switch[data-color="primary"]:focus-visible {
+  box-shadow: 0 0 0 3px var(--lp-ids-ring) !important;
+}
+
+body.docs-preview .ionic-switch[data-color="primary"][aria-checked="true"],
+body.docs-preview .ionic-switch[data-color="primary"]:checked {
+  background-color: var(--lp-ids-fill) !important;
+}
+
+/* —— Toggle / tooltip —— */
+body.docs-preview .ionic-togglebutton[data-color="primary"] {
+  color: var(--lp-accent) !important;
+}
+
+body.docs-preview .ionic-togglebutton[data-color="primary"]:hover {
+  color: var(--lp-accent-hover) !important;
+}
+
+body.docs-preview .ionic-togglebutton[data-color="primary"]:active {
+  color: var(--lp-ids-fill-active) !important;
+  background-color: var(--lp-accent-surface) !important;
+}
+
+body.docs-preview .ionic-tooltip[data-color="primary"] {
+  color: var(--lp-ids-ink) !important;
+  background-color: var(--lp-ids-fill) !important;
+}
+
+/* —— Progress uses currentColor —— */
+body.docs-preview .ionic-progress[data-color="primary"] {
+  color: var(--lp-accent) !important;
+}
+
+body.docs-preview .ionic-icon[data-color="primary"] {
+  color: var(--lp-accent) !important;
+}
+
+/* —— Dark: ghost + soft primary (IDS shipped blue tints) —— */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) body.docs-preview .ionic-button[data-appearance="ghost"][data-intent="primary"],
+  :root:not([data-theme="light"]) body.docs-preview .ionic-button[data-appearance="ghost"][data-color="primary"] {
+    color: var(--lp-accent-hover) !important;
+  }
+
+  :root:not([data-theme="light"]) body.docs-preview .ionic-button[data-appearance="soft"][data-intent="primary"],
+  :root:not([data-theme="light"]) body.docs-preview .ionic-button[data-appearance="soft"][data-color="primary"] {
+    color: var(--lp-accent-hover) !important;
+    background-color: color-mix(in srgb, var(--lp-accent) 12%, var(--lp-bg-inset)) !important;
+  }
+}
+
+html[data-theme="dark"] body.docs-preview .ionic-button[data-appearance="ghost"][data-intent="primary"],
+html[data-theme="dark"] body.docs-preview .ionic-button[data-appearance="ghost"][data-color="primary"] {
+  color: var(--lp-accent-hover) !important;
+}
+
+html[data-theme="dark"] body.docs-preview .ionic-button[data-appearance="soft"][data-intent="primary"],
+html[data-theme="dark"] body.docs-preview .ionic-button[data-appearance="soft"][data-color="primary"] {
+  color: var(--lp-accent-hover) !important;
+  background-color: color-mix(in srgb, var(--lp-accent) 12%, var(--lp-bg-inset)) !important;
+}
