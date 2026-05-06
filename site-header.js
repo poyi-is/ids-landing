@@ -16,10 +16,12 @@
   function detectActiveNav() {
     var pathname = (window.location.pathname || "").replace(/\\/g, "/");
     var file = pathname.split("/").pop() || "";
-    if (file === "docs.html") return { docs: true, comps: false };
-    if (file === "components.html") return { docs: false, comps: true };
-    if (pathname.indexOf("/components/") !== -1) return { docs: false, comps: true };
-    return { docs: false, comps: false };
+    if (file === "docs.html") return { docs: true, comps: false, skill: false };
+    if (file === "skill.html") return { docs: false, comps: false, skill: true };
+    if (file === "components.html") return { docs: false, comps: true, skill: false };
+    if (pathname.indexOf("/components/") !== -1)
+      return { docs: false, comps: true, skill: false };
+    return { docs: false, comps: false, skill: false };
   }
 
   function mount() {
@@ -37,6 +39,7 @@
     var active = detectActiveNav();
     var docsAttr = active.docs ? ' aria-current="page"' : "";
     var compAttr = active.comps ? ' aria-current="page"' : "";
+    var skillAttr = active.skill ? ' aria-current="page"' : "";
 
     var html =
       '<header class="site-topbar">' +
@@ -58,7 +61,11 @@
       '"' +
       compAttr +
       ">Components</a>" +
-      '<a class="topbar-link" data-nav-doc="skill" href="#" hidden>SKILL.md</a>' +
+      '<a class="topbar-link" data-nav-doc="skill" href="' +
+      prefix +
+      'skill.html"' +
+      skillAttr +
+      ">SKILL.md</a>" +
       "</nav>" +
       '<div class="topbar-actions">' +
       '<a class="lp-btn lp-btn-sm" data-variant="ghost" href="https://github.com/poyi-is/ids">GitHub</a>' +

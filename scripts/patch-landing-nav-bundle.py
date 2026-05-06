@@ -72,7 +72,7 @@ SITE_TOPBAR_FN = """function SiteTopbar() {
       <nav style={{ display: 'flex', gap: 24, flex: 1 }} aria-label="Primary">
         <a href="./docs.html" style={{ fontSize: 13, color: 'var(--lp-fg-muted)', cursor: 'pointer', textDecoration: 'none' }}>Docs</a>
         <a href="./components/alert.html" style={{ fontSize: 13, color: 'var(--lp-fg-muted)', cursor: 'pointer', textDecoration: 'none' }}>Components</a>
-        <a href="#" hidden data-nav-doc="skill" style={{ fontSize: 13, color: 'var(--lp-fg-muted)', cursor: 'pointer', textDecoration: 'none' }}>SKILL.md</a>
+        <a href="./skill.html" data-nav-doc="skill" style={{ fontSize: 13, color: 'var(--lp-fg-muted)', cursor: 'pointer', textDecoration: 'none' }}>SKILL.md</a>
       </nav>
       <div style={{ display: 'flex', gap: 8, alignItems: 'center' }}>
         <a href="https://github.com/poyi-is/ids" className="lp-btn" data-variant="ghost" style={{ padding: '6px 12px', fontSize: 13 }}>GitHub</a>

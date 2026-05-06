@@ -17,6 +17,21 @@
     return REPO_BLOB_MAIN + "/" + relPath.split("/").map(encodeURIComponent).join("/");
   }
 
+  function pathPrefix() {
+    var pathname = (window.location.pathname || "").replace(/\\/g, "/");
+    if (pathname.indexOf("/components/") !== -1) return "../";
+    return "./";
+  }
+
+  /** @param {string} skillPath */
+  function skillHref(skillPath) {
+    var p = String(skillPath || "").trim();
+    if (!p) return null;
+    if (/^https?:\/\//i.test(p)) return p;
+    if (/\.html$/i.test(p)) return pathPrefix() + p.replace(/^\//, "").replace(/^\.\//, "");
+    return blobHref(p);
+  }
+
   function headOk(url) {
     return fetch(url, { method: "HEAD", mode: "cors", cache: "no-store" })
       .then(function (r) {
@@ -62,6 +77,8 @@
         ]);
       }
 
+      if (!skillPath) skillPath = "skill.html";
+
       pathsCache = { skillPath: skillPath };
       resolving = null;
       return pathsCache;
@@ -84,16 +101,15 @@
 
     els.forEach(function (el) {
       var kind = el.getAttribute("data-nav-doc");
-      var resolved = kind === "skill" ? p.skillPath : null;
+      if (kind !== "skill") return;
 
       if (appliedEl) appliedEl.add(el);
 
-      if (!resolved) {
-        el.parentNode && el.parentNode.removeChild(el);
-        return;
-      }
+      var path = p.skillPath;
+      if (!path) path = "skill.html";
 
-      el.setAttribute("href", blobHref(resolved));
+      var href = skillHref(path);
+      if (href) el.setAttribute("href", href);
       el.removeAttribute("hidden");
     });
   }

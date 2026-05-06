@@ -831,46 +831,12 @@ BUILDERS: dict[str, Callable[[dict[str, str], dict | None], str]] = {
 }
 
 
-def render_topbar(
-    *,
-    nested: bool,
-    components_nav_current: bool,
-    hub_stub: bool = False,
-    top_level_component_slug: str | None = None,
-) -> str:
-    """Components always links to Alert (canonical first doc). aria-current only on that exact page or the hub stub."""
-    if nested:
-        index_href = "../index.html"
-        docs_href = "../docs.html"
-        comps_href = "./alert.html"
-        install_href = "../docs.html#install"
-    else:
-        index_href = "./index.html"
-        docs_href = "./docs.html"
-        comps_href = "./components/alert.html"
-        install_href = "./docs.html#install"
-
-    comps_aria = ""
-    if components_nav_current:
-        if hub_stub or (nested and top_level_component_slug == "alert"):
-            comps_aria = ' aria-current="page"'
-    return f"""  <header class="site-topbar">
-    <a href="{index_href}" class="topbar-brand" aria-label="Ionic DS — Home">
-      <div class="topbar-logo">I<span class="topbar-logo-dot pulse" aria-hidden="true"></span></div>
-      <span class="display topbar-lockup-title">Ionic DS</span>
-      <span class="mono topbar-version">v1.4</span>
-    </a>
-    <nav class="topbar-nav" aria-label="Primary">
-      <a class="topbar-link" href="{docs_href}">Docs</a>
-      <a class="topbar-link" href="{comps_href}"{comps_aria}>Components</a>
-      <a class="topbar-link" data-nav-doc="skill" href="#" hidden>SKILL.md</a>
-    </nav>
-    <div class="topbar-actions">
-      <a class="lp-btn lp-btn-sm" data-variant="ghost" href="https://github.com/poyi-is/ids">GitHub</a>
-      <a class="lp-btn lp-btn-sm-accent" data-variant="accent" href="{install_href}">Install</a>
-    </div>
-  </header>
-"""
+def render_site_header_mount(*, asset_prefix: str) -> str:
+    """#ids-site-header mount; replaced at runtime by site-header.js (shared top nav)."""
+    return (
+        '  <div id="ids-site-header"></div>\n'
+        f'  <script src="{asset_prefix}site-header.js" defer></script>\n'
+    )
 
 
 def components_hub_stub_body() -> str:
@@ -921,11 +887,7 @@ def main() -> None:
             page_title_full="Ionic DS — Components",
             extra_head=meta_refresh,
         )
-        + render_topbar(
-            nested=False,
-            components_nav_current=True,
-            hub_stub=True,
-        )
+        + render_site_header_mount(asset_prefix="./")
         + components_hub_stub_body()
         + footer("./")
     )
@@ -954,11 +916,7 @@ def main() -> None:
 
         page_html = (
             render_header_title(asset_prefix="../", page_title_full=f"Ionic DS — {nm}")
-            + render_topbar(
-                nested=True,
-                components_nav_current=True,
-                top_level_component_slug=slug(nm),
-            )
+            + render_site_header_mount(asset_prefix="../")
             + "  <div class=\"comp-wrap\">\n"
             + sidebar
             + f'''    <div class="comp-main">

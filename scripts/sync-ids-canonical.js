@@ -619,7 +619,11 @@ async function main() {
     return;
   }
 
-  const skillPath = await probeDocPresence(SKILL_CANDIDATES, "SKILL");
+  const skillFromIds = await probeDocPresence(SKILL_CANDIDATES, "SKILL");
+  const landingSkillHtml = path.join(ROOT, "skill.html");
+  const skillPath =
+    skillFromIds ||
+    (fs.existsSync(landingSkillHtml) ? "skill.html" : null);
 
   const canonicalStoredUrl =
     typeof canonicalUrlForLinks === "string" &&

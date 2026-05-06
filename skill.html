@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en" data-motion="on">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="./theme-toggle.js"></script>
+  <title>Ionic DS — Agent skill (SKILL.md)</title>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/inter@5.2.5/index.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/inter@5.2.5/500.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/inter@5.2.5/600.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/inter@5.2.5/700.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/geist-sans@5.2.5/index.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/geist-sans@5.2.5/600.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/geist-mono@5.2.5/index.css">
+  <link rel="stylesheet" href="./docs-shell.css">
+</head>
+<body>
+  <div id="ids-site-header"></div>
+  <script src="./site-header.js" defer></script>
+
+  <main class="doc-shell">
+    <h1 class="doc-lead display">Ionic Design System Skill</h1>
+    <p class="doc-sub">Practical instructions for AI agents: stay on-system with <span class="mono">ionic-design-system</span>, the default stylesheet, and published context files.</p>
+
+    <section class="doc-section" aria-labelledby="source-heading">
+      <h2 id="source-heading" class="doc-heading display">Source file</h2>
+      <div class="doc-panel">
+        <p class="doc-muted doc-body">This page mirrors the machine-friendly markdown skill shipped with the landing repo. Use the <code class="mono">.md</code> file in agent / skill loaders; use this page for browsing.</p>
+        <div class="btn-row">
+          <a class="lp-btn" data-variant="primary" href="./SKILL.md">Download SKILL.md</a>
+          <a class="lp-btn" data-variant="ghost" href="./docs.html">Back to Docs</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="doc-section" aria-labelledby="what-heading">
+      <h2 id="what-heading" class="doc-heading display">What this skill does</h2>
+      <div class="doc-panel">
+        <ul class="doc-muted" style="padding-left:1.25rem;margin-bottom:0;">
+          <li style="margin-bottom:10px;">Composes UIs from documented IDS components and variant values.</li>
+          <li style="margin-bottom:10px;">Loads the canonical stylesheet so <span class="mono">data-*</span> attributes match real CSS.</li>
+          <li style="margin-bottom:10px;">Treats <a href="./CONTEXT.md">CONTEXT.md</a> and <a href="./ai/llms.txt">ai/llms.txt</a> as authoritative for tokens and APIs.</li>
+          <li>Avoids one-off styling and invented props or tokens.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="doc-section" aria-labelledby="overview-heading">
+      <h2 id="overview-heading" class="doc-heading display">What IDS is</h2>
+      <div class="doc-panel">
+        <p class="doc-body doc-muted"><strong>Ionic Design System</strong> is a typed React library: variant props map to <span class="mono">data-*</span> DOM attributes. An external CSS file applies theming. Without that CSS, components use minimal fallbacks — always import the stylesheet for on-brand UI.</p>
+      </div>
+    </section>
+
+    <section class="doc-section" aria-labelledby="workflow-heading">
+      <h2 id="workflow-heading" class="doc-heading display">How agents should use IDS</h2>
+      <div class="doc-panel">
+        <ol class="doc-muted" style="padding-left:1.25rem;margin-bottom:0;">
+          <li style="margin-bottom:10px;">Read CONTEXT.md and ai/llms.txt.</li>
+          <li style="margin-bottom:10px;">Install <span class="mono">ionic-design-system</span> and import the default theme CSS at entry.</li>
+          <li style="margin-bottom:10px;">Compose with IDS primitives; prefer <span class="mono">Container</span> for layout.</li>
+          <li style="margin-bottom:10px;">Map designs to documented enums only; do not invent variant strings.</li>
+          <li>If undocumented, say unsupported or stay neutral — do not fabricate tokens.</li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="doc-section" aria-labelledby="install-heading">
+      <h2 id="install-heading" class="doc-heading display">Install</h2>
+      <div class="doc-panel">
+        <div class="code-shell">
+          <div class="code-label">Command</div>
+          <pre class="code-pre"><code>npm install ionic-design-system</code></pre>
+        </div>
+        <p class="doc-muted">Peers: <span class="mono">react</span>, <span class="mono">react-dom</span> (&gt;= 18). Optional: <span class="mono">lucide-react</span> for icons.</p>
+      </div>
+    </section>
+
+    <section class="doc-section" aria-labelledby="css-heading">
+      <h2 id="css-heading" class="doc-heading display">Required stylesheet</h2>
+      <div class="doc-panel">
+        <p class="doc-muted doc-body">Import once at app entry, before rendering IDS components.</p>
+        <h3 class="doc-h3">Published URL</h3>
+        <div class="code-shell">
+          <div class="code-label">Module</div>
+          <pre class="code-pre"><code>import "https://ionic-design-system.github.io/ids-landing/styles/default.css";
+import { Button, Container, Text } from "ionic-design-system";</code></pre>
+        </div>
+        <h3 class="doc-h3">HTML</h3>
+        <div class="code-shell">
+          <div class="code-label">Link</div>
+          <pre class="code-pre"><code>&lt;link rel="stylesheet" href="https://ionic-design-system.github.io/ids-landing/styles/default.css" /&gt;</code></pre>
+        </div>
+        <p class="doc-muted doc-body">Do not skip the stylesheet and compensate with ad-hoc utility CSS on IDS nodes — that drifts from system behavior.</p>
+      </div>
+    </section>
+
+    <section class="doc-section" aria-labelledby="rules-heading">
+      <h2 id="rules-heading" class="doc-heading display">Token and component rules</h2>
+      <div class="doc-panel">
+        <ul class="doc-muted" style="padding-left:1.25rem;margin-bottom:0;">
+          <li style="margin-bottom:10px;"><strong>Variants</strong> are constrained enums — use only values in ai/llms.txt or typings.</li>
+          <li style="margin-bottom:10px;"><strong>Color / spacing</strong> follow CONTEXT.md semantic usage, not arbitrary palettes.</li>
+          <li style="margin-bottom:10px;"><strong>Typography</strong>: prefer <span class="mono">Text</span> over raw headings with custom classes for system UI.</li>
+          <li><strong>Layout</strong>: prefer <span class="mono">Container</span> props over bespoke flex/grid utilities for structure.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="doc-section" aria-labelledby="dod-heading">
+      <h2 id="dod-heading" class="doc-heading display">Do / don&apos;t</h2>
+      <div class="doc-panel doc-panel-quick">
+        <h3 class="doc-h3">Do</h3>
+        <ul class="doc-muted" style="padding-left:1.25rem;margin-bottom:16px;">
+          <li style="margin-bottom:8px;">Import default CSS; mirror docs and CONTEXT.md.</li>
+          <li style="margin-bottom:8px;">Use flat props or <span class="mono">dimensionValues</span> as in llms.txt.</li>
+          <li>For Button, follow llms.txt prop names (<span class="mono">intent</span>, not legacy <span class="mono">color</span> examples).</li>
+        </ul>
+        <h3 class="doc-h3">Don&apos;t</h3>
+        <ul class="doc-muted" style="padding-left:1.25rem;margin-bottom:0;">
+          <li style="margin-bottom:8px;">Don&apos;t pile inline styles or utilities to mimic IDS unless explicitly requested.</li>
+          <li style="margin-bottom:8px;">Don&apos;t invent parallel tokens or undocumented components.</li>
+          <li>Don&apos;t clone IDS primitives — compose them.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="doc-section" aria-labelledby="on-system-heading">
+      <h2 id="on-system-heading" class="doc-heading display">Stay on-system</h2>
+      <div class="doc-panel">
+        <div class="code-shell">
+          <div class="code-label">Canonical URLs</div>
+          <pre class="code-pre"><code>https://ionic-design-system.github.io/ids-landing/CONTEXT.md
+https://ionic-design-system.github.io/ids-landing/ai/llms.txt
+https://ionic-design-system.github.io/ids-landing/styles/default.css</code></pre>
+        </div>
+        <p class="doc-muted doc-body">When unsure, read the component section in llms.txt — do not guess enums.</p>
+      </div>
+    </section>
+
+    <section class="doc-section" aria-labelledby="prompt-heading">
+      <h2 id="prompt-heading" class="doc-heading display">Example prompt</h2>
+      <div class="doc-panel">
+        <div class="code-shell">
+          <div class="code-label">Agent instruction</div>
+          <pre class="code-pre"><code>Build a settings panel in React using ionic-design-system. Import the published default stylesheet from ionic-design-system.github.io/ids-landing. Use only components and props from ai/llms.txt. Layout with Container; actions with Button (intent, appearance, size per docs). No custom hex — IDS intents and surfaces only.</code></pre>
+        </div>
+      </div>
+    </section>
+
+    <section class="doc-section" aria-labelledby="example-heading">
+      <h2 id="example-heading" class="doc-heading display">Example React usage</h2>
+      <div class="doc-panel">
+        <div class="code-shell">
+          <div class="code-label">tsx</div>
+          <pre class="code-pre"><code>import "https://ionic-design-system.github.io/ids-landing/styles/default.css";
+import {
+  Button,
+  Container,
+  Text,
+  Input,
+} from "ionic-design-system";
+
+export function SignInPreview() {
+  return (
+    &lt;Container display="flex" direction="column" spacing="md" padding="lg"&gt;
+      &lt;Text text="Sign in" tag="h1" size="2xl" weight="bold" /&gt;
+      &lt;Input type="email" placeholder="you@example.com" size="default" /&gt;
+      &lt;Container display="flex" direction="row" spacing="sm"&gt;
+        &lt;Button label="Continue" intent="primary" appearance="solid" size="md" /&gt;
+        &lt;Button label="Cancel" intent="neutral" appearance="ghost" size="md" /&gt;
+      &lt;/Container&gt;
+    &lt;/Container&gt;
+  );
+}</code></pre>
+        </div>
+      </div>
+    </section>
+
+    <section class="doc-section" aria-labelledby="guard-heading">
+      <h2 id="guard-heading" class="doc-heading display">Guardrails</h2>
+      <div class="doc-panel">
+        <ul class="doc-muted" style="padding-left:1.25rem;margin-bottom:0;">
+          <li style="margin-bottom:10px;">Never invent component names, export paths, or variant values.</li>
+          <li style="margin-bottom:10px;">Never replace the IDS stylesheet with an ad-hoc subset without a documented pipeline reason.</li>
+          <li>If the upstream ids repo publishes its own SKILL.md, tooling may prefer that link; this page tracks the landing copy and published CSS URLs.</li>
+        </ul>
+      </div>
+    </section>
+
+    <p class="doc-footer">MIT License &middot; Ionic Design System</p>
+  </main>
+  <script src="./docs-shell-nav.js" defer></script>
+</body>
+</html>
