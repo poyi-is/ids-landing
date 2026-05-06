@@ -1,8 +1,0 @@
-{
-  "name": "ids-landing",
-  "private": true,
-  "scripts": {
-    "ids:sync": "node scripts/sync-ids-canonical.js",
-    "serve": "npx serve ."
-  }
-}

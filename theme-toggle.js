@@ -55,7 +55,21 @@
     if (theme !== "light" && theme !== "dark") theme = systemTheme();
     document.documentElement.setAttribute("data-theme", theme);
     updateButtons(theme);
+    try {
+      window.dispatchEvent(
+        new CustomEvent("ids-theme-applied", { detail: { theme: theme } })
+      );
+    } catch (_) {}
   }
+
+  /** Used by the landing tweaks panel and other shells to stay in sync with the nav toggle. */
+  window.__idsApplyTheme = function (theme) {
+    if (theme !== "light" && theme !== "dark") return;
+    try {
+      localStorage.setItem(STORAGE_KEY, theme);
+    } catch (_) {}
+    apply(theme);
+  };
 
   apply(effectiveTheme());
 

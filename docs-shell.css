@@ -16,8 +16,9 @@
       --lp-fg-subtle: #6B7280;
       --lp-grid: rgba(17, 24, 39, 0.04);
       --lp-grid-strong: rgba(17, 24, 39, 0.08);
-      --lp-code-bg: #0A0A0A;
-      --lp-code-fg: #E5E7EB;
+      /* Code panels: light surface + dark text (pre.code-pre); dark theme overrides below */
+      --lp-code-bg: #f4f5f8;
+      --lp-code-fg: #1a1f28;
     }
 
     :root[data-theme="dark"] {
@@ -34,6 +35,16 @@
       --lp-grid-strong: rgba(255, 255, 255, 0.07);
       --lp-code-bg: #0A0D13;
       --lp-code-fg: #E5E7EB;
+    }
+
+    html[data-theme="light"],
+    :root[data-theme="light"] {
+      color-scheme: light;
+    }
+
+    html[data-theme="dark"],
+    :root[data-theme="dark"] {
+      color-scheme: dark;
     }
 
     * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -337,6 +348,38 @@
 
     pre.code-pre code {
       font-family: inherit;
+    }
+
+    /* Light theme only: literals + color-scheme so panels never stay “ink”
+       when custom props lag, inline styles reference vars, or UA dark canvases bite. */
+    html[data-theme="light"] pre.code-pre,
+    html[data-theme="light"] .code-shell pre.code-pre,
+    html[data-theme="light"] .code-panel pre.code-pre,
+    html[data-theme="light"] .doc-panel pre.code-pre {
+      color-scheme: light;
+      background: #f4f5f8 !important;
+      background-color: #f4f5f8 !important;
+      color: #1a1f28 !important;
+      background-image: none !important;
+    }
+
+    html[data-theme="light"] pre.code-pre code,
+    html[data-theme="light"] .doc-panel pre.code-pre code,
+    html[data-theme="light"] .code-panel pre.code-pre code {
+      background-color: transparent !important;
+      background-image: none !important;
+      color: #1a1f28 !important;
+    }
+
+    html[data-theme="light"] .tick-corners {
+      color-scheme: light;
+      background-color: #f4f5f8 !important;
+      background-image: none !important;
+    }
+
+    html[data-theme="light"] .tick-corners pre.mono {
+      background-color: transparent !important;
+      color: var(--lp-fg) !important;
     }
 
     p code,
