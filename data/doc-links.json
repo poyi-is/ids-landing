@@ -1,6 +1,5 @@
 {
   "skillPath": null,
-  "changelogPath": "CHANGELOG.md",
   "canonicalPath": "LOCAL_REPO:ids-canonical.json @../ids",
   "canonicalUrl": null,
   "stylesheetPath": "LOCAL_REPO:gh-pages/styles/default.css",

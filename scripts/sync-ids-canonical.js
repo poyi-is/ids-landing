@@ -55,14 +55,6 @@ const SKILL_CANDIDATES = [
   ".github/SKILL.md",
 ];
 
-const CHANGELOG_CANDIDATES = [
-  "CHANGELOG.md",
-  "CHANGELOG.markdown",
-  "docs/CHANGELOG.md",
-  "docs/changelog.md",
-  "History.md",
-];
-
 function githubToken() {
   return process.env.GITHUB_TOKEN?.trim() || "";
 }
@@ -628,10 +620,6 @@ async function main() {
   }
 
   const skillPath = await probeDocPresence(SKILL_CANDIDATES, "SKILL");
-  const changelogPath = await probeDocPresence(
-    CHANGELOG_CANDIDATES,
-    "changelog",
-  );
 
   const canonicalStoredUrl =
     typeof canonicalUrlForLinks === "string" &&
@@ -655,7 +643,6 @@ async function main() {
     JSON.stringify(
       {
         skillPath,
-        changelogPath,
         canonicalPath: canonicalPathUsed,
         canonicalUrl: canonicalStoredUrl,
         stylesheetPath: cssPathUsed,
@@ -686,7 +673,6 @@ async function main() {
     console.log("[ids:sync] stylesheet link:", stylesheetStoredUrl);
   }
   console.log("[ids:sync] SKILL:", skillPath ?? "(none)");
-  console.log("[ids:sync] changelog:", changelogPath ?? "(none)");
   console.log("[ids:sync] ───────────────────────────────────");
   console.log("");
   console.log("Wrote:", path.relative(ROOT, OUT_CANONICAL));

@@ -43,7 +43,6 @@
 
     resolving = (async function () {
       var skillPath = null;
-      var changelogPath = null;
       try {
         var mr = await fetch(docLinksHref(), {
           cache: "no-store",
@@ -51,8 +50,6 @@
         if (mr.ok) {
           var m = await mr.json();
           if (typeof m.skillPath === "string" && m.skillPath) skillPath = m.skillPath;
-          if (typeof m.changelogPath === "string" && m.changelogPath)
-            changelogPath = m.changelogPath;
         }
       } catch (_) {}
 
@@ -64,17 +61,8 @@
           ".github/SKILL.md",
         ]);
       }
-      if (!changelogPath) {
-        changelogPath = await probeSequential([
-          "CHANGELOG.md",
-          "CHANGELOG.markdown",
-          "docs/CHANGELOG.md",
-          "docs/changelog.md",
-          "History.md",
-        ]);
-      }
 
-      pathsCache = { skillPath: skillPath, changelogPath: changelogPath };
+      pathsCache = { skillPath: skillPath };
       resolving = null;
       return pathsCache;
     })();
@@ -96,12 +84,7 @@
 
     els.forEach(function (el) {
       var kind = el.getAttribute("data-nav-doc");
-      var resolved =
-        kind === "skill"
-          ? p.skillPath
-          : kind === "changelog"
-            ? p.changelogPath
-            : null;
+      var resolved = kind === "skill" ? p.skillPath : null;
 
       if (appliedEl) appliedEl.add(el);
 

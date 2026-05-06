@@ -59,7 +59,6 @@
       compAttr +
       ">Components</a>" +
       '<a class="topbar-link" data-nav-doc="skill" href="#" hidden>SKILL.md</a>' +
-      '<a class="topbar-link" data-nav-doc="changelog" href="#" hidden>Changelog</a>' +
       "</nav>" +
       '<div class="topbar-actions">' +
       '<a class="lp-btn lp-btn-sm" data-variant="ghost" href="https://github.com/poyi-is/ids">GitHub</a>' +
