@@ -2,6 +2,7 @@
 """Patch index.html bundler template + inline SiteTopbar chunk for shared site header."""
 import base64
 import gzip
+import importlib.util
 import json
 import re
 from pathlib import Path
@@ -72,7 +73,6 @@ SITE_TOPBAR_FN = """function SiteTopbar() {
         <a href="./docs.html" style={{ fontSize: 13, color: 'var(--lp-fg-muted)', cursor: 'pointer', textDecoration: 'none' }}>Docs</a>
         <a href="./components/alert.html" style={{ fontSize: 13, color: 'var(--lp-fg-muted)', cursor: 'pointer', textDecoration: 'none' }}>Components</a>
         <a href="#" hidden data-nav-doc="skill" style={{ fontSize: 13, color: 'var(--lp-fg-muted)', cursor: 'pointer', textDecoration: 'none' }}>SKILL.md</a>
-        <a href="#" hidden data-nav-doc="changelog" style={{ fontSize: 13, color: 'var(--lp-fg-muted)', cursor: 'pointer', textDecoration: 'none' }}>Changelog</a>
       </nav>
       <div style={{ display: 'flex', gap: 8, alignItems: 'center' }}>
         <a href="https://github.com/poyi-is/ids" className="lp-btn" data-variant="ghost" style={{ padding: '6px 12px', fontSize: 13 }}>GitHub</a>
@@ -298,6 +298,15 @@ def main():
         + new_manifest_json
         + html[manifest_m2.end(2) :]
     )
+
+    vp_spec = importlib.util.spec_from_file_location(
+        "_ids_landing_value_props",
+        Path(__file__).resolve().parent / "patch_landing_value_props.py",
+    )
+    assert vp_spec and vp_spec.loader
+    vp_mod = importlib.util.module_from_spec(vp_spec)
+    vp_spec.loader.exec_module(vp_mod)
+    html = vp_mod.apply_landing_value_props_patch(html)
 
     INDEX.write_text(html, encoding="utf-8")
     print("Wrote", INDEX)
